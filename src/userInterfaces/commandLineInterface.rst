@@ -27,7 +27,7 @@ About
 .. code-block:: text
 
    $ ./OpenCOR -a
-   OpenCOR Version 0.5
+   OpenCOR Version 0.6
    macOS High Sierra (10.13)
    Copyright 2011-2018
 
@@ -133,4 +133,4 @@ Version
 .. code-block:: text
 
    $ ./OpenCOR -v
-   OpenCOR Version 0.5
+   OpenCOR Version 0.6
