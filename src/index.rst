@@ -8,20 +8,6 @@
 
 Various information about OpenCOR and its use can be found in the following pages:
 
-- `Tutorial <http://tutorial-on-cellml-opencor-and-pmr.readthedocs.io/en/latest/index.html>`__
-
-.. toctree::
-   :hidden:
-
-   tutorial
-
-- `What is new? <http://www.opencor.ws/whatIsNew.html>`__
-
-.. toctree::
-   :hidden:
-
-   whatIsNew
-
 - :ref:`userInterfaces_index`
 
   - :ref:`userInterfaces_commandLineInterface`
@@ -101,8 +87,6 @@ Various information about OpenCOR and its use can be found in the following page
    :hidden:
 
    licensing
-
-- `Team <http://www.opencor.ws/team.html>`__
 
 You might also be interested in our `published article <https://dx.doi.org/10.3389/fphys.2015.00026>`__.
 
