@@ -7,7 +7,7 @@
 Help
 ----
 
-.. code-block:: text
+::
 
    $ ./OpenCOR -h
    Usage: OpenCOR [-a|--about] [-c|--command [<plugin>]::<command> <options>] [-e|--exclude <plugins>] [-h|--help] [-i|--include <plugins>] [-p|--plugins] [-r|--reset] [-s|--status] [-v|--version] [<files>]
@@ -24,7 +24,7 @@ Help
 About
 -----
 
-.. code-block:: text
+::
 
    $ ./OpenCOR -a
    OpenCOR Version 0.6
@@ -36,7 +36,7 @@ About
 Command
 -------
 
-.. code-block:: text
+::
 
    $ ./OpenCOR -c ::help
    Commands supported by the CellMLTextView plugin:
@@ -55,7 +55,7 @@ Command
       <predefined_format> can take one of the following values:
          cellml_1_0: to export a CellML 1.1 file to CellML 1.0
 
-.. code-block:: text
+::
 
    $ ./OpenCOR -c CellMLTools::help
    Commands supported by the CellMLTools plugin:
@@ -69,7 +69,7 @@ Command
 Exclude
 -------
 
-.. code-block:: text
+::
 
    $ ./OpenCOR -e Core HelpWindow Unknown
     - Core: cannot be directly excluded.
@@ -79,7 +79,7 @@ Exclude
 Include
 -------
 
-.. code-block:: text
+::
 
    $ ./OpenCOR -i Core HelpWindow Unknown
     - Core: cannot be directly included.
@@ -89,7 +89,7 @@ Include
 Plugins
 -------
 
-.. code-block:: text
+::
 
    $ ./OpenCOR -p
    The following CLI plugins are available:
@@ -99,7 +99,7 @@ Plugins
 Reset
 -----
 
-.. code-block:: text
+::
 
    $ ./OpenCOR -r
    All your settings have been reset.
@@ -107,7 +107,7 @@ Reset
 Status
 ------
 
-.. code-block:: text
+::
 
    $ ./OpenCOR -s
    The following plugins are available:
@@ -130,7 +130,7 @@ Status
 Version
 -------
 
-.. code-block:: text
+::
 
    $ ./OpenCOR -v
    OpenCOR Version 0.6
