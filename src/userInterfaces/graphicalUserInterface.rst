@@ -6,31 +6,31 @@
 
 OpenCOR offers a consistent `GUI <https://en.wikipedia.org/wiki/Graphical_user_interface>`__ across the :ref:`different platforms <supportedPlatforms>` it supports. The look and feel of the interface is determined by the :ref:`plugins <plugins_index>` that are selected. The first time you run OpenCOR, it will look something like:
 
-.. image:: pics/userInterfaces_graphicalUserInterface01.png
+.. image:: pics/screenshot01.png
    :align: center
    :scale: 25%
 
 The central area is used to interact with files. By default, no files are open, hence the OpenCOR logo is shown instead. To the sides, there are dockable windows, which provide additional features. Those windows can be dragged and dropped to the top or bottom of the central area:
 
-.. image:: pics/userInterfaces_graphicalUserInterface02.png
+.. image:: pics/screenshot02.png
    :align: center
    :scale: 25%
 
 Alternatively, they can be undocked:
 
-.. image:: pics/userInterfaces_graphicalUserInterface03.png
+.. image:: pics/screenshot03.png
    :align: center
    :scale: 25%
 
 Or even closed, by either closing the window itself or by unticking the corresponding menu item (under the ``View`` menu, or the ``Help`` menu for the Help window). Alternatively, all the docked windows can be closed at once:
 
-.. image:: pics/userInterfaces_graphicalUserInterface04.png
+.. image:: pics/screenshot04.png
    :align: center
    :scale: 25%
 
 To unselect all the :ref:`plugins <plugins_index>` will result in OpenCOR looking empty:
 
-.. image:: pics/userInterfaces_graphicalUserInterface05.png
+.. image:: pics/screenshot05.png
    :align: center
    :scale: 25%
 
