@@ -4,7 +4,8 @@
  Supported platforms
 =====================
 
-OpenCOR can be used on the following versions of `Windows <https://en.wikipedia.org/wiki/Microsoft_Windows>`__, `Linux <https://en.wikipedia.org/wiki/Linux>`__ and `macOS <https://en.wikipedia.org/wiki/MacOS>`__. Alternatively, you can try `building <http://www.opencor.ws/developer/index.html>`__ it yourself.
+OpenCOR can be used on the following versions of `Windows <https://en.wikipedia.org/wiki/Microsoft_Windows>`__, `Linux <https://en.wikipedia.org/wiki/Linux>`__ and `macOS <https://en.wikipedia.org/wiki/MacOS>`__.
+Alternatively, you can try `building <http://www.opencor.ws/developer/index.html>`__ it yourself.
 
 Windows
 -------

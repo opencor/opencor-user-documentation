@@ -4,13 +4,18 @@
  Graphical User Interface (GUI)
 ================================
 
-OpenCOR offers a consistent `GUI <https://en.wikipedia.org/wiki/Graphical_user_interface>`__ across the :ref:`different platforms <supportedPlatforms>` it supports. The look and feel of the interface is determined by the :ref:`plugins <plugins_index>` that are selected. The first time you run OpenCOR, it will look something like:
+OpenCOR offers a consistent `GUI <https://en.wikipedia.org/wiki/Graphical_user_interface>`__ across the :ref:`different platforms <supportedPlatforms>` it supports.
+The look and feel of the interface is determined by the :ref:`plugins <plugins_index>` that are selected.
+The first time you run OpenCOR, it will look something like:
 
 .. image:: pics/screenshot01.png
    :align: center
    :scale: 25%
 
-The central area is used to interact with files. By default, no files are open, hence the OpenCOR logo is shown instead. To the sides, there are dockable windows, which provide additional features. Those windows can be dragged and dropped to the top or bottom of the central area:
+The central area is used to interact with files.
+By default, no files are open, hence the OpenCOR logo is shown instead.
+To the sides, there are dockable windows, which provide additional features.
+Those windows can be dragged and dropped to the top or bottom of the central area:
 
 .. image:: pics/screenshot02.png
    :align: center
@@ -22,7 +27,8 @@ Alternatively, they can be undocked:
    :align: center
    :scale: 25%
 
-Or even closed, by either closing the window itself or by unticking the corresponding menu item (under the ``View`` menu, or the ``Help`` menu for the Help window). Alternatively, all the docked windows can be closed at once:
+Or even closed, by either closing the window itself or by unticking the corresponding menu item (under the ``View`` menu, or the ``Help`` menu for the Help window).
+Alternatively, all the docked windows can be closed at once:
 
 .. image:: pics/screenshot04.png
    :align: center
