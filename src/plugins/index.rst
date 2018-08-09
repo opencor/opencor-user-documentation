@@ -21,3 +21,11 @@ Most of the selectable plugins come with some kind of a :ref:`GUI <userInterface
 - **Window:** such a plugin (e.g. the :ref:`PMR window <plugins_organisation_pmrWindow>` and :ref:`Help window <plugins_miscellaneous_helpWindow>` plugins) can be docked around the central area, undocked or hidden, as illustrated :ref:`here <userInterfaces_graphicalUserInterface>`.
 
 As can be imagined, if no plugins are selected, then OpenCOR is an :ref:`empty shell <userInterfaces_graphicalUserInterface_opencorWithNoLoadedPlugins>`.
+
+Data store
+----------
+
+Data Store plugins are used to store and manipulate data:
+
+- :ref:`BioSignalML data store <plugins_dataStore_biosignalmlDataStore>`: a BioSignalML specific data store plugin.
+- :ref:`CSV data store <plugins_dataStore_csvDataStore>`: a `CSV <https://en.wikipedia.org/wiki/Comma-separated_values>`__ specific data store plugin.
