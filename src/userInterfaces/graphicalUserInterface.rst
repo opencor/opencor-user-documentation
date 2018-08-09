@@ -34,6 +34,8 @@ Alternatively, all the docked windows can be closed at once:
    :align: center
    :scale: 25%
 
+.. _userInterfaces_graphicalUserInterface_opencorWithNoLoadedPlugins:
+
 To unselect all the :ref:`plugins <plugins_index>` will result in OpenCOR looking empty:
 
 .. image:: pics/screenshot05.png
