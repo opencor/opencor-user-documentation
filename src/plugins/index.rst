@@ -25,7 +25,13 @@ As can be imagined, if no plugins are selected, then OpenCOR is an :ref:`empty s
 Data store
 ----------
 
-Data Store plugins are used to store and manipulate data:
+Data store plugins are used to store and manipulate data:
 
-- :ref:`BioSignalML data store <plugins_dataStore_biosignalmlDataStore>`: a BioSignalML specific data store plugin.
-- :ref:`CSV data store <plugins_dataStore_csvDataStore>`: a `CSV <https://en.wikipedia.org/wiki/Comma-separated_values>`__ specific data store plugin.
+.. rst-class:: internal reference
+
+   - :ref:`BioSignalMLDataStore <plugins_dataStore_biosignalmlDataStore>`: a BioSignalML specific data store plugin.
+   - :ref:`CSVDataStore <plugins_dataStore_csvDataStore>`: a `CSV <https://en.wikipedia.org/wiki/Comma-separated_values>`__ specific data store plugin.
+
+There is also one non-selectable data store plugin:
+
+- **DataStore:** a plugin that provides core data store facilities.
