@@ -104,3 +104,17 @@ Solver plugins are used to access various solvers:
    - :ref:`HeunSolver: <plugins_solver_heunSolver>` a plugin that implements the `Heun's method <https://en.wikipedia.org/wiki/Heun's_method>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
    - :ref:`KINSOLSolver: <plugins_solver_kinsolSolver>` a plugin that uses `KINSOL <http://computation.llnl.gov/projects/sundials/kinsol>`__ to solve `non-linear algebraic systems <https://en.wikipedia.org/wiki/Nonlinear_system#Nonlinear_algebraic_equations>`__.
    - :ref:`SecondOrderRungeKuttaSolver: <plugins_solver_secondOrderRungeKuttaSolver>` a plugin that implements the second-order `Runge-Kutta method <https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
+
+Support
+-------
+
+Non-selectable support plugins are used to support various third-party libraries:
+
+- **CellMLSupport:** a plugin to support CellML.
+- **COMBINESupport:** a plugin to support COMBINE.
+- **PMRSupport:** a plugin to support PMR.
+- **QScintillaSupport:** a plugin to support QScintilla.
+- **SEDMLSupport:** a plugin to support SED-ML.
+- **SimulationSupport:** a plugin to support simulations.
+- **StandardSupport:** a plugin to support various standards.
+- **ZIPSupport:** a plugin to support the ZIP format.
