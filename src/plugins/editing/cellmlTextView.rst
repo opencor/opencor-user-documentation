@@ -5,3 +5,10 @@
 ==================
 
 Blah...
+
+.. _plugins_editing_cellmlTextView_cellmlTextFormat:
+
+CellML Text format
+------------------
+
+Blah...
