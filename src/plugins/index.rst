@@ -90,3 +90,17 @@ Simulation plugins are used to simulate files:
 .. rst-class:: internal reference
 
    - :ref:`SimulationExperimentView: <plugins_simulation_simulationExperimentView>` a plugin to edit and run a simulation experiment.
+
+Solver
+------
+
+Solver plugins are used to access various solvers:
+
+.. rst-class:: internal reference
+
+   - :ref:`CVODESolver: <plugins_solver_cvodeSolver>` a plugin that uses `CVODE <http://computation.llnl.gov/projects/sundials/cvode>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
+   - :ref:`ForwardEulerSolver: <plugins_solver_forwardEulerSolver>` a plugin that implements the `Forward Euler method <https://en.wikipedia.org/wiki/Euler_method>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
+   - :ref:`FourthOrderRungeKuttaSolver: <plugins_solver_fourthOrderRungeKuttaSolver>` a plugin that implements the fourth-order `Runge-Kutta method <https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
+   - :ref:`HeunSolver: <plugins_solver_heunSolver>` a plugin that implements the `Heun's method <https://en.wikipedia.org/wiki/Heun's_method>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
+   - :ref:`KINSOLSolver: <plugins_solver_kinsolSolver>` a plugin that uses `KINSOL <http://computation.llnl.gov/projects/sundials/kinsol>`__ to solve `non-linear algebraic systems <https://en.wikipedia.org/wiki/Nonlinear_system#Nonlinear_algebraic_equations>`__.
+   - :ref:`SecondOrderRungeKuttaSolver: <plugins_solver_secondOrderRungeKuttaSolver>` a plugin that implements the second-order `Runge-Kutta method <https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
