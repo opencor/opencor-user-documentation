@@ -1,7 +1,7 @@
 .. _plugins_solver_kinsolSolver:
 
-===============
- KINSOL solver
-===============
+==============
+ KINSOLSolver
+==============
 
 Blah...

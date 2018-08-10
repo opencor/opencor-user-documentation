@@ -1,7 +1,7 @@
 .. _plugins_tools_cellmlTools:
 
-==============
- CellML tools
-==============
+=============
+ CellMLTools
+=============
 
 Blah...

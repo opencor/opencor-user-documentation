@@ -1,7 +1,7 @@
 .. _plugins_simulation_simulationExperimentView:
 
-============================
- Simulation Experiment view
-============================
+==========================
+ SimulationExperimentView
+==========================
 
 Blah...

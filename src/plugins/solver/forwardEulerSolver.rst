@@ -1,7 +1,7 @@
 .. _plugins_solver_forwardEulerSolver:
 
-======================
- Forward Euler solver
-======================
+====================
+ ForwardEulerSolver
+====================
 
 Blah...
