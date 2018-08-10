@@ -147,3 +147,15 @@ Tools plugins are used to access to various tools:
 .. rst-class:: internal reference
 
    - :ref:`CellMLTools: <plugins_tools_cellmlTools>` a plugin to access various `CellML <https://www.cellml.org/>`__-related tools.
+
+Widget
+------
+
+Non-selectable widget plugins are used to access various *ad hoc* widgets:
+
+.. rst-class:: internal reference
+
+   - **EditorWidget:** a plugin to edit and display text.
+   - **GraphPanelWidget:** a plugin to plot graphs.
+   - **MathMLViewerWidget:** a plugin to visualise `MathML <https://www.w3.org/Math/>`__ documents.
+   - **WebViewerWidget:** a plugin to visualise Web documents.
