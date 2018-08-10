@@ -69,3 +69,15 @@ There are also some non-selectable Miscellaneous plugins:
 
 - **Compiler:** a plugin to support code compilation.
 - **Core:** the core plugin.
+
+Organisation
+------------
+
+Organisation plugins are used to organise files:
+
+.. rst-class:: internal reference
+
+   - :ref:`FileBrowserWindow: <plugins_organisation_fileBrowserWindow>` a plugin to access local files.
+   - :ref:`FileOrganiserWindow: <plugins_organisation_fileOrganiserWindow>` a plugin to virtually organise files.
+   - :ref:`PMRWindow: <plugins_organisation_pmrWindow>` a plugin to access `PMR <https://models.physiomeproject.org/>`__.
+   - :ref:`PMRWorkspacesWindow: <plugins_organisation_pmrWorkspacesWindow>` a plugin to manage a user's `PMR <https://models.physiomeproject.org/>`__ workspaces.
