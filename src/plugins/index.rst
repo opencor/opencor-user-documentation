@@ -29,8 +29,8 @@ Data store plugins are used to store and manipulate data:
 
 .. rst-class:: internal reference
 
-   - :ref:`BioSignalMLDataStore <plugins_dataStore_biosignalmlDataStore>`: a BioSignalML specific data store plugin.
-   - :ref:`CSVDataStore <plugins_dataStore_csvDataStore>`: a `CSV <https://en.wikipedia.org/wiki/Comma-separated_values>`__ specific data store plugin.
+   - :ref:`BioSignalMLDataStore: <plugins_dataStore_biosignalmlDataStore>` a BioSignalML specific data store plugin.
+   - :ref:`CSVDataStore: <plugins_dataStore_csvDataStore>` a `CSV <https://en.wikipedia.org/wiki/Comma-separated_values>`__ specific data store plugin.
 
 There is also one non-selectable data store plugin:
 
@@ -43,14 +43,14 @@ Editing plugins are used to edit files:
 
 .. rst-class:: internal reference
 
-   - :ref:`CellMLAnnotationView <plugins_editing_cellmlAnnotationView>`: a plugin to annotate `CellML <https://www.cellml.org/>`__ files.
-   - :ref:`CellMLTextView <plugins_editing_cellmlTextView>`: a plugin to edit `CellML <https://www.cellml.org/>`__ files using the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`.
-   - :ref:`RawCellMLView <plugins_editing_rawCellmlView>`: a plugin to edit `CellML <https://www.cellml.org/>`__ files using an `XML <https://www.w3.org/XML/>`__ editor.
-   - :ref:`RawSEDMLView <plugins_editing_rawSedmlView>`: a plugin to edit `SED-ML <http://www.sed-ml.org/>`__ files using an `XML <https://www.w3.org/XML/>`__ editor.
-   - :ref:`RawTextView <plugins_editing_rawTextView>`: a plugin to edit text-based files using a text editor.
+   - :ref:`CellMLAnnotationView: <plugins_editing_cellmlAnnotationView>` a plugin to annotate `CellML <https://www.cellml.org/>`__ files.
+   - :ref:`CellMLTextView: <plugins_editing_cellmlTextView>` a plugin to edit `CellML <https://www.cellml.org/>`__ files using the :ref:`CellML Text format: <plugins_editing_cellmlTextView_cellmlTextFormat>`.
+   - :ref:`RawCellMLView: <plugins_editing_rawCellmlView>` a plugin to edit `CellML <https://www.cellml.org/>`__ files using an `XML <https://www.w3.org/XML/>`__ editor.
+   - :ref:`RawSEDMLView: <plugins_editing_rawSedmlView>` a plugin to edit `SED-ML <http://www.sed-ml.org/>`__ files using an `XML <https://www.w3.org/XML/>`__ editor.
+   - :ref:`RawTextView: <plugins_editing_rawTextView>` a plugin to edit text-based files using a text editor.
 
 There are also some non-selectable editing plugins:
 
-- **CellMLEditingView**: a plugin that provides core `CellML <https://www.cellml.org/>`__ editing view facilities.
-- **EditingView**: a plugin that provides core editing view facilities.
-- **SEDMLEditingView**: a plugin that provides core `SED-ML <http://www.sed-ml.org/>`__ editing view facilities.
+- **CellMLEditingView:** a plugin that provides core `CellML <https://www.cellml.org/>`__ editing view facilities.
+- **EditingView:** a plugin that provides core editing view facilities.
+- **SEDMLEditingView:** a plugin that provides core `SED-ML <http://www.sed-ml.org/>`__ editing view facilities.
