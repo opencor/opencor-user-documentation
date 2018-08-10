@@ -118,3 +118,23 @@ Non-selectable support plugins are used to support various third-party libraries
 - **SimulationSupport:** a plugin to support simulations.
 - **StandardSupport:** a plugin to support various standards.
 - **ZIPSupport:** a plugin to support the ZIP format.
+
+Third-party
+-----------
+
+Non-selectable third-party plugins are used to access to various third-party libraries:
+
+- **CellMLAPI:** a plugin to access the `CellML API <https://github.com/cellmlapi/cellml-api/>`__.
+- **libBioSignalML:** a plugin to access BioSignalML.
+- **libgit2:** a plugin to access `libgit2 <https://libgit2.github.com/>`__.
+- **libNuML:** a plugin to access `libNuML <https://github.com/NuML/NuML/>`__.
+- **libSBML:** a plugin to access `libSBML <http://sbml.org/Software/libSBML/>`__.
+- **libSEDML:** a plugin to access `libSEDML <https://github.com/fbergmann/libSEDML/>`__.
+- **LibXDiff:** a plugin to access `LibXDiff <http://www.xmailserver.org/xdiff-lib.html>`__.
+- **LLVMClang:** a plugin to access `LLVM <http://www.llvm.org/>`__ and `Clang <http://clang.llvm.org/>`__.
+- **OAuth:** a plugin to access `OAuth for Qt <https://github.com/pipacs/o2>`__.
+- **OpenSSL:** a plugin to access `OpenSSL <http://www.openssl.org/>`__.
+- **QScintilla:** a plugin to access `QScintilla <https://riverbankcomputing.com/software/qscintilla/intro>`__.
+- **Qwt:** a plugin to access `Qwt <http://qwt.sourceforge.net/>`__.
+- **SUNDIALS:** a plugin to access the `ARKode <http://computation.llnl.gov/projects/sundials/arkode>`__, `CVODES <http://computation.llnl.gov/projects/sundials/cvodes>`__, `IDAS <http://computation.llnl.gov/projects/sundials/idas>`__ and `KINSOL <http://computation.llnl.gov/projects/sundials/kinsol>`__ solvers from the `SUNDIALS <http://computation.llnl.gov/projects/sundials>`__ library.
+- **zlib:** a plugin to access `zlib <http://www.zlib.net/>`__.
