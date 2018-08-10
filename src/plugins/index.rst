@@ -138,3 +138,12 @@ Non-selectable third-party plugins are used to access to various third-party lib
 - **Qwt:** a plugin to access `Qwt <http://qwt.sourceforge.net/>`__.
 - **SUNDIALS:** a plugin to access the `ARKode <http://computation.llnl.gov/projects/sundials/arkode>`__, `CVODES <http://computation.llnl.gov/projects/sundials/cvodes>`__, `IDAS <http://computation.llnl.gov/projects/sundials/idas>`__ and `KINSOL <http://computation.llnl.gov/projects/sundials/kinsol>`__ solvers from the `SUNDIALS <http://computation.llnl.gov/projects/sundials>`__ library.
 - **zlib:** a plugin to access `zlib <http://www.zlib.net/>`__.
+
+Tools
+-----
+
+Tools plugins are used to access to various tools:
+
+.. rst-class:: internal reference
+
+   - :ref:`CellMLTools: <plugins_tools_cellmlTools>` a plugin to access various `CellML <https://www.cellml.org/>`__-related tools.
