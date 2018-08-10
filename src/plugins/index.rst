@@ -54,3 +54,18 @@ There are also some non-selectable editing plugins:
 - **CellMLEditingView:** a plugin that provides core `CellML <https://www.cellml.org/>`__ editing view facilities.
 - **EditingView:** a plugin that provides core editing view facilities.
 - **SEDMLEditingView:** a plugin that provides core `SED-ML <http://www.sed-ml.org/>`__ editing view facilities.
+
+Miscellaneous
+-------------
+
+Miscellaneous plugins are plugins that do not fit in any other category:
+
+.. rst-class:: internal reference
+
+   - :ref:`HelpWindow: <plugins_miscellaneous_helpWindow>` a plugin to provide help.
+   - :ref:`WebBrowserWindow: <plugins_miscellaneous_webBrowserWindow>` a plugin to browse the Web.
+
+There are also some non-selectable Miscellaneous plugins:
+
+- **Compiler:** a plugin to support code compilation.
+- **Core:** the core plugin.
