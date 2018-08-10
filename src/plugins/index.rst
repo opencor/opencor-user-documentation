@@ -81,3 +81,12 @@ Organisation plugins are used to organise files:
    - :ref:`FileOrganiserWindow: <plugins_organisation_fileOrganiserWindow>` a plugin to virtually organise files.
    - :ref:`PMRWindow: <plugins_organisation_pmrWindow>` a plugin to access `PMR <https://models.physiomeproject.org/>`__.
    - :ref:`PMRWorkspacesWindow: <plugins_organisation_pmrWorkspacesWindow>` a plugin to manage a user's `PMR <https://models.physiomeproject.org/>`__ workspaces.
+
+Simulation
+----------
+
+Simulation plugins are used to simulate files:
+
+.. rst-class:: internal reference
+
+   - :ref:`SimulationExperimentView: <plugins_simulation_simulationExperimentView>` a plugin to edit and run a simulation experiment.
