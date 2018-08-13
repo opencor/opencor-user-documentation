@@ -23,3 +23,6 @@ Windows
 - OpenCOR's :ref:`File Browser window <plugins_organisation_fileBrowserWindow>` plugin may, on some systems, result in OpenCOR being slow to respond at startup.
   This has nothing to do with OpenCOR, but most likely with a `Windows <https://en.wikipedia.org/wiki/Microsoft_Windows>`__ shell add-on that is installed on your system.
   `This page <http://www.brighthub.com/computing/windows-platform/articles/86552.aspx>`__ may help you address the issue, but if not then you might have to unselect the :ref:`File Browser window <plugins_organisation_fileBrowserWindow>` plugin.
+- OpenCOR is a `Qt <https://www.qt.io/>`__-based application that is styled to look as native as possible on `Windows <https://en.wikipedia.org/wiki/Microsoft_Windows>`__, `Linux <https://en.wikipedia.org/wiki/Linux>`__ and `macOS <https://en.wikipedia.org/wiki/MacOS>`__.
+  However, on `Windows <https://en.wikipedia.org/wiki/Microsoft_Windows>`__, the style used by `Qt <https://www.qt.io/>`__ is known to have some limitations when it comes to `HiDPI support <http://doc.qt.io/qt-5/highdpi.html#high-dpi-support-in-qt>`__.
+  So, should you need such support, we recommend switching to Qt's Fusion style (either by selecting the ``Tools`` | ``Preferences...`` menu or by clicking `here <opencor://openPreferencesDialog>`__).
