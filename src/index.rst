@@ -68,6 +68,20 @@ Various information about OpenCOR and its use can be found in the following page
 
    plugins/index
 
+- :ref:`preferences`
+
+.. toctree::
+   :hidden:
+
+   preferences
+
+- :ref:`uriScheme`
+
+.. toctree::
+   :hidden:
+
+   uriScheme
+
 - :ref:`knownLimitations`
 
 .. toctree::

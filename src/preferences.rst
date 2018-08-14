@@ -1,0 +1,7 @@
+.. _preferences:
+
+=============
+ Preferences
+=============
+
+Blah...
