@@ -51,7 +51,7 @@ The following commands are supported by OpenCOR itself:
 - ``openFiles``: open several files, which path/URL is given as arguments, separated by ``|``.
 
   - Example #1: |openFiles01|_ to open ``/home/user/file1`` and ``/home/user/file2``.
-  - Example #2: |openFiles02|_ to open ``/home/user/file1`` and ``/home/user/file2``.
+  - Example #2: |openFiles02|_ to open ``https://models.physiomeproject.org/.../cell-model.xml`` and ``https://models.physiomeproject.org/.../cell-model.sedml``.
 
 .. |openFiles01| replace:: ``opencor://openFiles//home/user/file1|/home/user/file2``
 .. _openFiles01: opencor://openFiles//home/user/file1|/home/user/file2
