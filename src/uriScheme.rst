@@ -40,7 +40,7 @@ The following commands are supported by OpenCOR itself:
 - ``openFile``: open a file, which path/URL is given as an argument.
 
   - Example #1: |openFile01|_ to open ``/home/user/file``.
-  - Example #2: |openFile02|_ to open ``https://models.physiomeproject.org/.../cell-model.sedml``.
+  - Example #2: |openFile02|_ to open |sedmlFile|_.
 
 .. |openFile01| replace:: ``opencor://openFile//home/user/file``
 .. _openFile01: opencor://openFile//home/user/file
@@ -48,13 +48,19 @@ The following commands are supported by OpenCOR itself:
 .. |openFile02| replace:: ``opencor://openFile/https://models.physiomeproject.org/.../cell-model.sedml``
 .. _openFile02: opencor://openFile/https://models.physiomeproject.org/workspace/49e/rawfile/0a252e033bdf5e65d5a6490c9d3ade9035fef04e/experiments/cell-model.sedml
 
+.. |sedmlFile| replace:: ``https://models.physiomeproject.org/.../cell-model.sedml``
+.. _sedmlFile: https://models.physiomeproject.org/workspace/49e/rawfile/0a252e033bdf5e65d5a6490c9d3ade9035fef04e/experiments/cell-model.sedml
+
 - ``openFiles``: open several files, which path/URL is given as arguments, separated by ``|``.
 
   - Example #1: |openFiles01|_ to open ``/home/user/file1`` and ``/home/user/file2``.
-  - Example #2: |openFiles02|_ to open ``https://models.physiomeproject.org/.../cell-model.xml`` and ``https://models.physiomeproject.org/.../cell-model.sedml``.
+  - Example #2: |openFiles02|_ to open |cellmlFile|_ and |sedmlFile|_.
 
 .. |openFiles01| replace:: ``opencor://openFiles//home/user/file1|/home/user/file2``
 .. _openFiles01: opencor://openFiles//home/user/file1|/home/user/file2
 
 .. |openFiles02| replace:: ``opencor://openFiles/https://models.physiomeproject.org/.../cell-model.xml|https://models.physiomeproject.org/.../cell-model.sedml``
 .. _openFiles02: opencor://openFiles/https://models.physiomeproject.org/workspace/49e/rawfile/0a252e033bdf5e65d5a6490c9d3ade9035fef04e/experiments/cell-model.xml|https://models.physiomeproject.org/workspace/49e/rawfile/0a252e033bdf5e65d5a6490c9d3ade9035fef04e/experiments/cell-model.sedml
+
+.. |cellmlFile| replace:: ``https://models.physiomeproject.org/.../cell-model.xml``
+.. _cellmlFile: https://models.physiomeproject.org/workspace/49e/rawfile/0a252e033bdf5e65d5a6490c9d3ade9035fef04e/experiments/cell-model.xml
