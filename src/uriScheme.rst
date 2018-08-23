@@ -37,7 +37,7 @@ The following commands are supported by OpenCOR itself:
 .. |openAboutDialog| replace:: ``opencor://openAboutDialog``
 .. _openAboutDialog: opencor://openAboutDialog
 
-- ``openFile``: open a file, which path/URL is given as an argument.
+- ``openFile``: open a file, which `path <https://en.wikipedia.org/wiki/Path_(computing)>`__/`URL <https://en.wikipedia.org/wiki/URL>`__ is given as an argument.
 
   - Example #1: |openFile01|_ to open ``/home/user/file``.
   - Example #2: |openFile02|_ to open |sedmlFile|_.
@@ -51,7 +51,7 @@ The following commands are supported by OpenCOR itself:
 .. |sedmlFile| replace:: ``https://models.physiomeproject.org/.../cell-model.sedml``
 .. _sedmlFile: https://models.physiomeproject.org/workspace/49e/rawfile/0a252e033bdf5e65d5a6490c9d3ade9035fef04e/experiments/cell-model.sedml
 
-- ``openFiles``: open several files, which path/URL is given as arguments, separated by ``|``.
+- ``openFiles``: open several files, which `path <https://en.wikipedia.org/wiki/Path_(computing)>`__/`URL <https://en.wikipedia.org/wiki/URL>`__ is given as arguments, separated by ``|``.
 
   - Example #1: |openFiles01|_ to open ``/home/user/file1`` and ``/home/user/file2``.
   - Example #2: |openFiles02|_ to open |cellmlFile|_ and |sedmlFile|_.
@@ -65,7 +65,7 @@ The following commands are supported by OpenCOR itself:
 .. |cellmlFile| replace:: ``https://models.physiomeproject.org/.../cell-model.xml``
 .. _cellmlFile: https://models.physiomeproject.org/workspace/49e/rawfile/0a252e033bdf5e65d5a6490c9d3ade9035fef04e/experiments/cell-model.xml
 
-As hinted above, a command can be sent to a plugin through the OpenCOR URI scheme.
+As hinted above, a command can be sent to a plugin through the OpenCOR `URI scheme <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__.
 For example, we can ask the :ref:`Core <plugins_miscellaneous_core>` plugin to select a particular mode or view.
 
 - Example #1: |selectMode|_ to select the Simulation mode.
