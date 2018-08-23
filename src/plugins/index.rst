@@ -67,8 +67,10 @@ Miscellaneous plugins are plugins that do not fit in any other category:
 
 There are also some non-selectable Miscellaneous plugins:
 
-- **Compiler:** a plugin to support code compilation.
-- **Core:** the core plugin.
+.. rst-class:: internal reference
+
+   - **Compiler:** a plugin to support code compilation.
+   - :ref:`Core: <plugins_miscellaneous_core>` the core plugin.
 
 Organisation
 ------------
