@@ -66,10 +66,10 @@ The following commands are supported by OpenCOR itself:
 .. _cellmlFile: https://models.physiomeproject.org/workspace/49e/rawfile/0a252e033bdf5e65d5a6490c9d3ade9035fef04e/experiments/cell-model.xml
 
 As hinted above, a command can be sent to a plugin through the OpenCOR URI scheme.
-For example, we can ask the :ref:`Core: <plugins_miscellaneous_core>` plugin to select a particular mode or view.
+For example, we can ask the :ref:`Core <plugins_miscellaneous_core>` plugin to select a particular mode or view.
 
-  - Example #1: |selectMode|_ to select the Simulation mode.
-  - Example #2: |selectView|_ to select the :ref:`Raw Text <plugins_editing_rawTextView>` view.
+- Example #1: |selectMode|_ to select the Simulation mode.
+- Example #2: |selectView|_ to select the :ref:`Raw Text view <plugins_editing_rawTextView>`.
 
 .. |selectMode| replace:: ``opencor://Core.selectMode/SimulationMode``
 .. _selectMode: opencor://Core.selectMode/SimulationMode
