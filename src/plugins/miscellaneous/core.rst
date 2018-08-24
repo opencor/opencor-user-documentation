@@ -5,3 +5,10 @@
 ======
 
 Blah...
+
+.. _plugins_miscellaneous_core_uriScheme:
+
+URI scheme
+----------
+
+Blah...
