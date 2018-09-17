@@ -12,7 +12,8 @@ The scheme takes the form:
   opencor://[pluginName.]command[/argument1[|argument2|argument3|...|argumentN]]
 
 It can be used in a Web browser, as well as in a Web document (e.g. the :ref:`plugins_index` page).
-Both ``pluginName`` and ``command`` are case insensitive while it depends for ``argument1``, ``argument2``, ``argument3``, ..., ``argumentN``.
+Both ``pluginName`` and ``command`` are case insensitive while it depends on the command when it comes to ``argument1``, ``argument2``, ``argument3``, ..., ``argumentN``.
+(Note that for a command to be executed, no modal dialog must be active.)
 
 The following commands are supported by OpenCOR itself:
 
