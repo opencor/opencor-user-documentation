@@ -14,11 +14,6 @@ Various information about OpenCOR and its use can be found in the following page
   - :ref:`userInterfaces_commandLineInterface`
   - :ref:`userInterfaces_graphicalUserInterface`
 
-.. toctree::
-   :hidden:
-
-   userInterfaces/index
-
 - :ref:`plugins_index`
 
   - Data store:
@@ -64,44 +59,49 @@ Various information about OpenCOR and its use can be found in the following page
 
     - :ref:`CellMLTools <plugins_tools_cellmlTools>`
 
-.. toctree::
-   :hidden:
-
-   plugins/index
-
 - :ref:`preferences`
-
-.. toctree::
-   :hidden:
-
-   preferences
 
 - :ref:`uriScheme`
 
-.. toctree::
-   :hidden:
-
-   uriScheme
-
 - :ref:`knownLimitations`
 
-.. toctree::
-   :hidden:
-
-   knownLimitations
-
 - :ref:`supportedPlatforms`
-
-.. toctree::
-   :hidden:
-
-   supportedPlatforms
 
 - :ref:`licensing`
 
 .. toctree::
    :hidden:
 
+   userInterfaces/index
+   userInterfaces/commandLineInterface
+   userInterfaces/graphicalUserInterface
+   plugins/index
+   plugins/dataStore/biosignalmlDataStore
+   plugins/dataStore/csvDataStore
+   plugins/editing/cellmlAnnotationView
+   plugins/editing/cellmlTextView
+   plugins/editing/rawCellmlView
+   plugins/editing/rawSedmlView
+   plugins/editing/rawTextView
+   plugins/miscellaneous/core
+   plugins/miscellaneous/helpWindow
+   plugins/miscellaneous/webBrowserWindow
+   plugins/organisation/fileBrowserWindow
+   plugins/organisation/fileOrganiserWindow
+   plugins/organisation/pmrWindow
+   plugins/organisation/pmrWorkspacesWindow
+   plugins/simulation/simulationExperimentView
+   plugins/solver/cvodeSolver
+   plugins/solver/forwardEulerSolver
+   plugins/solver/fourthOrderRungeKuttaSolver
+   plugins/solver/heunSolver
+   plugins/solver/kinsolSolver
+   plugins/solver/secondOrderRungeKuttaSolver
+   plugins/tools/cellmlTools
+   preferences
+   uriScheme
+   knownLimitations
+   supportedPlatforms
    licensing
 
 You might also be interested in our `published article <https://dx.doi.org/10.3389/fphys.2015.00026>`__.
