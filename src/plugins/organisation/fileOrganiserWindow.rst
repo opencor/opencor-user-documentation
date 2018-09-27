@@ -1,7 +1,7 @@
 .. _plugins_organisation_fileOrganiserWindow:
 
-=====================
- FileOrganiserWindow
-=====================
+============================
+ FileOrganiserWindow plugin
+============================
 
 Blah...

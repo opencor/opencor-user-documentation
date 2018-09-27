@@ -1,7 +1,7 @@
 .. _plugins_organisation_pmrWindow:
 
-===========
- PMRWindow
-===========
+==================
+ PMRWindow plugin
+==================
 
 Blah...

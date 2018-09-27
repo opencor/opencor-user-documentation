@@ -1,7 +1,7 @@
 .. _plugins_solver_heunSolver:
 
-============
- HeunSolver
-============
+===================
+ HeunSolver plugin
+===================
 
 Blah...

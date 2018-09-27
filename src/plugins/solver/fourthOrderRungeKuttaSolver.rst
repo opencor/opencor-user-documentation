@@ -1,7 +1,7 @@
 .. _plugins_solver_fourthOrderRungeKuttaSolver:
 
-=============================
- FourthOrderRungeKuttaSolver
-=============================
+====================================
+ FourthOrderRungeKuttaSolver plugin
+====================================
 
 Blah...

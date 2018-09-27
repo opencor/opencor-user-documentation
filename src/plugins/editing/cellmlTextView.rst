@@ -1,8 +1,8 @@
 .. _plugins_editing_cellmlTextView:
 
-================
- CellMLTextView
-================
+=======================
+ CellMLTextView plugin
+=======================
 
 Blah...
 

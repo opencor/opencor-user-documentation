@@ -1,7 +1,7 @@
 .. _plugins_organisation_pmrWorkspacesWindow:
 
-=====================
- PMRWorkspacesWindow
-=====================
+============================
+ PMRWorkspacesWindow plugin
+============================
 
 Blah...

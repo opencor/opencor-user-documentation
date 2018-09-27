@@ -1,7 +1,7 @@
 .. _plugins_dataStore_biosignalmlDataStore:
 
-======================
- BioSignalMLDataStore
-======================
+=============================
+ BioSignalMLDataStore plugin
+=============================
 
 Blah...

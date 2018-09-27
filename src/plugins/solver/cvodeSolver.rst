@@ -1,7 +1,7 @@
 .. _plugins_solver_cvodeSolver:
 
-=============
- CVODESolver
-=============
+====================
+ CVODESolver plugin
+====================
 
 Blah...

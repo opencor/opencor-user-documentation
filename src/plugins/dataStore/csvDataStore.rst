@@ -1,7 +1,7 @@
 .. _plugins_dataStore_csvDataStore:
 
-==============
- CSVDataStore
-==============
+=====================
+ CSVDataStore plugin
+=====================
 
 Blah...

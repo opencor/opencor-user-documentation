@@ -1,7 +1,7 @@
 .. _plugins_miscellaneous_webBrowserWindow:
 
-==================
- WebBrowserWindow
-==================
+=========================
+ WebBrowserWindow plugin
+=========================
 
 Blah...

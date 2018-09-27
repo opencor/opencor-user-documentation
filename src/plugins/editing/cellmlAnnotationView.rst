@@ -1,7 +1,7 @@
 .. _plugins_editing_cellmlAnnotationView:
 
-======================
- CellMLAnnotationView
-======================
+=============================
+ CellMLAnnotationView plugin
+=============================
 
 Blah...

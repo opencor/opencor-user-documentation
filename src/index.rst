@@ -23,45 +23,46 @@ Various information about OpenCOR and its use can be found in the following page
 
   - Data store:
 
-    - :ref:`plugins_dataStore_biosignalmlDataStore`
-    - :ref:`plugins_dataStore_csvDataStore`
+    - :ref:`BioSignalMLDataStore <plugins_dataStore_biosignalmlDataStore>`
+    - :ref:`CSVDataStore <plugins_dataStore_csvDataStore>`
 
   - Editing:
 
-    - :ref:`plugins_editing_cellmlAnnotationView`
-    - :ref:`plugins_editing_cellmlTextView`
-    - :ref:`plugins_editing_rawCellmlView`
-    - :ref:`plugins_editing_rawSedmlView`
-    - :ref:`plugins_editing_rawTextView`
+    - :ref:`CellMLAnnotationView <plugins_editing_cellmlAnnotationView>`
+    - :ref:`CellMLTextView <plugins_editing_cellmlTextView>`
+    - :ref:`RawCellMLView <plugins_editing_rawCellmlView>`
+    - :ref:`RawSEDMLView <plugins_editing_rawSedmlView>`
+    - :ref:`RawTextView <plugins_editing_rawTextView>`
 
   - Miscellaneous:
 
-    - :ref:`plugins_miscellaneous_helpWindow`
-    - :ref:`plugins_miscellaneous_webBrowserWindow`
+    - :ref:`Core <plugins_miscellaneous_core>`
+    - :ref:`HelpWindow <plugins_miscellaneous_helpWindow>`
+    - :ref:`WebBrowserWindow <plugins_miscellaneous_webBrowserWindow>`
 
   - Organisation:
 
-    - :ref:`plugins_organisation_fileBrowserWindow`
-    - :ref:`plugins_organisation_fileOrganiserWindow`
-    - :ref:`plugins_organisation_pmrWindow`
-    - :ref:`plugins_organisation_pmrWorkspacesWindow`
+    - :ref:`FileBrowserWindow <plugins_organisation_fileBrowserWindow>`
+    - :ref:`FileOrganiserWindow <plugins_organisation_fileOrganiserWindow>`
+    - :ref:`PMRWindow <plugins_organisation_pmrWindow>`
+    - :ref:`PMRWorkspacesWindow <plugins_organisation_pmrWorkspacesWindow>`
 
   - Simulation:
 
-    - :ref:`plugins_simulation_simulationExperimentView`
+    - :ref:`SimulationExperimentView <plugins_simulation_simulationExperimentView>`
 
   - Solver:
 
-    - :ref:`plugins_solver_cvodeSolver`
-    - :ref:`plugins_solver_forwardEulerSolver`
-    - :ref:`plugins_solver_fourthOrderRungeKuttaSolver`
-    - :ref:`plugins_solver_heunSolver`
-    - :ref:`plugins_solver_kinsolSolver`
-    - :ref:`plugins_solver_secondOrderRungeKuttaSolver`
+    - :ref:`CVODESolver <plugins_solver_cvodeSolver>`
+    - :ref:`ForwardEulerSolver <plugins_solver_forwardEulerSolver>`
+    - :ref:`FourthOrderRungeKuttaSolver <plugins_solver_fourthOrderRungeKuttaSolver>`
+    - :ref:`HeunSolver <plugins_solver_heunSolver>`
+    - :ref:`KINSOLSolver <plugins_solver_kinsolSolver>`
+    - :ref:`SecondOrderRungeKuttaSolver <plugins_solver_secondOrderRungeKuttaSolver>`
 
   - Tools:
 
-    - :ref:`plugins_tools_cellmlTools`
+    - :ref:`CellMLTools <plugins_tools_cellmlTools>`
 
 .. toctree::
    :hidden:

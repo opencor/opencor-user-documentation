@@ -1,7 +1,7 @@
 .. _plugins_editing_rawCellmlView:
 
-===============
- RawCellMLView
-===============
+======================
+ RawCellMLView plugin
+======================
 
 Blah...

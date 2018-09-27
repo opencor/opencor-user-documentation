@@ -1,7 +1,7 @@
 .. _plugins_solver_secondOrderRungeKuttaSolver:
 
-=============================
- SecondOrderRungeKuttaSolver
-=============================
+====================================
+ SecondOrderRungeKuttaSolver plugin
+====================================
 
 Blah...
