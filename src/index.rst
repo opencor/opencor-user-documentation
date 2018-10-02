@@ -14,6 +14,8 @@ Various information about OpenCOR and its use can be found in the following page
   - :ref:`userInterfaces_commandLineInterface`
   - :ref:`userInterfaces_graphicalUserInterface`
 
+..
+
 - :ref:`plugins_index`
 
   - Data store:
@@ -59,13 +61,23 @@ Various information about OpenCOR and its use can be found in the following page
 
     - :ref:`CellMLTools <plugins_tools_cellmlTools>`
 
+..
+
 - :ref:`preferences`
+
+..
 
 - :ref:`uriScheme`
 
+..
+
 - :ref:`knownLimitations`
 
+..
+
 - :ref:`supportedPlatforms`
+
+..
 
 - :ref:`licensing`
 
