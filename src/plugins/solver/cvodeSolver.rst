@@ -83,21 +83,3 @@ This is the case with cardiac cellular electrophysiological models that need a s
 Such a protocol is likely to be ignored by `CVODE <http://computation.llnl.gov/projects/sundials/cvode>`__, if **Maximum step** and **Interpolate solution** are set to their default values of :math:`0` and ``True``, respectively.
 To address this issue, you can either set **Maximum step** to the length of the stimulus protocol or set **Interpolate solution** to ``False``.
 The former approach will yield (slightly) less accurate results, but they will be obtained (much) faster.
-
-If :math:`\sigma_{1}` equals :math:`\sigma_{2}` then etc, etc.
-
-:math:`\underline{x}=[  x_{1}, ...,  x_{n}]^{T}`
-
-\langle \alpha, \beta  \rangle
-\in
-\Biggl \lbrace
-{
-M,\text{ if }
-{
-l(\underline{x}) =
-\frac { p(\underline{x}|M ) } { p(\underline{x}|U) }
-\geq
-\frac { p(U) }{ p(M) } }
-\atop
-U, \text{ otherwise }
-}
