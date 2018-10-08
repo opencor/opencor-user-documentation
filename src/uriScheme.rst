@@ -17,14 +17,14 @@ For a command to be executable, no modal dialog must be active in OpenCOR.
 
 The following commands are supported by OpenCOR itself:
 
-- ``openPluginsDialog``: open the :ref:`Plugins <plugins_index>` dialog.
+- ``openPluginsDialog``: open the :ref:`Plugins dialog <plugins_index>`.
 
   - Example: |openPluginsDialog|_.
 
 .. |openPluginsDialog| replace:: ``opencor://openPluginsDialog``
 .. _openPluginsDialog: opencor://openPluginsDialog
 
-- ``openPreferencesDialog``: open the :ref:`Preferences <preferences>` dialog.
+- ``openPreferencesDialog``: open the :ref:`Preferences dialog <preferences>`.
 
   - Example: |openPreferencesDialog|_.
 
@@ -70,7 +70,7 @@ As hinted above, a command can be sent to a given plugin.
 For example, we can ask the :ref:`Core <plugins_miscellaneous_core_uriScheme>` plugin to select a particular mode or view.
 
 - Example #1: |selectMode|_ to select the Simulation mode.
-- Example #2: |selectView|_ to select the :ref:`Raw Text <plugins_editing_rawTextView>` view.
+- Example #2: |selectView|_ to select the :ref:`Raw Text view <plugins_editing_rawTextView>`.
 
 .. |selectMode| replace:: ``opencor://Core.selectMode/SimulationMode``
 .. _selectMode: opencor://Core.selectMode/SimulationMode
