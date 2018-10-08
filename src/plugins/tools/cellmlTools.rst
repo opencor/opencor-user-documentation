@@ -28,6 +28,8 @@ to export ``myfile.cellml`` to CellML 1.0, or by entering:
 
 to export ``http://mydomain.com/myfile.cellml`` file using the user-defined format described in ``myformat.xml``.
 
-Some sample user-defined formats can be found in the OpenCOR distribution package. They are for `C <https://raw.githubusercontent.com/opencor/opencor/master/formats/C.xml>`__, `FORTRAN 77 <https://raw.githubusercontent.com/opencor/opencor/master/formats/F77.xml>`__, `MATLAB <https://raw.githubusercontent.com/opencor/opencor/master/formats/MATLAB.xml>`__ and `Python <https://raw.githubusercontent.com/opencor/opencor/master/formats/Python.xml>`__.
+Some sample user-defined formats can be found in the OpenCOR distribution package.
+They are for `C <https://raw.githubusercontent.com/opencor/opencor/master/formats/C.xml>`__, `FORTRAN 77 <https://raw.githubusercontent.com/opencor/opencor/master/formats/F77.xml>`__, `MATLAB <https://raw.githubusercontent.com/opencor/opencor/master/formats/MATLAB.xml>`__ and `Python <https://raw.githubusercontent.com/opencor/opencor/master/formats/Python.xml>`__.
 
-**Note:** the CellML 1.0 export is adapted from `Jonathan Cooper's CellML 1.1 to 1.0 converter <https://www.cellml.org/tools/jonathan-cooper-s-cellml-1-1-to-1-0-converter/versionconverter-tar.bz2/view>`__ and therefore has the same limitations.
+| **Note #1:** the CellML 1.0 export is adapted from `Jonathan Cooper's CellML 1.1 to 1.0 converter <https://www.cellml.org/tools/jonathan-cooper-s-cellml-1-1-to-1-0-converter/versionconverter-tar.bz2/view>`__ and therefore has the same limitations.
+| **Note #2:** the sample user-defined formats come from the `CellML API <https://github.com/cellmlapi/cellml-api/>`__ and should be used with caution.
