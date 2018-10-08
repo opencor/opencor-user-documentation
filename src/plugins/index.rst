@@ -44,7 +44,7 @@ Editing plugins are used to edit files:
 .. rst-class:: internal reference
 
    - :ref:`CellMLAnnotationView: <plugins_editing_cellmlAnnotationView>` a plugin to annotate `CellML <https://www.cellml.org/>`__ files.
-   - :ref:`CellMLTextView: <plugins_editing_cellmlTextView>` a plugin to edit `CellML <https://www.cellml.org/>`__ files using the :ref:`CellML Text format: <plugins_editing_cellmlTextView_cellmlTextFormat>`.
+   - :ref:`CellMLTextView: <plugins_editing_cellmlTextView>` a plugin to edit `CellML <https://www.cellml.org/>`__ files using the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`.
    - :ref:`RawCellMLView: <plugins_editing_rawCellmlView>` a plugin to edit `CellML <https://www.cellml.org/>`__ files using an `XML <https://www.w3.org/XML/>`__ editor.
    - :ref:`RawSEDMLView: <plugins_editing_rawSedmlView>` a plugin to edit `SED-ML <http://www.sed-ml.org/>`__ files using an `XML <https://www.w3.org/XML/>`__ editor.
    - :ref:`RawTextView: <plugins_editing_rawTextView>` a plugin to edit text-based files using a text editor.
