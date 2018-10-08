@@ -58,7 +58,7 @@ Menu
 
   - **Language:** select the language to be used by OpenCOR.
   - **Plugins...:** un/select plugins.
-  - **Preferences:** preferences for OpenCOR and its plugins.
+  - **Preferences...:** preferences for OpenCOR and its plugins.
   - **Reset All:** reset all your settings.
 
 - **Help:**
