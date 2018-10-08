@@ -13,18 +13,18 @@ The scheme takes the form:
 
 It can be used in a Web browser, as well as in a Web document (e.g. the :ref:`plugins_index` page).
 Both ``pluginName`` and ``command`` are case insensitive while it depends on the command when it comes to ``argument1``, ``argument2``, ``argument3``, ..., ``argumentN``.
-(Note that for a command to be executed, no modal dialog must be active.)
+For a command to be executable, no modal dialog must be active in OpenCOR.
 
 The following commands are supported by OpenCOR itself:
 
-- ``openPluginsDialog``: open the Plugins dialog.
+- ``openPluginsDialog``: open the :ref:`Plugins <plugins_index>` dialog.
 
   - Example: |openPluginsDialog|_.
 
 .. |openPluginsDialog| replace:: ``opencor://openPluginsDialog``
 .. _openPluginsDialog: opencor://openPluginsDialog
 
-- ``openPreferencesDialog``: open the Preferences dialog.
+- ``openPreferencesDialog``: open the :ref:`Preferences <preferences>` dialog.
 
   - Example: |openPreferencesDialog|_.
 
@@ -66,11 +66,11 @@ The following commands are supported by OpenCOR itself:
 .. |cellmlFile| replace:: ``https://models.physiomeproject.org/.../cell-model.xml``
 .. _cellmlFile: https://models.physiomeproject.org/workspace/49e/rawfile/0a252e033bdf5e65d5a6490c9d3ade9035fef04e/experiments/cell-model.xml
 
-As hinted above, a command can be sent to a plugin through the OpenCOR `URI scheme <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__.
+As hinted above, a command can be sent to a given plugin.
 For example, we can ask the :ref:`Core <plugins_miscellaneous_core_uriScheme>` plugin to select a particular mode or view.
 
 - Example #1: |selectMode|_ to select the Simulation mode.
-- Example #2: |selectView|_ to select the :ref:`Raw Text view <plugins_editing_rawTextView>`.
+- Example #2: |selectView|_ to select the :ref:`Raw Text <plugins_editing_rawTextView>` view.
 
 .. |selectMode| replace:: ``opencor://Core.selectMode/SimulationMode``
 .. _selectMode: opencor://Core.selectMode/SimulationMode
