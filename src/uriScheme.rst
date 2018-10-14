@@ -69,11 +69,11 @@ The following commands are supported by OpenCOR itself:
 As hinted above, a command can be sent to a given plugin.
 For example, we can ask the :ref:`Core <plugins_miscellaneous_core_uriScheme>` plugin to select a particular mode or view.
 
-- Example #1: |selectMode|_ to select the Simulation mode.
-- Example #2: |selectView|_ to select the :ref:`Raw Text view <plugins_editing_rawTextView>`.
+- Example #1: |coreSelectMode|_ to select the Simulation mode.
+- Example #2: |coreSelectView|_ to select the :ref:`Raw Text view <plugins_editing_rawTextView>`.
 
-.. |selectMode| replace:: ``opencor://Core.selectMode/SimulationMode``
-.. _selectMode: opencor://Core.selectMode/SimulationMode
+.. |coreSelectMode| replace:: ``opencor://Core.selectMode/SimulationMode``
+.. _coreSelectMode: opencor://Core.selectMode/SimulationMode
 
-.. |selectView| replace:: ``opencor://Core.selectView/RawTextView``
-.. _selectView: opencor://Core.selectView/RawTextView
+.. |coreSelectView| replace:: ``opencor://Core.selectView/RawTextView``
+.. _coreSelectView: opencor://Core.selectView/RawTextView
