@@ -4,13 +4,11 @@
  HelpWindow plugin
 ===================
 
-The HelpWindow plugin provides some user documentation that looks as follows:
+The HelpWindow plugin provides some user documentation, which contents is the same as the one found on the `OpenCOR website <http://www.opencor.ws/>`__:
 
 .. image:: pics/HelpWindowScreenshot01.png
    :align: center
    :scale: 25%
-
-Its contents is the same as the one that can be found in the `user documentation <http://www.opencor.ws/user/index.html>`__ section of the `OpenCOR website <http://www.opencor.ws/>`__.
 
 Tool bar
 --------
