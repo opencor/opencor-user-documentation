@@ -28,3 +28,12 @@ For example, to double click on ``Noble, 1962`` gives:
 
 From there, double click on either ``noble_1962.cellml`` or ``noble_1962.sedml`` to open them in OpenCOR.
 You can also right click on any of them to view them in `PMR <https://models.physiomeproject.org/>`__ or copy their `URL <https://en.wikipedia.org/wiki/URL>`__ to the clipboard.
+
+Tool bar
+--------
+
+| |toolbarOxygenActionsViewRefresh| Reload the list of exposures
+
+.. |toolbarOxygenActionsViewRefresh| image:: ../../pics/oxygen/actions/view-refresh.png
+   :class: toolbar
+   :scale: 50%
