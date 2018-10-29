@@ -14,6 +14,8 @@ Your virtual environment is remembered from one session to another and is origin
 To create a (virtual) folder, you need to click on the |newFolder| button in the toolbar (or use the context menu):
 
 .. |newFolder| image:: ../../pics/newFolder.png
+   :class: nonclickable
+   :scale: 33%
 
 .. image:: pics/FileOrganiserWindowScreenshot02.png
    :align: center
@@ -30,7 +32,7 @@ An existing (sub-)folder can be deleted by clicking on the |oxygenActionsEditDel
 
 .. |oxygenActionsEditDelete| image:: ../../pics/oxygen/actions/edit-delete.png
    :class: nonclickable
-   :scale: 50%
+   :scale: 33%
 
 .. image:: pics/FileOrganiserWindowScreenshot04.png
    :align: center
@@ -55,7 +57,8 @@ Tool bar
 | |toolbarOxygenActionsEditDelete| Delete the current folder(s) and/or link(s) to the current file(s)
 
 .. |toolbarNewFolder| image:: ../../pics/newFolder.png
-   :class: enlarge toolbar
+   :class: toolbar
+   :scale: 50%
 
 .. |toolbarOxygenActionsEditDelete| image:: ../../pics/oxygen/actions/edit-delete.png
    :class: toolbar
