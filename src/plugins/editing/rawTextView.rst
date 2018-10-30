@@ -5,7 +5,7 @@
 ====================
 
 The RawTextView plugin can be used to edit text-based files.
-If you open a file, it will look something like (after having hidden all the docked windows by pressing ``Ctrl``\ +\ ``Space``):
+If you open a file, it will look something like:
 
 .. image:: pics/RawTextViewScreenshot01.png
    :align: center
