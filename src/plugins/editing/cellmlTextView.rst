@@ -39,7 +39,6 @@ Comments
 You can (un)comment a piece of code by pressing ``Ctrl``\ +\ ``/``.
 If no text is selected or if it consists of one or several full lines, then the comment will be rendered as ``// XXX``, e.g.
 
-
 .. code-block:: cellmlText
 
    def model my_model as
