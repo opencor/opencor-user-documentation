@@ -158,3 +158,97 @@ texinfo_documents = [
      author, 'UserdocumentationforOpenCOR', 'User documentation for OpenCOR.',
      'Miscellaneous'),
 ]
+
+# -- Lexer for the CellML Text format -------------------------------------
+
+from pygments.lexer import RegexLexer, words
+from pygments.token import Comment, Keyword, Name, Operator, Punctuation, \
+                           Text, Token, STANDARD_TYPES
+from sphinx.highlighting import lexers
+
+CellMLKeyword = Token
+
+CELLMLTEXT_TYPES = {
+    CellMLKeyword: 'cmk'
+}
+
+STANDARD_TYPES.update(CELLMLTEXT_TYPES)
+
+class cellmlTextLexer(RegexLexer):
+    tokens = {
+        'root': [
+            # Whitespaces
+
+            (r'\n', Text),
+            (r'\s+', Text),
+            (r'\\\n', Text),
+
+            # Single and multiline comments
+
+            (r'//(\n|[\w\W]*?[^\\]\n)', Comment.Single),
+            (r'/(\\\n)?[*][\w\W]*?[*](\\\n)?/', Comment.Multiline),
+            (r'/(\\\n)?[*][\w\W]*', Comment.Multiline),
+
+            # Keywords
+
+            (words((
+                # CellML Text keywords
+
+                'and', 'as', 'between', 'case', 'comp', 'def', 'endcomp',
+                'enddef', 'endsel', 'for', 'group', 'import', 'incl', 'map',
+                'model', 'otherwise', 'sel', 'unit', 'using', 'var', 'vars',
+
+                # MathML arithmetic operators
+
+                'abs', 'ceil', 'exp', 'fact', 'floor', 'ln', 'log', 'pow',
+                'root', 'sqr', 'sqrt',
+
+                # MathML logical operators
+
+                'and', 'or', 'xor', 'not',
+
+                # MathML calculus elements
+
+                'ode',
+
+                # MathML min/max operators
+
+                'min', 'max',
+
+                # MathML gcd/lcm operators
+
+                'gcd', 'lcm',
+
+                # MathML trigonometric operators
+
+                'sin', 'cos', 'tan', 'sec', 'csc', 'cot',
+                'sinh', 'cosh', 'tanh', 'sech', 'csch', 'coth',
+                'asin', 'acos', 'atan', 'asec', 'acsc', 'acot',
+                'asinh', 'acosh', 'atanh', 'asech', 'acsch', 'acoth',
+
+                # MathML constants
+
+                'true', 'false', 'nan', 'pi', 'inf', 'e',
+
+                # Extra operators
+
+                'rem'
+            ), suffix=r'\b'), Keyword),
+
+            # CellML keywords
+
+            (words((
+                # Miscellaneous
+
+                'base', 'encapsulation', 'containment'
+            ), suffix=r'\b'), CellMLKeyword),
+
+            # Miscellaneous
+
+            (r'[a-zA-Z_]\w*', Name),
+            (r'[+\-*/=]', Operator),
+            (r'[().,;]', Punctuation)
+        ]
+    }
+
+lexers['cellmlText'] = cellmlTextLexer()

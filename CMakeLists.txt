@@ -24,3 +24,8 @@ FetchContent_Populate(sphinx-theme)
 include(${SPHINX_THEME_DIR}/cmake/common.cmake)
 
 build_documentation(user 54 96 146)
+
+add_custom_command(TARGET Sphinx POST_BUILD
+                   COMMAND ${PYTHON_EXECUTABLE} "${CMAKE_SOURCE_DIR}/scripts/appendfile.py"
+                                                "${CMAKE_BINARY_DIR}/html/_static/pygments.css"
+                                                "${CMAKE_SOURCE_DIR}/styles/cellmlText.css")
