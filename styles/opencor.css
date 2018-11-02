@@ -1,0 +1,24 @@
+table {
+    margin: 1em 0em;
+    border: none;
+}
+
+table > tbody > tr > td {
+    vertical-align: baseline;
+}
+
+table.units > colgroup > col,
+table.prefixes > colgroup > col {
+    width: 0%;
+}
+
+table.units > tbody > tr > td,
+table.prefixes > tbody > tr > td {
+    border: none;
+    padding: 0em 1em;
+    text-align: center;
+}
+
+table.prefixes > tbody > tr > td:nth-child(even) {
+    text-align: justify;
+}

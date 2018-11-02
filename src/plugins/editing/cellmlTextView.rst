@@ -71,4 +71,187 @@ However, the rendering of certain elements using the :ref:`CellML Text format <p
 CellML Text format
 ------------------
 
+The CellML Text format offers, for the large part, a one-to-one mapping to the CellML format with the view of making it easier to create and edit CellML files.
+
+Model structure
+"""""""""""""""
+
+To define a model of name ``my_model``, we would use:
+
+.. code-block:: cellmlText
+
+   def model my_model as
+       ...
+   enddef;
+
+The model definition sits between ``as`` and ``enddef;``, and can consist of :ref:`imports <plugins_editing_cellmlTextView_imports>`, :ref:`unit definitions <plugins_editing_cellmlTextView_unitDefinitions>`, :ref:`component definitions <plugins_editing_cellmlTextView_componentDefinitions>`, :ref:`group definitions <plugins_editing_cellmlTextView_groupDefinitions>` and :ref:`mapping definitions <plugins_editing_cellmlTextView_mappingDefinitions>`.
+
+.. _plugins_editing_cellmlTextView_imports:
+
+Imports
+"""""""
+
+To define an import for units and components defined in a CellML file, which `URI <https://en.wikipedia.org/wiki/Uniform_resource_identifier>`__ is ``my_imported_model_uri``, we would use:
+
+.. code-block:: cellmlText
+
+   def import using "my_imported_model_uri" for
+       ...
+   enddef;
+
+To import a unit originally named ``my_reference_unit`` and renamed ``my_imported_unit`` in our model, we would use:
+
+.. code-block:: cellmlText
+
+   unit my_imported_unit using unit my_reference_unit;
+
+Similarly, to import a component originally named ``my_reference_component`` and renamed ``my_imported_component`` in our model, we would use:
+
+.. code-block:: cellmlText
+
+   comp my_imported_component using comp my_reference_component;
+
+Putting everything together, we would have:
+
+.. code-block:: cellmlText
+
+   def import using "my_imported_model_uri" for
+       unit my_imported_unit using unit my_reference_unit;
+       comp my_imported_component using comp my_reference_component;
+   enddef;
+
+.. _plugins_editing_cellmlTextView_unitDefinitions:
+
+Unit definitions
+""""""""""""""""
+
+To define a base unit of name ``my_base_unit``, we would use:
+
+.. code-block:: cellmlText
+
+   def unit my_base_unit as base unit;
+
+To define a unit of name ``my_unit``, based on some other units, we would use:
+
+.. code-block:: cellmlText
+
+   def unit my_unit as
+       unit my_other_unit {...};
+       unit second {...};
+       unit litre {...};
+       unit volt {...};
+       ...
+   enddef;
+
+``my_other_unit`` refers to a user-defined unit while ``second`` is an `SI <https://en.wikipedia.org/wiki/International_System_of_Units>`__ base unit, ``litre`` a convenience unit and ``volt`` an `SI <https://en.wikipedia.org/wiki/International_System_of_Units>`__ derived unit .
+The following `SI <https://en.wikipedia.org/wiki/International_System_of_Units>`__ base (in bold) and derived units, as well as convenience units (in italics), can be used:
+
+.. table::
+   :class: units
+
+   +------------+------------+--------------+----------+---------+-----------------+
+   | **ampere** | becquerel  | **candela**  | celsius  | coulomb | *dimensionless* |
+   +------------+------------+--------------+----------+---------+-----------------+
+   |   farad    |   *gram*   |     gray     |  henry   |  hertz  |      joule      |
+   +------------+------------+--------------+----------+---------+-----------------+
+   |   katal    | **kelvin** | **kilogram** | *liter*  | *litre* |      lumen      |
+   +------------+------------+--------------+----------+---------+-----------------+
+   |    lux     | **meter**  |  **metre**   | **mole** | newton  |       ohm       |
+   +------------+------------+--------------+----------+---------+-----------------+
+   |   pascal   |   radian   |  **second**  | siemens  | sievert |    steradian    |
+   +------------+------------+--------------+----------+---------+-----------------+
+   |   tesla    |    volt    |     watt     |  weber   |         |                 |
+   +------------+------------+--------------+----------+---------+-----------------+
+
+Additional information can be provided within curly brackets.
+Thus, ``prefix``, ``exponent``, ``multiplier`` and ``offset`` values of :math:`p`, :math:`e`, :math:`m` and :math:`o` can be used on a unit :math:`u` to define a new unit equal to :math:`m \cdot (p \cdot u)^e+o`.
+For example, to define ``my_unit`` as being equal to :math:`3 \cdot (milli \cdot my\_other\_unit)^{-1}+7`, we would use:
+
+.. code-block:: cellmlText
+
+   def unit my_unit as
+       unit my_other_unit {pref: milli, expo: -1, mult: 3, off: 7};
+   enddef;
+
+By default, ``pref``, ``expo``, ``mult`` and ``off`` have a value of :math:`0`, :math:`1.0`, :math:`1.0` and :math:`0.0`, respectively.
+``pref`` can either be an integer or have any of the following values:
+
+.. table::
+   :class: prefixes
+
+   +-------+-----------------+-------+------------------+
+   | yotta | :math:`10^{24}` | deci  | :math:`10^{-1}`  |
+   +-------+-----------------+-------+------------------+
+   | zetta | :math:`10^{21}` | centi | :math:`10^{-2}`  |
+   +-------+-----------------+-------+------------------+
+   |  exa  | :math:`10^{18}` | milli | :math:`10^{-3}`  |
+   +-------+-----------------+-------+------------------+
+   | peta  | :math:`10^{15}` | micro | :math:`10^{-6}`  |
+   +-------+-----------------+-------+------------------+
+   | tera  | :math:`10^{12}` | nano  | :math:`10^{-9}`  |
+   +-------+-----------------+-------+------------------+
+   | giga  | :math:`10^{9}`  | pico  | :math:`10^{-12}` |
+   +-------+-----------------+-------+------------------+
+   | mega  | :math:`10^{6}`  | femto | :math:`10^{-15}` |
+   +-------+-----------------+-------+------------------+
+   | kilo  | :math:`10^{3}`  | atto  | :math:`10^{-18}` |
+   +-------+-----------------+-------+------------------+
+   | hecto | :math:`10^{2}`  | zepto | :math:`10^{-21}` |
+   +-------+-----------------+-------+------------------+
+   | deka  | :math:`10^{1}`  | yocto | :math:`10^{-24}` |
+   +-------+-----------------+-------+------------------+
+
+.. _plugins_editing_cellmlTextView_componentDefinitions:
+
+Component definitions
+"""""""""""""""""""""
+
+To define a component of name ``my_component``, we would use:
+
+.. code-block:: cellmlText
+
+   def comp my_component as
+       ...
+   enddef;
+
+The component definition sits between ``as`` and ``enddef;``, and can consist of :ref:`unit definitions <plugins_editing_cellmlTextView_unitDefinitions>`, :ref:`variable definitions <plugins_editing_cellmlTextView_variableDefinitions>`, :ref:`mathematical equations <plugins_editing_cellmlTextView_mathematicalEquations>`.
+
+.. _plugins_editing_cellmlTextView_variableDefinitions:
+
+Variable definitions
+""""""""""""""""""""
+
+Blah...
+
+.. _plugins_editing_cellmlTextView_mathematicalEquations:
+
+Mathematical equations
+""""""""""""""""""""""
+
+Blah...
+
+.. _plugins_editing_cellmlTextView_groupDefinitions:
+
+Group definitions
+"""""""""""""""""
+
+Blah...
+
+.. _plugins_editing_cellmlTextView_mappingDefinitions:
+
+Mapping definitions
+"""""""""""""""""""
+
+Blah...
+
+.. _plugins_editing_cellmlTextView_metadata:
+
+Metadata
+""""""""
+
+Blah...
+
+CLI support
+-----------
+
 Blah...

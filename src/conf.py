@@ -161,15 +161,23 @@ texinfo_documents = [
 
 # -- Lexer for the CellML Text format -------------------------------------
 
-from pygments.lexer import RegexLexer, words
+from pygments.lexer import RegexLexer, include, words
 from pygments.token import Comment, Keyword, Name, Operator, Punctuation, \
-                           Text, Token, STANDARD_TYPES
+                           String, Text, Token, STANDARD_TYPES
 from sphinx.highlighting import lexers
 
-CellMLKeyword = Token
+CellmlKeyword = Token.CellmlKeyword
+ParameterBlock = Token.ParameterBlock
+ParameterCellmlKeyword = Token.ParameterCellmlKeyword
+ParameterKeyword = Token.ParameterKeyword
+ParameterNumber = Token.ParameterNumber
 
 CELLMLTEXT_TYPES = {
-    CellMLKeyword: 'cmk'
+    CellmlKeyword: 'cmk',
+    ParameterBlock: 'pb',
+    ParameterCellmlKeyword: 'pcmk',
+    ParameterKeyword: 'pk',
+    ParameterNumber: 'pn'
 }
 
 STANDARD_TYPES.update(CELLMLTEXT_TYPES)
@@ -177,12 +185,6 @@ STANDARD_TYPES.update(CELLMLTEXT_TYPES)
 class cellmlTextLexer(RegexLexer):
     tokens = {
         'root': [
-            # Whitespaces
-
-            (r'\n', Text),
-            (r'\s+', Text),
-            (r'\\\n', Text),
-
             # Single and multiline comments
 
             (r'//(\n|[\w\W]*?[^\\]\n)', Comment.Single),
@@ -241,13 +243,59 @@ class cellmlTextLexer(RegexLexer):
                 # Miscellaneous
 
                 'base', 'encapsulation', 'containment'
-            ), suffix=r'\b'), CellMLKeyword),
+            ), suffix=r'\b'), CellmlKeyword),
 
             # Miscellaneous
 
+            include('whitespaces'),
             (r'[a-zA-Z_]\w*', Name),
             (r'[+\-*/=]', Operator),
-            (r'[().,;]', Punctuation)
+            (r'[().,;]', Punctuation),
+            (r'"[^\\"\n]+"', String),
+            (r'\{', ParameterBlock, 'parameterBlock')
+        ],
+        'parameterBlock': [
+            # Parameter keywords
+
+            (words((
+                # Unit keywords
+
+                'pref', 'expo', 'mult', 'off',
+
+                # Variable keywords
+
+                'init', 'pub', 'priv'
+            ), suffix=r'\b'), ParameterKeyword),
+
+            # Parameter CellML keywords
+
+            (words((
+                # Unit prefixes
+
+                'yotta', 'zetta', 'exa', 'peta', 'tera', 'giga', 'mega', 'kilo',
+                'hecto', 'deka', 'deci', 'centi', 'milli', 'micro', 'nano',
+                'pico', 'femto', 'atto', 'zepto', 'yocto',
+
+                # Public/private interfaces
+
+                'in', 'out', 'none'
+            ), suffix=r'\b'), ParameterCellmlKeyword),
+
+            # Miscellaneous
+
+            include('whitespaces'),
+            (r'(\d+\.\d*|\.\d+|\d+)([eE][+-]?\d+)?', ParameterNumber),
+            (r'[\-]', ParameterBlock),
+            (r'[,:]', ParameterBlock),
+            (r'\.\.\.', ParameterBlock),
+            (r'\}', ParameterBlock, '#pop')
+        ],
+        'whitespaces': [
+            # Whitespaces
+
+            (r'\n', Text),
+            (r'\s+', Text),
+            (r'\\\n', Text)
         ]
     }
 
