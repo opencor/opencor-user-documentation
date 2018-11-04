@@ -221,7 +221,22 @@ The component definition sits between ``as`` and ``enddef;``, and can consist of
 Variable definitions
 """"""""""""""""""""
 
-Blah...
+To define a variable of name ``my_variable`` and of unit ``my_unit``, we would use:
+
+.. code-block:: cellmlText
+
+   var my_variable: my_unit {...};
+
+Additional information can be provided within curly brackets: an initial value, a public interface and/or a private interface.
+For example, to initialise ``my_variable`` to :math:`3` and set its public and private interfaces to ``in`` and ``out``, respectively, we would use:
+
+.. code-block:: cellmlText
+
+   var my_variable: my_unit {init: 3, pub: in, priv: out};
+
+By default, ``init`` has no value (i.e. the variable is not initialised) while ``pub`` and ``priv`` have a value of ``none`` (i.e. the variable belongs to the current component and is not visible to other components in the model).
+``init`` can either take a real number as a value or the name of a variable defined in the current component.
+Both ``pub`` and ``priv`` can take any of the following values: ``none``, ``in`` or ``out``.
 
 .. _plugins_editing_cellmlTextView_mathematicalEquations:
 

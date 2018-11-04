@@ -250,7 +250,7 @@ class cellmlTextLexer(RegexLexer):
             include('whitespaces'),
             (r'[a-zA-Z_]\w*', Name),
             (r'[+\-*/=]', Operator),
-            (r'[().,;]', Punctuation),
+            (r'[().,;:]', Punctuation),
             (r'"[^\\"\n]+"', String),
             (r'\{', ParameterBlock, 'parameterBlock')
         ],
