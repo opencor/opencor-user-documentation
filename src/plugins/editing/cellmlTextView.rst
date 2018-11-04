@@ -51,7 +51,7 @@ Alternatively, if one or several lines are partially selected, then the comment 
 .. code-block:: cellmlText
 
    def model my/*_super_duper*/_model as
-       ...;
+       ...
    enddef;
 
 Note that ``/* XXX */`` comments are only for convenience and are not serialised back to CellML.

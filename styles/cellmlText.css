@@ -1,37 +1,49 @@
-.highlight .c1,
-.highlight .cm {
+.highlight .ctc {
     color: #7f7f7f;
     font-style: normal;
 }
 
-.highlight .cmk {
-    color: #7f007f;
-}
-
-.highlight .k {
+.highlight .ctk {
     color: #00007f;
     font-weight: normal;
 }
 
-.highlight .pb {
+.highlight .ctck {
+    color: #7f007f;
+}
+
+.highlight .ctn {
+    color: #007f7f;
+}
+
+.highlight .ctpb {
     font-style: italic;
 }
 
-.highlight .pcmk {
+.highlight .ctpck {
     color: #7f007f;
     font-style: italic;
 }
 
-.highlight .pk {
+.highlight .ctpk {
     color: #00007f;
     font-style: italic;
 }
 
-.highlight .pn {
+.highlight .ctpn {
     color: #007f7f;
     font-style: italic;
 }
 
-.highlight .s {
+.highlight .ctpsuk {
+    color: #7f007f;
+    font-style: italic;
+}
+
+.highlight .cts {
     color: #007f00;
+}
+
+.highlight .ctsuk {
+    color: #7f007f;
 }

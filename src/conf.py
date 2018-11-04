@@ -162,22 +162,39 @@ texinfo_documents = [
 # -- Lexer for the CellML Text format -------------------------------------
 
 from pygments.lexer import RegexLexer, include, words
-from pygments.token import Comment, Keyword, Name, Operator, Punctuation, \
-                           String, Text, Token, STANDARD_TYPES
+from pygments.token import Token, STANDARD_TYPES
 from sphinx.highlighting import lexers
 
-CellmlKeyword = Token.CellmlKeyword
-ParameterBlock = Token.ParameterBlock
-ParameterCellmlKeyword = Token.ParameterCellmlKeyword
-ParameterKeyword = Token.ParameterKeyword
-ParameterNumber = Token.ParameterNumber
+CellmlText = Token.CellmlText
+CellmlTextComment = Token.CellmlTextComment
+CellmlTextKeyword = Token.CellmlTextKeyword
+CellmlTextCellmlKeyword = Token.CellmlTextCellmlKeyword
+CellmlTextNumber = Token.CellmlTextNumber
+CellmlTextOperator = Token.CellmlTextOperator
+CellmlTextParameterBlock = Token.CellmlTextParameterBlock
+CellmlTextParameterCellmlKeyword = Token.CellmlTextParameterCellmlKeyword
+CellmlTextParameterKeyword = Token.CellmlTextParameterKeyword
+CellmlTextParameterNumber = Token.CellmlTextParameterNumber
+CellmlTextParameterSiUnitKeyword = Token.CellmlTextParameterSiUnitKeyword
+CellmlTextPunctuation = Token.CellmlTextPunctuation
+CellmlTextString = Token.CellmlTextString
+CellmlTextSiUnitKeyword = Token.CellmlTextSiUnitKeyword
 
 CELLMLTEXT_TYPES = {
-    CellmlKeyword: 'cmk',
-    ParameterBlock: 'pb',
-    ParameterCellmlKeyword: 'pcmk',
-    ParameterKeyword: 'pk',
-    ParameterNumber: 'pn'
+    CellmlText: 'ct',
+    CellmlTextComment: 'ctc',
+    CellmlTextKeyword: 'ctk',
+    CellmlTextCellmlKeyword: 'ctck',
+    CellmlTextNumber: 'ctn',
+    CellmlTextOperator: 'cto',
+    CellmlTextParameterBlock: 'ctpb',
+    CellmlTextParameterCellmlKeyword: 'ctpck',
+    CellmlTextParameterKeyword: 'ctpk',
+    CellmlTextParameterNumber: 'ctpn',
+    CellmlTextParameterSiUnitKeyword: 'ctpsuk',
+    CellmlTextPunctuation: 'ctp',
+    CellmlTextString: 'cts',
+    CellmlTextSiUnitKeyword: 'ctsuk'
 }
 
 STANDARD_TYPES.update(CELLMLTEXT_TYPES)
@@ -187,9 +204,9 @@ class cellmlTextLexer(RegexLexer):
         'root': [
             # Single and multiline comments
 
-            (r'//(\n|[\w\W]*?[^\\]\n)', Comment.Single),
-            (r'/(\\\n)?[*][\w\W]*?[*](\\\n)?/', Comment.Multiline),
-            (r'/(\\\n)?[*][\w\W]*', Comment.Multiline),
+            (r'//(\n|[\w\W]*?[^\\]\n)', CellmlTextComment),
+            (r'/(\\\n)?[*][\w\W]*?[*](\\\n)?/', CellmlTextComment),
+            (r'/(\\\n)?[*][\w\W]*', CellmlTextComment),
 
             # Keywords
 
@@ -235,7 +252,7 @@ class cellmlTextLexer(RegexLexer):
                 # Extra operators
 
                 'rem'
-            ), suffix=r'\b'), Keyword),
+            ), suffix=r'\b'), CellmlTextKeyword),
 
             # CellML keywords
 
@@ -243,16 +260,30 @@ class cellmlTextLexer(RegexLexer):
                 # Miscellaneous
 
                 'base', 'encapsulation', 'containment'
-            ), suffix=r'\b'), CellmlKeyword),
+            ), suffix=r'\b'), CellmlTextCellmlKeyword),
+
+            # SI units
+
+            (words((
+                # Standard units
+
+                'ampere', 'becquerel', 'candela', 'celsius', 'coulomb',
+                'dimensionless', 'farad', 'gram', 'gray', 'henry', 'hertz',
+                'joule', 'katal', 'kelvin', 'kilogram', 'liter', 'litre',
+                'lumen', 'lux', 'meter', 'metre', 'mole', 'newton', 'ohm',
+                'pascal', 'radian', 'second', 'siemens', 'sievert', 'steradian',
+                'tesla', 'volt', 'watt', 'weber'
+            ), suffix=r'\b'), CellmlTextSiUnitKeyword),
 
             # Miscellaneous
 
             include('whitespaces'),
-            (r'[a-zA-Z_]\w*', Name),
-            (r'[+\-*/=]', Operator),
-            (r'[().,;:]', Punctuation),
-            (r'"[^\\"\n]+"', String),
-            (r'\{', ParameterBlock, 'parameterBlock')
+            (r'(\d+\.\d*|\.\d+|\d+)([eE][+-]?\d+)?', CellmlTextNumber),
+            (r'[a-zA-Z_]\w*', CellmlText),
+            (r'[+\-*/=]', CellmlTextOperator),
+            (r'[().,;:]', CellmlTextPunctuation),
+            (r'"[^\\"\n]+"', CellmlTextString),
+            (r'\{', CellmlTextParameterBlock, 'parameterBlock')
         ],
         'parameterBlock': [
             # Parameter keywords
@@ -265,7 +296,7 @@ class cellmlTextLexer(RegexLexer):
                 # Variable keywords
 
                 'init', 'pub', 'priv'
-            ), suffix=r'\b'), ParameterKeyword),
+            ), suffix=r'\b'), CellmlTextParameterKeyword),
 
             # Parameter CellML keywords
 
@@ -279,23 +310,36 @@ class cellmlTextLexer(RegexLexer):
                 # Public/private interfaces
 
                 'in', 'out', 'none'
-            ), suffix=r'\b'), ParameterCellmlKeyword),
+            ), suffix=r'\b'), CellmlTextParameterCellmlKeyword),
+
+            # Parameter SI units
+
+            (words((
+                # Standard units
+
+                'ampere', 'becquerel', 'candela', 'celsius', 'coulomb',
+                'dimensionless', 'farad', 'gram', 'gray', 'henry', 'hertz',
+                'joule', 'katal', 'kelvin', 'kilogram', 'liter', 'litre',
+                'lumen', 'lux', 'meter', 'metre', 'mole', 'newton', 'ohm',
+                'pascal', 'radian', 'second', 'siemens', 'sievert', 'steradian',
+                'tesla', 'volt', 'watt', 'weber'
+            ), suffix=r'\b'), CellmlTextParameterSiUnitKeyword),
 
             # Miscellaneous
 
             include('whitespaces'),
-            (r'(\d+\.\d*|\.\d+|\d+)([eE][+-]?\d+)?', ParameterNumber),
-            (r'[\-]', ParameterBlock),
-            (r'[,:]', ParameterBlock),
-            (r'\.\.\.', ParameterBlock),
-            (r'\}', ParameterBlock, '#pop')
+            (r'(\d+\.\d*|\.\d+|\d+)([eE][+-]?\d+)?', CellmlTextParameterNumber),
+            (r'[\-]', CellmlTextParameterBlock),
+            (r'[,:]', CellmlTextParameterBlock),
+            (r'\.\.\.', CellmlTextParameterBlock),
+            (r'\}', CellmlTextParameterBlock, '#pop')
         ],
         'whitespaces': [
             # Whitespaces
 
-            (r'\n', Text),
-            (r'\s+', Text),
-            (r'\\\n', Text)
+            (r'\n', CellmlText),
+            (r'\s+', CellmlText),
+            (r'\\\n', CellmlText)
         ]
     }
 
