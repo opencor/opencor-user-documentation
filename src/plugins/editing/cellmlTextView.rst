@@ -74,7 +74,7 @@ CellML Text format
 The CellML Text format offers, for the large part, a one-to-one mapping to the CellML format with the view of making it easier to create and edit CellML files.
 
 Model structure
-"""""""""""""""
+~~~~~~~~~~~~~~~
 
 To define a model of name ``my_model``, we would use:
 
@@ -89,7 +89,7 @@ The model definition sits between ``as`` and ``enddef;``, and can consist of :re
 .. _plugins_editing_cellmlTextView_imports:
 
 Imports
-"""""""
+~~~~~~~
 
 To define an import for units and components defined in a CellML file, which `URI <https://en.wikipedia.org/wiki/Uniform_resource_identifier>`__ is ``my_imported_model_uri``, we would use:
 
@@ -123,7 +123,7 @@ Putting everything together, we would have:
 .. _plugins_editing_cellmlTextView_unitDefinitions:
 
 Unit definitions
-""""""""""""""""
+~~~~~~~~~~~~~~~~
 
 To define a base unit of name ``my_base_unit``, we would use:
 
@@ -204,7 +204,7 @@ By default, ``pref``, ``expo``, ``mult`` and ``off`` have a value of :math:`0`, 
 .. _plugins_editing_cellmlTextView_componentDefinitions:
 
 Component definitions
-"""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~
 
 To define a component of name ``my_component``, we would use:
 
@@ -219,7 +219,7 @@ The component definition sits between ``as`` and ``enddef;``, and can consist of
 .. _plugins_editing_cellmlTextView_variableDefinitions:
 
 Variable definitions
-""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~
 
 To define a variable of name ``my_variable`` and of unit ``my_unit``, we would use:
 
@@ -241,28 +241,28 @@ Both ``pub`` and ``priv`` can take any of the following values: ``none``, ``in``
 .. _plugins_editing_cellmlTextView_mathematicalEquations:
 
 Mathematical equations
-""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~
 
 Blah...
 
 .. _plugins_editing_cellmlTextView_groupDefinitions:
 
 Group definitions
-"""""""""""""""""
+~~~~~~~~~~~~~~~~~
 
 Blah...
 
 .. _plugins_editing_cellmlTextView_mappingDefinitions:
 
 Mapping definitions
-"""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~
 
 Blah...
 
 .. _plugins_editing_cellmlTextView_metadata:
 
 Metadata
-""""""""
+~~~~~~~~
 
 Blah...
 
