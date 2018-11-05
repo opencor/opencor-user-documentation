@@ -71,7 +71,7 @@ However, the rendering of certain elements using the :ref:`CellML Text format <p
 CellML Text format
 ------------------
 
-The CellML Text format offers, for the large part, a one-to-one mapping to the CellML format with the view of making it easier to create and edit CellML files.
+The :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>` offers, for the large part, a one-to-one mapping to the CellML format with the view of making it easier to create and edit CellML files.
 
 Model structure
 ~~~~~~~~~~~~~~~
@@ -184,7 +184,7 @@ By default, ``pref``, ``expo``, ``mult`` and ``off`` have a value of :math:`0`, 
    +-------+-----------------+-------+------------------+
    | zetta | :math:`10^{21}` | centi | :math:`10^{-2}`  |
    +-------+-----------------+-------+------------------+
-   |  exa  | :math:`10^{18}` | milli | :math:`10^{-3}`  |
+   | exa   | :math:`10^{18}` | milli | :math:`10^{-3}`  |
    +-------+-----------------+-------+------------------+
    | peta  | :math:`10^{15}` | micro | :math:`10^{-6}`  |
    +-------+-----------------+-------+------------------+
@@ -243,30 +243,492 @@ Both ``pub`` and ``priv`` can take any of the following values: ``none``, ``in``
 Mathematical equations
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Blah...
+A mathematical equation must either have an identifier or an ODE on its left hand side, i.e. :math:`x=...` and :math:`\frac{dx}{dt}=...`, respectively.
+To write such equations, we would use:
+
+.. code-block:: cellmlText
+
+   x = ...;
+
+and
+
+.. code-block:: cellmlText
+
+   ode(x, t) = ...;
+
+The ODE is a first-order ODE and could also be written:
+
+.. code-block:: cellmlText
+
+   ode(x, t, 1{dimensionless})
+
+As can be seen, the order of the ODE is specified using a constant value of unit ``dimensionless``, which means that to write :math:`\frac{d^2 x}{dt^2}`, :math:`\frac{d^3 x}{dt^3}`, etc., we would use:
+
+.. code-block:: cellmlText
+
+   ode(x, t, 2{dimensionless})
+   ode(x, t, 3{dimensionless})
+   ...
+
+The right hand side of a mathematical equation can use any of the following mathematical operators, elements and constants:
+
+- Relational operators:
+
+  .. table::
+     :class: mathematics
+
+     +--------+--------------------------+----------------------------+
+     | ``=``  | Equality (assignment)    | .. code-block:: cellmlText |
+     |        |                          |                            |
+     |        |                          |    x = y                   |
+     +--------+--------------------------+----------------------------+
+     | ``==`` | Equality (binary)        | .. code-block:: cellmlText |
+     |        |                          |                            |
+     |        |                          |    x == y                  |
+     +--------+--------------------------+----------------------------+
+     | ``<>`` | Inequality               | .. code-block:: cellmlText |
+     |        |                          |                            |
+     |        |                          |    x <> y                  |
+     +--------+--------------------------+----------------------------+
+     | ``>``  | Greater than             | .. code-block:: cellmlText |
+     |        |                          |                            |
+     |        |                          |    x > y                   |
+     +--------+--------------------------+----------------------------+
+     | ``<``  | Lower than               | .. code-block:: cellmlText |
+     |        |                          |                            |
+     |        |                          |    x < y                   |
+     +--------+--------------------------+----------------------------+
+     | ``>=`` | Greater than or equal to | .. code-block:: cellmlText |
+     |        |                          |                            |
+     |        |                          |    x >= y                  |
+     +--------+--------------------------+----------------------------+
+     | ``<=`` | Lower than or equal to   | .. code-block:: cellmlText |
+     |        |                          |                            |
+     |        |                          |    x <= y                  |
+     +--------+--------------------------+----------------------------+
+
+- Arithmetic operators:
+
+  .. table::
+     :class: mathematics
+
+     +-----------+--------------------------+------------------------------+
+     | ``+``     | Addition                 | .. code-block:: cellmlText   |
+     |           |                          |                              |
+     |           |                          |    x+y                       |
+     +-----------+--------------------------+------------------------------+
+     | ``-``     | Subtraction              | .. code-block:: cellmlText   |
+     |           |                          |                              |
+     |           |                          |    x-y                       |
+     +-----------+--------------------------+------------------------------+
+     | ``*``     | Multiplication           | .. code-block:: cellmlText   |
+     |           |                          |                              |
+     |           |                          |    x*y                       |
+     +-----------+--------------------------+------------------------------+
+     | ``/``     | Division                 | .. code-block:: cellmlText   |
+     |           |                          |                              |
+     |           |                          |    x/y                       |
+     +-----------+--------------------------+------------------------------+
+     | ``pow``   | Exponentiation (generic) | .. code-block:: cellmlText   |
+     |           |                          |                              |
+     |           |                          |    pow(x, 3{dimensionless})  |
+     |           |                          |    pow(x, y)                 |
+     +-----------+--------------------------+------------------------------+
+     | ``sqr``   | Exponentiation (square)  | .. code-block:: cellmlText   |
+     |           |                          |                              |
+     |           |                          |    sqr(x)                    |
+     +-----------+--------------------------+------------------------------+
+     | ``root``  | Root (generic)           | .. code-block:: cellmlText   |
+     |           |                          |                              |
+     |           |                          |    root(x, 3{dimensionless}) |
+     |           |                          |    root(x, y)                |
+     +-----------+--------------------------+------------------------------+
+     | ``sqrt``  | Root (square)            | .. code-block:: cellmlText   |
+     |           |                          |                              |
+     |           |                          |    sqrt(x)                   |
+     +-----------+--------------------------+------------------------------+
+     | ``abs``   | Absolute value           | .. code-block:: cellmlText   |
+     |           |                          |                              |
+     |           |                          |    abs(x)                    |
+     +-----------+--------------------------+------------------------------+
+     | ``exp``   | Exponential              | .. code-block:: cellmlText   |
+     |           |                          |                              |
+     |           |                          |    exp(x)                    |
+     +-----------+--------------------------+------------------------------+
+     | ``ln``    | Natural logarithm        | .. code-block:: cellmlText   |
+     |           |                          |                              |
+     |           |                          |    ln(x)                     |
+     +-----------+--------------------------+------------------------------+
+     | ``log``   | Logarithm                | .. code-block:: cellmlText   |
+     |           |                          |                              |
+     |           |                          |    log(x)                    |
+     |           |                          |    log(x, 3{dimensionless})  |
+     |           |                          |    log(x, y)                 |
+     +-----------+--------------------------+------------------------------+
+     | ``floor`` | Floor                    | .. code-block:: cellmlText   |
+     |           |                          |                              |
+     |           |                          |    floor(x)                  |
+     +-----------+--------------------------+------------------------------+
+     | ``ceil``  | Ceiling                  | .. code-block:: cellmlText   |
+     |           |                          |                              |
+     |           |                          |    ceil(x)                   |
+     +-----------+--------------------------+------------------------------+
+     | ``fact``  | Factorial                | .. code-block:: cellmlText   |
+     |           |                          |                              |
+     |           |                          |    fact(x)                   |
+     +-----------+--------------------------+------------------------------+
+     | ``rem``   | Remainder                | .. code-block:: cellmlText   |
+     |           |                          |                              |
+     |           |                          |    rem(x, 3{dimensionless})  |
+     |           |                          |    rem(x, y)                 |
+     +-----------+--------------------------+------------------------------+
+     | ``min``   | Minimum                  | .. code-block:: cellmlText   |
+     |           |                          |                              |
+     |           |                          |    min(x, 3{dimensionless})  |
+     |           |                          |    min(x, y)                 |
+     |           |                          |    min(x, y, z)              |
+     +-----------+--------------------------+------------------------------+
+     | ``max``   | Maximum                  | .. code-block:: cellmlText   |
+     |           |                          |                              |
+     |           |                          |    max(x, 3{dimensionless})  |
+     |           |                          |    max(x, y)                 |
+     |           |                          |    max(x, y, z)              |
+     +-----------+--------------------------+------------------------------+
+     | ``gcd``   | Greatest common divisor  | .. code-block:: cellmlText   |
+     |           |                          |                              |
+     |           |                          |    gcd(x, 3{dimensionless})  |
+     |           |                          |    gcd(x, y)                 |
+     |           |                          |    gcd(x, y, z)              |
+     +-----------+--------------------------+------------------------------+
+     | ``lcm``   | Least common multiple    | .. code-block:: cellmlText   |
+     |           |                          |                              |
+     |           |                          |    lcm(x, 3{dimensionless})  |
+     |           |                          |    lcm(x, y)                 |
+     |           |                          |    lcm(x, y, z)              |
+     +-----------+--------------------------+------------------------------+
+
+- Logical operators:
+
+  .. table::
+     :class: mathematics
+
+     +-----------+--------------+------------------------------+
+     | ``and``   | And          | .. code-block:: cellmlText   |
+     |           |              |                              |
+     |           |              |    x and y                   |
+     +-----------+--------------+------------------------------+
+     | ``or``    | Or           | .. code-block:: cellmlText   |
+     |           |              |                              |
+     |           |              |    x or y                    |
+     +-----------+--------------+------------------------------+
+     | ``xor``   | Exclusive or | .. code-block:: cellmlText   |
+     |           |              |                              |
+     |           |              |    x xor y                   |
+     +-----------+--------------+------------------------------+
+     | ``not``   | Not          | .. code-block:: cellmlText   |
+     |           |              |                              |
+     |           |              |    not x                     |
+     |           |              |    not(x and y)              |
+     +-----------+--------------+------------------------------+
+
+- Calculus elements:
+
+  .. table::
+     :class: mathematics
+
+     +-----------+-----------------+--------------------------------+
+     | ``ode``   | Differentiation | .. code-block:: cellmlText     |
+     |           |                 |                                |
+     |           |                 |    ode(x, t)                   |
+     |           |                 |    ode(x, t, 2{dimensionless}) |
+     +-----------+-----------------+--------------------------------+
+
+- Trigonometric operators:
+
+  .. table::
+     :class: mathematics
+
+     +-------------+--------------------------------+----------------------------+
+     | | ``sin``   | | Sine                         | .. code-block:: cellmlText |
+     | | ``sinh``  | | Hyperbolic sine              |                            |
+     | | ``asin``  | | Inverse sine                 |    sin(x)                  |
+     | | ``asinh`` | | Inverse hyperbolic sine      |    sinh(x)                 |
+     |             |                                |    asin(x)                 |
+     |             |                                |    asinh(x)                |
+     +-------------+--------------------------------+----------------------------+
+     | | ``cos``   | | Cosine                       | .. code-block:: cellmlText |
+     | | ``cosh``  | | Hyperbolic cosine            |                            |
+     | | ``acos``  | | Inverse cosine               |    cos(x)                  |
+     | | ``acosh`` | | Inverse hyperbolic cosine    |    cosh(x)                 |
+     |             |                                |    acos(x)                 |
+     |             |                                |    acosh(x)                |
+     +-------------+--------------------------------+----------------------------+
+     | | ``tan``   | | Tangent                      | .. code-block:: cellmlText |
+     | | ``tanh``  | | Hyperbolic tangent           |                            |
+     | | ``atan``  | | Inverse tangent              |    tan(x)                  |
+     | | ``atanh`` | | Inverse hyperbolic tangent   |    tanh(x)                 |
+     |             |                                |    atan(x)                 |
+     |             |                                |    atanh(x)                |
+     +-------------+--------------------------------+----------------------------+
+     | | ``sec``   | | Secant                       | .. code-block:: cellmlText |
+     | | ``sech``  | | Hyperbolic secant            |                            |
+     | | ``asec``  | | Inverse secant               |    sec(x)                  |
+     | | ``asech`` | | Inverse hyperbolic secant    |    sech(x)                 |
+     |             |                                |    asec(x)                 |
+     |             |                                |    asech(x)                |
+     +-------------+--------------------------------+----------------------------+
+     | | ``csc``   | | Cosecant                     | .. code-block:: cellmlText |
+     | | ``csch``  | | Hyperbolic cosecant          |                            |
+     | | ``acsc``  | | Inverse cosecant             |    csc(x)                  |
+     | | ``acsch`` | | Inverse hyperbolic cosecant  |    csch(x)                 |
+     |             |                                |    acsc(x)                 |
+     |             |                                |    acsch(x)                |
+     +-------------+--------------------------------+----------------------------+
+     | | ``cot``   | | Cotangent                    | .. code-block:: cellmlText |
+     | | ``coth``  | | Hyperbolic cotangent         |                            |
+     | | ``acot``  | | Inverse cotangent            |    cot(x)                  |
+     | | ``acoth`` | | Inverse hyperbolic cotangent |    coth(x)                 |
+     |             |                                |    acot(x)                 |
+     |             |                                |    acoth(x)                |
+     +-------------+--------------------------------+----------------------------+
+
+- Constants:
+
+  .. table::
+     :class: mathematics
+
+     +-----------+----------------+----------------------------+
+     | ``true``  | True           | .. code-block:: cellmlText |
+     |           |                |                            |
+     |           |                |    true                    |
+     +-----------+----------------+----------------------------+
+     | ``false`` | False          | .. code-block:: cellmlText |
+     |           |                |                            |
+     |           |                |    false                   |
+     +-----------+----------------+----------------------------+
+     | ``nan``   | Not a number   | .. code-block:: cellmlText |
+     |           |                |                            |
+     |           |                |    nan                     |
+     +-----------+----------------+----------------------------+
+     | ``pi``    | Pi             | .. code-block:: cellmlText |
+     |           |                |                            |
+     |           |                |    pi                      |
+     +-----------+----------------+----------------------------+
+     | ``inf``   | Infinity       | .. code-block:: cellmlText |
+     |           |                |                            |
+     |           |                |    inf                     |
+     +-----------+----------------+----------------------------+
+     | ``e``     | Euler's number | .. code-block:: cellmlText |
+     |           |                |                            |
+     |           |                |    e                       |
+     +-----------+----------------+----------------------------+
+
+A piecewise statement can also be used in the top-level of the right hand side of a mathematical equation.
+For example, to define :math:`x` as being equal to :math:`y+z` when :math:`x > 0` and :math:`y-z` otherwise, we would use:
+
+.. code-block:: cellmlText
+
+   x = sel
+       case x > 0{dimensionless}:
+           y+z;
+       otherwise:
+           y-z;
+   endsel;
 
 .. _plugins_editing_cellmlTextView_groupDefinitions:
 
 Group definitions
 ~~~~~~~~~~~~~~~~~
 
-Blah...
+To define a group, we would use:
+
+.. code-block:: cellmlText
+
+   def group as ... for
+       ...
+   enddef;
+
+A group must be typed as a containment and/or an encapsulation.
+For example, to define a containment group, we would use:
+
+.. code-block:: cellmlText
+
+   def group as containment for
+       ...
+   enddef;
+
+A containment group can be named.
+For example, to define a containment group of name ``my_containment``, we would use:
+
+.. code-block:: cellmlText
+
+   def group as containment my_containment for
+       ...
+   enddef;
+
+An encapsulation group is always nameless, so to define an encapsulation group, we would use:
+
+.. code-block:: cellmlText
+
+   def group as encapsulation for
+       ...
+   enddef;
+
+A group can have more than one type.
+For example, to define a group as both an encapsulation group and a containment group (of name ``my_containment``), we would use:
+
+.. code-block:: cellmlText
+
+   def group as encapsulation and containment my_containment for
+       ...
+   enddef;
+
+A group definition is used whenever there is a need for a hierarchy of components.
+Some components may include others.
+For example, to define a group where both ``my_component1`` and ``my_component2`` are at the top level, and where ``my_component1`` includes ``my_component11``, ``my_component12`` and ``my_component13``, we would use:
+
+.. code-block:: cellmlText
+
+   def group as ... for
+       comp my_component1 incl
+           comp my_component11;
+           comp my_component12;
+           comp my_component13;
+       endcomp;
+
+       comp my_component2;
+   enddef;
+
+Similarly, to define a group where ``my_component1`` is at the top level, where ``my_component1`` includes both ``my_component11`` and ``my_component12``, and where ``my_component11`` includes ``my_component111``, we would use:
+
+.. code-block:: cellmlText
+
+   def group as ... for
+       comp my_component1 incl
+           comp my_component11 incl
+               comp my_component111;
+           endcomp;
+
+           comp my_component12;
+       endcomp;
+   enddef;
 
 .. _plugins_editing_cellmlTextView_mappingDefinitions:
 
 Mapping definitions
 ~~~~~~~~~~~~~~~~~~~
 
-Blah...
+To define some mappings between two components of name ``my_component1`` and ``my_component2``, we would use:
+
+.. code-block:: cellmlText
+
+   def map between my_component1 and my_component2 for
+       ...
+   enddef;
+
+To map variables ``my_variable1a`` with ``my_variable2a``, ``my_variable1b`` with ``my_variable2b``, and ``my_variable1c`` with ``my_variable2c`` from components ``my_component1`` and ``my_component2``, respectively, we would use:
+
+.. code-block:: cellmlText
+
+   def map between my_component1 and my_component2 for
+       vars my_variable1a and my_variable2a;
+       vars my_variable1b and my_variable2b;
+       vars my_variable1c and my_variable2c;
+   enddef;
 
 .. _plugins_editing_cellmlTextView_metadata:
 
 Metadata
 ~~~~~~~~
 
-Blah...
+The :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>` does not support the editing of `CellML <https://www.cellml.org/>`__ annotations.
+However, ``cmeta:id``'s are used to make the link between `CellML <https://www.cellml.org/>`__ elements and `CellML <https://www.cellml.org/>`__ annotations.
+So, we need the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>` to support the use of ``cmeta:id``'s and this is done by enclosing a ``cmeta:id`` value (e.g. ``my_cmeta_id``) within curly brackets:
+
+.. code-block:: cellmlText
+
+   {my_cmeta_id}
+
+which can then be used to annotate various `CellML <https://www.cellml.org/>`__ elements:
+
+.. code-block:: cellmlText
+
+   def model{my_model_cmeta_id} my_model as
+       def import{my_import_cmeta_id} using "my_imported_model_uri" for
+           unit{my_imported_unit_cmeta_id} my_imported_unit using unit my_reference_unit;
+
+           comp{my_imported_component_cmeta_id} my_imported_component using comp my_reference_component;
+       enddef;
+
+       def unit{my_base_unit_cmeta_id} my_base_unit as base unit;
+
+       def unit{my_unit_cmeta_id} my_unit as
+           unit{my_other_unit_cmeta_id} my_other_unit {pref: milli, expo: -1, mult: 3, off: 7};
+       enddef;
+
+       def comp{my_component_cmeta_id} my_component as
+           var{my_variable_cmeta_id} my_variable: my_unit {init: 3, pub: in, priv: out};
+
+           a ={my_algebraic_equation_cmeta_id} b+c;
+           ode(d, t) ={my_ode_equation_cmeta_id} e+f;
+       enddef;
+
+       def group{my_group_cmeta_id} as encapsulation{my_encapsulation_cmeta_id} and containment{my_containment_cmeta_id} my_containment for
+           comp{my_component1_cmeta_id} my_component1 incl
+               comp{my_component11_cmeta_id} my_component11;
+               comp{my_component12_cmeta_id} my_component12;
+               comp{my_component13_cmeta_id} my_component13;
+           endcomp;
+
+           comp{my_component2_cmeta_id} my_component2;
+       enddef;
+
+       def map{my_map_cmeta_id} between{my_between_cmeta_id} my_component1 and my_component2 for
+           vars{my_varsa_cmeta_id} my_variable1a and my_variable2a;
+           vars{my_varsb_cmeta_id} my_variable1b and my_variable2b;
+           vars{my_varsc_cmeta_id} my_variable1c and my_variable2c;
+       enddef;
+   enddef;
 
 CLI support
 -----------
 
-Blah...
+The CellMLTextView plugin relies on the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`.
+CLI support has therefore been added to it so that a `CellML <https://www.cellml.org/>`__ file can, from the command line, be imported to the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`, and back.
+
+For example, to import ``models/van_der_pol_model_1928.cellml`` to the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`, we would do the following:
+
+::
+
+   $ ./OpenCOR -c CellMLTextView::import models/van_der_pol_model_1928.cellml
+   def model van_der_pol_model_1928 as
+       def comp main as
+           def unit per_second as
+               unit second {expo: -1};
+           enddef;
+
+           var time: second;
+           var x: dimensionless {init: -2};
+           var y: dimensionless {init: 0};
+           var epsilon: dimensionless {init: 1};
+
+           ode(x, time) = y*1{per_second};
+           ode(y, time) = (epsilon*(1{dimensionless}-sqr(x))*y-x)*1{per_second};
+       enddef;
+   enddef;
+
+Similarly, and assuming the above import has been saved to a file named ``van_der_pol_model_1928.txt``, we could get our original `CellML <https://www.cellml.org/>`__ file by doing the following:
+
+::
+
+   $ ./OpenCOR -c CellMLTextView::export van_der_pol_model_1928.txt > van_der_pol_model_1928.cellml
+
+For precaution, the new `CellML <https://www.cellml.org/>`__ file relies on `CellML 1.1 <https://www.cellml.org/specifications/cellml_1.1>`__, as confirmed by ``diff``:
+
+::
+
+   $ diff models/van_der_pol_model_1928.cellml van_der_pol_model_1928.cellml
+   2c2
+   < <model name="van_der_pol_model_1928" xmlns="http://www.cellml.org/cellml/1.0#" xmlns:cellml="http://www.cellml.org/cellml/1.0#">
+   ---
+   > <model name="van_der_pol_model_1928" xmlns="http://www.cellml.org/cellml/1.1#" xmlns:cellml="http://www.cellml.org/cellml/1.1#">
