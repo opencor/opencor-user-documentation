@@ -7,18 +7,41 @@ table > tbody > tr > td {
     vertical-align: baseline;
 }
 
-table.units > colgroup > col,
-table.prefixes > colgroup > col {
+table.mathematics > colgroup > col,
+table.prefixes > colgroup > col,
+table.units > colgroup > col {
     width: 0%;
 }
 
-table.units > tbody > tr > td,
-table.prefixes > tbody > tr > td {
+table.mathematics > tbody > tr > td,
+table.prefixes > tbody > tr > td,
+table.units > tbody > tr > td {
     border: none;
     padding: 0em 1em;
+}
+
+table.mathematics > tbody > tr > td {
+    vertical-align: middle;
+}
+
+table.mathematics > tbody > tr > td:first-child {
+    text-align: center;
+}
+
+table.mathematics > tbody > tr > td pre {
+    margin: 0px;
+    padding: 0px;
+}
+
+table.prefixes > tbody > tr > td,
+table.units > tbody > tr > td {
     text-align: center;
 }
 
 table.prefixes > tbody > tr > td:nth-child(even) {
     text-align: justify;
+}
+
+table.prefixes > tbody > tr > td:nth-child(3) {
+    padding-left: 3em;
 }

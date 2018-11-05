@@ -280,7 +280,7 @@ class cellmlTextLexer(RegexLexer):
             include('whitespaces'),
             (r'(\d+\.\d*|\.\d+|\d+)([eE][+-]?\d+)?', CellmlTextNumber),
             (r'[a-zA-Z_]\w*', CellmlText),
-            (r'[+\-*/=]', CellmlTextOperator),
+            (r'[+\-*/=<>]', CellmlTextOperator),
             (r'[().,;:]', CellmlTextPunctuation),
             (r'"[^\\"\n]+"', CellmlTextString),
             (r'\{', CellmlTextParameterBlock, 'parameterBlock')
@@ -329,6 +329,7 @@ class cellmlTextLexer(RegexLexer):
 
             include('whitespaces'),
             (r'(\d+\.\d*|\.\d+|\d+)([eE][+-]?\d+)?', CellmlTextParameterNumber),
+            (r'[a-zA-Z_]\w*', CellmlTextParameterBlock),
             (r'[\-]', CellmlTextParameterBlock),
             (r'[,:]', CellmlTextParameterBlock),
             (r'\.\.\.', CellmlTextParameterBlock),
