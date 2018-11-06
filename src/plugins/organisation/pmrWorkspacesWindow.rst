@@ -11,6 +11,9 @@ By default, it looks as follows:
    :align: center
    :scale: 25%
 
+Preferences
+-----------
+
 There are three `PMR <https://models.physiomeproject.org/>`__ sites:
 
 - `Primary site <https://models.physiomeproject.org>`__: everything on this site is permanent and persistent.
@@ -22,6 +25,18 @@ There are three `PMR <https://models.physiomeproject.org/>`__ sites:
 
 Both the `primary site <https://models.physiomeproject.org>`__ and the `teaching site <https://teaching.physiomeproject.org>`__ require you to create an account before you can start interacting with them.
 On the `staging site <https://staging.physiomeproject.org>`__, your `primary site <https://models.physiomeproject.org>`__ account may work, but if not then you need to create an account (on the `staging site <https://staging.physiomeproject.org>`__).
+
+You can specify which site you want to interact with by clicking on the |oxygenCategoriesPreferencesSystem| button in the toolbar, or by selecting the ``Tools`` | ``Preferences...`` menu and then the ``PMRSupport`` section:
+
+.. |oxygenCategoriesPreferencesSystem| image:: ../../pics/oxygen/categories/preferences-system.png
+   :class: nonclickable
+   :scale: 33%
+
+.. image:: pics/PMRWorkspacesWindowScreenshot02.png
+   :align: center
+   :scale: 25%
+
+This is also where you must specify your name and email address, if you want to be able to synchronise your workspaces with `PMR <https://models.physiomeproject.org/>`__.
 
 Tool bar
 --------
