@@ -29,8 +29,8 @@ Data store plugins are used to store and manipulate data:
 
 .. rst-class:: internal reference
 
-   - :ref:`BioSignalMLDataStore: <plugins_dataStore_biosignalmlDataStore>` a BioSignalML specific data store plugin.
-   - :ref:`CSVDataStore: <plugins_dataStore_csvDataStore>` a `CSV <https://en.wikipedia.org/wiki/Comma-separated_values>`__ specific data store plugin.
+   - :ref:`BioSignalMLDataStore <plugins_dataStore_biosignalmlDataStore>`\ : a BioSignalML specific data store plugin.
+   - :ref:`CSVDataStore <plugins_dataStore_csvDataStore>`\ : a `CSV <https://en.wikipedia.org/wiki/Comma-separated_values>`__ specific data store plugin.
 
 There is also one non-selectable data store plugin:
 
@@ -43,11 +43,11 @@ Editing plugins are used to edit files:
 
 .. rst-class:: internal reference
 
-   - :ref:`CellMLAnnotationView: <plugins_editing_cellmlAnnotationView>` a plugin to annotate `CellML <https://www.cellml.org/>`__ files.
-   - :ref:`CellMLTextView: <plugins_editing_cellmlTextView>` a plugin to edit `CellML <https://www.cellml.org/>`__ files using the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`.
-   - :ref:`RawCellMLView: <plugins_editing_rawCellmlView>` a plugin to edit `CellML <https://www.cellml.org/>`__ files using an `XML <https://www.w3.org/XML/>`__ editor.
-   - :ref:`RawSEDMLView: <plugins_editing_rawSedmlView>` a plugin to edit `SED-ML <http://www.sed-ml.org/>`__ files using an `XML <https://www.w3.org/XML/>`__ editor.
-   - :ref:`RawTextView: <plugins_editing_rawTextView>` a plugin to edit text-based files using a text editor.
+   - :ref:`CellMLAnnotationView <plugins_editing_cellmlAnnotationView>`\ : a plugin to annotate `CellML <https://www.cellml.org/>`__ files.
+   - :ref:`CellMLTextView <plugins_editing_cellmlTextView>`\ : a plugin to edit `CellML <https://www.cellml.org/>`__ files using the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`.
+   - :ref:`RawCellMLView <plugins_editing_rawCellmlView>`\ : a plugin to edit `CellML <https://www.cellml.org/>`__ files using an `XML <https://www.w3.org/XML/>`__ editor.
+   - :ref:`RawSEDMLView <plugins_editing_rawSedmlView>`\ : a plugin to edit `SED-ML <http://www.sed-ml.org/>`__ files using an `XML <https://www.w3.org/XML/>`__ editor.
+   - :ref:`RawTextView <plugins_editing_rawTextView>`\ : a plugin to edit text-based files using a text editor.
 
 There are also some non-selectable editing plugins:
 
@@ -62,15 +62,15 @@ Miscellaneous plugins are plugins that do not fit in any other category:
 
 .. rst-class:: internal reference
 
-   - :ref:`HelpWindow: <plugins_miscellaneous_helpWindow>` a plugin to provide help.
-   - :ref:`WebBrowserWindow: <plugins_miscellaneous_webBrowserWindow>` a plugin to browse the Web.
+   - :ref:`HelpWindow <plugins_miscellaneous_helpWindow>`\ : a plugin to provide help.
+   - :ref:`WebBrowserWindow <plugins_miscellaneous_webBrowserWindow>`\ : a plugin to browse the Web.
 
 There are also some non-selectable Miscellaneous plugins:
 
 .. rst-class:: internal reference
 
    - **Compiler:** a plugin to support code compilation.
-   - :ref:`Core: <plugins_miscellaneous_core>` the core plugin.
+   - :ref:`Core <plugins_miscellaneous_core>`\ : the core plugin.
 
 Organisation
 ------------
@@ -79,10 +79,10 @@ Organisation plugins are used to organise files:
 
 .. rst-class:: internal reference
 
-   - :ref:`FileBrowserWindow: <plugins_organisation_fileBrowserWindow>` a plugin to access local files.
-   - :ref:`FileOrganiserWindow: <plugins_organisation_fileOrganiserWindow>` a plugin to virtually organise files.
-   - :ref:`PMRWindow: <plugins_organisation_pmrWindow>` a plugin to access `PMR <https://models.physiomeproject.org/>`__.
-   - :ref:`PMRWorkspacesWindow: <plugins_organisation_pmrWorkspacesWindow>` a plugin to manage a user's `PMR <https://models.physiomeproject.org/>`__ workspaces.
+   - :ref:`FileBrowserWindow <plugins_organisation_fileBrowserWindow>`\ : a plugin to access local files.
+   - :ref:`FileOrganiserWindow <plugins_organisation_fileOrganiserWindow>`\ : a plugin to virtually organise files.
+   - :ref:`PMRWindow <plugins_organisation_pmrWindow>`\ : a plugin to access `PMR <https://models.physiomeproject.org/>`__.
+   - :ref:`PMRWorkspacesWindow <plugins_organisation_pmrWorkspacesWindow>`\ : a plugin to manage a user's `PMR <https://models.physiomeproject.org/>`__ workspaces.
 
 Simulation
 ----------
@@ -91,7 +91,7 @@ Simulation plugins are used to simulate files:
 
 .. rst-class:: internal reference
 
-   - :ref:`SimulationExperimentView: <plugins_simulation_simulationExperimentView>` a plugin to edit and run a simulation experiment.
+   - :ref:`SimulationExperimentView <plugins_simulation_simulationExperimentView>`\ : a plugin to edit and run a simulation experiment.
 
 Solver
 ------
@@ -100,12 +100,12 @@ Solver plugins are used to access various solvers:
 
 .. rst-class:: internal reference
 
-   - :ref:`CVODESolver: <plugins_solver_cvodeSolver>` a plugin that uses `CVODE <http://computation.llnl.gov/projects/sundials/cvode>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
-   - :ref:`ForwardEulerSolver: <plugins_solver_forwardEulerSolver>` a plugin that implements the `Forward Euler method <https://en.wikipedia.org/wiki/Euler_method>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
-   - :ref:`FourthOrderRungeKuttaSolver: <plugins_solver_fourthOrderRungeKuttaSolver>` a plugin that implements the fourth-order `Runge-Kutta method <https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
-   - :ref:`HeunSolver: <plugins_solver_heunSolver>` a plugin that implements the `Heun's method <https://en.wikipedia.org/wiki/Heun's_method>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
-   - :ref:`KINSOLSolver: <plugins_solver_kinsolSolver>` a plugin that uses `KINSOL <http://computation.llnl.gov/projects/sundials/kinsol>`__ to solve `non-linear algebraic systems <https://en.wikipedia.org/wiki/Nonlinear_system#Nonlinear_algebraic_equations>`__.
-   - :ref:`SecondOrderRungeKuttaSolver: <plugins_solver_secondOrderRungeKuttaSolver>` a plugin that implements the second-order `Runge-Kutta method <https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
+   - :ref:`CVODESolver <plugins_solver_cvodeSolver>`\ : a plugin that uses `CVODE <http://computation.llnl.gov/projects/sundials/cvode>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
+   - :ref:`ForwardEulerSolver <plugins_solver_forwardEulerSolver>`\ : a plugin that implements the `Forward Euler method <https://en.wikipedia.org/wiki/Euler_method>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
+   - :ref:`FourthOrderRungeKuttaSolver <plugins_solver_fourthOrderRungeKuttaSolver>`\ : a plugin that implements the fourth-order `Runge-Kutta method <https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
+   - :ref:`HeunSolver <plugins_solver_heunSolver>`\ : a plugin that implements the `Heun's method <https://en.wikipedia.org/wiki/Heun's_method>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
+   - :ref:`KINSOLSolver <plugins_solver_kinsolSolver>`\ : a plugin that uses `KINSOL <http://computation.llnl.gov/projects/sundials/kinsol>`__ to solve `non-linear algebraic systems <https://en.wikipedia.org/wiki/Nonlinear_system#Nonlinear_algebraic_equations>`__.
+   - :ref:`SecondOrderRungeKuttaSolver <plugins_solver_secondOrderRungeKuttaSolver>`\ : a plugin that implements the second-order `Runge-Kutta method <https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
 
 Support
 -------
@@ -148,7 +148,7 @@ Tools plugins are used to access to various tools:
 
 .. rst-class:: internal reference
 
-   - :ref:`CellMLTools: <plugins_tools_cellmlTools>` a plugin to access various `CellML <https://www.cellml.org/>`__-related tools.
+   - :ref:`CellMLTools <plugins_tools_cellmlTools>`\ : a plugin to access various `CellML <https://www.cellml.org/>`__-related tools.
 
 Widget
 ------
