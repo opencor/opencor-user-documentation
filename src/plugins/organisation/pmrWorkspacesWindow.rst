@@ -42,7 +42,7 @@ Log on to PMR
 -------------
 
 To log on to `PMR <https://models.physiomeproject.org/>`__, you need to click on the |logOn| button in the toolbar.
-On `Windows <https://en.wikipedia.org/wiki/Microsoft_Windows>`__, you may see a security alert that looks something like:
+This brings up a window inviting you to log in to `PMR <https://models.physiomeproject.org/>`__:
 
 .. |logOn| image:: pics/logOn.png
    :class: nonclickable
@@ -52,26 +52,19 @@ On `Windows <https://en.wikipedia.org/wiki/Microsoft_Windows>`__, you may see a 
    :align: center
    :scale: 25%
 
-It is nothing to worry about when it comes to OpenCOR, so simply click on the ``Allow access`` button.
-In all cases, a window pops up, inviting you to log in to `PMR <https://models.physiomeproject.org/>`__:
+Logged in, you can grant OpenCOR access to `PMR <https://models.physiomeproject.org/>`__ by clicking on the ``Grant access`` button:
 
 .. image:: pics/PMRWorkspacesWindowScreenshot04.png
    :align: center
    :scale: 25%
 
-Logged in, you can grant OpenCOR access to `PMR <https://models.physiomeproject.org/>`__ by clicking on the ``Grant access`` button:
-
-.. image:: pics/PMRWorkspacesWindowScreenshot05.png
-   :align: center
-   :scale: 25%
-
-Upon granting OpenCOR access to `PMR <https://models.physiomeproject.org/>`__, the window closes and the |logOn| button is replaced with the |logOff| button.
+This closes the window and replaces the |logOn| button with the |logOff| button, and displays a message indicating that, as expected, no workspaces were found:
 
 .. |logOff| image:: pics/logOff.png
    :class: nonclickable
    :scale: 33%
 
-.. image:: pics/PMRWorkspacesWindowScreenshot06.png
+.. image:: pics/PMRWorkspacesWindowScreenshot05.png
    :align: center
    :scale: 25%
 
