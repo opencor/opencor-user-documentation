@@ -38,6 +38,43 @@ You can specify which site you want to interact with by clicking on the |oxygenC
 
 This is also where you must specify your name and email address, if you want to be able to synchronise your workspaces with `PMR <https://models.physiomeproject.org/>`__.
 
+Log on to PMR
+-------------
+
+To log on to `PMR <https://models.physiomeproject.org/>`__, you need to click on the |logOn| button in the toolbar.
+On `Windows <https://en.wikipedia.org/wiki/Microsoft_Windows>`__, you may see a security alert that looks something like:
+
+.. |logOn| image:: ../../pics/logOn.png
+   :class: nonclickable
+   :scale: 33%
+
+.. image:: pics/PMRWorkspacesWindowScreenshot03.png
+   :align: center
+   :scale: 25%
+
+It is nothing to worry about when it comes to OpenCOR, so simply click on the ``Allow access`` button.
+In all cases, a window pops up, inviting you to log in to `PMR <https://models.physiomeproject.org/>`__:
+
+.. image:: pics/PMRWorkspacesWindowScreenshot04.png
+   :align: center
+   :scale: 25%
+
+Logged in, you can grant OpenCOR access to `PMR <https://models.physiomeproject.org/>`__ by clicking on the ``Grant access`` button:
+
+.. image:: pics/PMRWorkspacesWindowScreenshot05.png
+   :align: center
+   :scale: 25%
+
+Upon granting OpenCOR access to `PMR <https://models.physiomeproject.org/>`__, the window closes and the |logOn| button is replaced with the |logOff| button.
+
+.. |logOff| image:: ../../pics/logOff.png
+   :class: nonclickable
+   :scale: 33%
+
+.. image:: pics/PMRWorkspacesWindowScreenshot06.png
+   :align: center
+   :scale: 25%
+
 Tool bar
 --------
 
