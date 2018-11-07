@@ -44,7 +44,7 @@ Log on to PMR
 To log on to `PMR <https://models.physiomeproject.org/>`__, you need to click on the |logOn| button in the toolbar.
 On `Windows <https://en.wikipedia.org/wiki/Microsoft_Windows>`__, you may see a security alert that looks something like:
 
-.. |logOn| image:: ../../pics/logOn.png
+.. |logOn| image:: pics/logOn.png
    :class: nonclickable
    :scale: 33%
 
@@ -67,7 +67,7 @@ Logged in, you can grant OpenCOR access to `PMR <https://models.physiomeproject.
 
 Upon granting OpenCOR access to `PMR <https://models.physiomeproject.org/>`__, the window closes and the |logOn| button is replaced with the |logOff| button.
 
-.. |logOff| image:: ../../pics/logOff.png
+.. |logOff| image:: pics/logOff.png
    :class: nonclickable
    :scale: 33%
 
@@ -96,10 +96,10 @@ Tool bar
    :class: toolbar
    :scale: 50%
 
-.. |toolbarLogOn| image:: ../../pics/logOn.png
+.. |toolbarLogOn| image:: pics/logOn.png
    :class: toolbar
    :scale: 50%
 
-.. |toolbarLogOff| image:: ../../pics/logOff.png
+.. |toolbarLogOff| image:: pics/logOff.png
    :class: toolbar
    :scale: 50%
