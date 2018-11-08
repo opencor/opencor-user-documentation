@@ -81,7 +81,7 @@ You can do so by switching to the teaching instance (see :ref:`above <plugins_or
    :align: center
    :scale: 25%
 
-You will need to provide the path to an empty folder, creating one if needed.
+You need to provide the path to an empty folder.
 The local copy completed, you can double click on it to reveal its contents:
 
 .. image:: pics/PMRWorkspacesWindowScreenshot07.png
