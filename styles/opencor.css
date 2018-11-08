@@ -31,10 +31,6 @@ table.units > tbody > tr > td {
     padding: 0em 1em;
 }
 
-table.mathematics > tbody > tr > td {
-    vertical-align: middle;
-}
-
 table.mathematics > tbody > tr > td:first-child {
     text-align: center;
 }
