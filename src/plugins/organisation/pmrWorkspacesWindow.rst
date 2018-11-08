@@ -11,6 +11,8 @@ By default, it looks as follows:
    :align: center
    :scale: 25%
 
+.. _plugins_organisation_pmrWorkspacesWindow_preferences:
+
 Preferences
 -----------
 
@@ -65,6 +67,24 @@ This closes the window and replaces the |logOn| button with the |logOff| button,
    :scale: 33%
 
 .. image:: pics/PMRWorkspacesWindowScreenshot05.png
+   :align: center
+   :scale: 25%
+
+Make a local copy of a public workspace
+---------------------------------------
+
+The :ref:`PMR Window <plugins_organisation_pmrWindow>` lists published exposures, which reference a specific state of a public workspace.
+Say that you want to experiment with the `Hodgkin–Huxley model <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1392413/pdf/jphysiol01442-0106.pdf>`__.
+You can do so by switching to the teaching instance (see :ref:`above <plugins_organisation_pmrWorkspacesWindow_preferences>`), looking for the `Hodgkin–Huxley model <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1392413/pdf/jphysiol01442-0106.pdf>`__ in the list, right clicking on it and selecting ``Make Local Copy...``:
+
+.. image:: pics/PMRWorkspacesWindowScreenshot06.png
+   :align: center
+   :scale: 25%
+
+You will need to provide the path to an empty folder, creating one if needed.
+The local copy completed, you can double click on it to reveal its contents:
+
+.. image:: pics/PMRWorkspacesWindowScreenshot07.png
    :align: center
    :scale: 25%
 
