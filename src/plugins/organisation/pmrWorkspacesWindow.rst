@@ -88,6 +88,92 @@ The local copy completed, you can double click on it to reveal its contents:
    :align: center
    :scale: 25%
 
+Create a new workspace
+----------------------
+
+You can create a workspace by clicking on the |newFolder| button in the toolbar.
+You need to provide both a name and the path to a folder (it does not have to be empty).
+You may also provide a description:
+
+.. |newFolder| image:: ../../pics/newFolder.png
+   :class: nonclickable
+   :scale: 33%
+
+.. image:: pics/PMRWorkspacesWindowScreenshot08.png
+   :align: center
+   :scale: 25%
+
+Any file already present in the folder you provided will automatically be considered new.
+For example, if you provide a folder containing the `models <https://github.com/opencor/opencor/tree/master/models>`__ shipped with OpenCOR, you will get something like the following upon creation of the workspace:
+
+.. image:: pics/PMRWorkspacesWindowScreenshot09.png
+   :align: center
+   :scale: 25%
+
+The model files are preceded by the |waFile| icon, which means that they are indeed new, while the workspace folder is preceded by the |unstagedOwnedWorkspace| icon, which means that it is owned by you and that it contains changes that have yet to be synchronised (see :ref:`below <plugins_organisation_pmrWorkspacesWindow_icons>` for the full set of possible icons).
+
+.. |waFile| image:: pics/waFile.png
+   :class: nonclickable
+   :scale: 33%
+
+.. |unstagedOwnedWorkspace| image:: pics/unstagedOwnedWorkspace.png
+   :class: nonclickable
+   :scale: 33%
+
+Synchronise with PMR
+--------------------
+
+Your workspace created, you may want to syncrhonise it with `PMR <https://models.physiomeproject.org/>`__.
+This is done by right clicking on any of the files/folders in your workspace and by selecting the ``Synchronise Workspace With PMR...`` menu.
+This brings up a window where you can see *which* files have changed and *what* exactly has changed.
+For `CellML <https://www.cellml.org/>`__ files, changes can be seen using either the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>` or the raw CellML format (i.e. `XML <https://www.w3.org/XML/>`__-based).
+Simply toggle the |logo| button as you see fit:
+
+.. |logo| image:: pics/logo.png
+   :class: nonclickable
+   :scale: 63%
+
+.. image:: pics/PMRWorkspacesWindowScreenshot10.png
+   :align: center
+   :scale: 25%
+
+Provide a description for your changes and click on the ``OK`` button to synchronise your workspace with `PMR <https://models.physiomeproject.org/>`__.
+As you can see, the model files are now preceded by the |file| icon and the workspace folder by the |ownedWorkspace| icon:
+
+.. |file| image:: pics/file.png
+   :class: nonclickable
+   :scale: 33%
+
+.. |ownedWorkspace| image:: pics/ownedWorkspace.png
+   :class: nonclickable
+   :scale: 33%
+
+.. image:: pics/PMRWorkspacesWindowScreenshot11.png
+   :align: center
+   :scale: 25%
+
+You can see your workspace in `PMR <https://models.physiomeproject.org/>`__ by right clicking on any of the files/folders in your workspace and by selecting the ``Synchronise Workspace With PMR...`` menu:
+
+.. image:: pics/PMRWorkspacesWindowScreenshot12.png
+   :align: center
+   :scale: 25%
+
+If you modify the model files and decide to resynchronise your workspace with `PMR <https://models.physiomeproject.org/>`__, you will see something like the following:
+
+.. image:: pics/PMRWorkspacesWindowScreenshot13.png
+   :align: center
+   :scale: 25%
+
+All the model files can be selected to see all their changes at once, be they additions (in green) or deletions (in red).
+
+Your workspace resynchronised, you can see the history of your changes in `PMR <https://models.physiomeproject.org/>`__:
+
+.. image:: pics/PMRWorkspacesWindowScreenshot14.png
+   :align: center
+   :scale: 25%
+
+.. _plugins_organisation_pmrWorkspacesWindow_icons:
+
 Icons
 -----
 
@@ -144,6 +230,8 @@ Similarly, different icons are used to distinguish the state of staged/unstaged 
    :class: icons
 
    +--------------+---+--------------+-----------------------------------------------+
+   |              |   | |iconFile|   | File that is *clean*                          |
+   +--------------+---+--------------+-----------------------------------------------+
    | |iconIaFile| | / | |iconWaFile| | Staged/unstaged file that has been *added*    |
    +--------------+---+--------------+-----------------------------------------------+
    | |iconIdFile| | / | |iconWdFile| | Staged/unstaged file that has been *deleted*  |
@@ -160,6 +248,10 @@ Similarly, different icons are used to distinguish the state of staged/unstaged 
    +--------------+---+--------------+-----------------------------------------------+
    |              |   | |iconGiFile| | File that is *ignored*                        |
    +--------------+---+--------------+-----------------------------------------------+
+
+.. |iconFile| image:: pics/file.png
+   :class: icon
+   :scale: 50%
 
 .. |iconIaFile| image:: pics/iaFile.png
    :class: icon
