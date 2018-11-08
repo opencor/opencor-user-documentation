@@ -68,6 +68,135 @@ This closes the window and replaces the |logOn| button with the |logOff| button,
    :align: center
    :scale: 25%
 
+Icons
+-----
+
+Different icons are used to distinguish between the different states of public and owned workspaces:
+
+.. table::
+   :class: icons
+
+   +-------------------------+---+------------------------------+---------------------------------------------------+
+   | |iconWorkspace|         | / | |iconOwnedWorkspace|         | Public/owned workspace                            |
+   +-------------------------+---+------------------------------+---------------------------------------------------+
+   | |iconStagedWorkspace|   | / | |iconStagedOwnedWorkspace|   | Public/owned workspace with *staged* changes.     |
+   +-------------------------+---+------------------------------+---------------------------------------------------+
+   | |iconUnstagedWorkspace| | / | |iconUnstagedOwnedWorkspace| | Public/owned workspace with *unstaged* changes    |
+   +-------------------------+---+------------------------------+---------------------------------------------------+
+   | |iconConflictWorkspace| | / | |iconConflictOwnedWorkspace| | Public/owned workspace with *conflicting* changes |
+   +-------------------------+---+------------------------------+---------------------------------------------------+
+
+.. |iconWorkspace| image:: pics/workspace.png
+   :class: icon
+   :scale: 50%
+
+.. |iconStagedWorkspace| image:: pics/stagedWorkspace.png
+   :class: icon
+   :scale: 50%
+
+.. |iconUnstagedWorkspace| image:: pics/unstagedWorkspace.png
+   :class: icon
+   :scale: 50%
+
+.. |iconConflictWorkspace| image:: pics/conflictWorkspace.png
+   :class: icon
+   :scale: 50%
+
+.. |iconOwnedWorkspace| image:: pics/ownedWorkspace.png
+   :class: icon
+   :scale: 50%
+
+.. |iconStagedOwnedWorkspace| image:: pics/stagedOwnedWorkspace.png
+   :class: icon
+   :scale: 50%
+
+.. |iconUnstagedOwnedWorkspace| image:: pics/unstagedOwnedWorkspace.png
+   :class: icon
+   :scale: 50%
+
+.. |iconConflictOwnedWorkspace| image:: pics/conflictOwnedWorkspace.png
+   :class: icon
+   :scale: 50%
+
+Similarly, different icons are used to distinguish the state of staged/unstaged files:
+
+.. table::
+   :class: icons
+
+   +--------------+---+--------------+-----------------------------------------------+
+   | |iconIaFile| | / | |iconWaFile| | Staged/unstaged file that has been *added*    |
+   +--------------+---+--------------+-----------------------------------------------+
+   | |iconIdFile| | / | |iconWdFile| | Staged/unstaged file that has been *deleted*  |
+   +--------------+---+--------------+-----------------------------------------------+
+   | |iconImFile| | / | |iconWmFile| | Staged/unstaged file that has been *modified* |
+   +--------------+---+--------------+-----------------------------------------------+
+   | |iconIrFile| | / | |iconWrFile| | Staged/unstaged file that has been *renamed*  |
+   +--------------+---+--------------+-----------------------------------------------+
+   | |iconItFile| | / | |iconWtFile| | Staged/unstaged file which type has *changed* |
+   +--------------+---+--------------+-----------------------------------------------+
+   |              |   | |iconWuFile| | File that is *unreadable*                     |
+   +--------------+---+--------------+-----------------------------------------------+
+   |              |   | |iconGcFile| | File that has *conflicts*                     |
+   +--------------+---+--------------+-----------------------------------------------+
+   |              |   | |iconGiFile| | File that is *ignored*                        |
+   +--------------+---+--------------+-----------------------------------------------+
+
+.. |iconIaFile| image:: pics/iaFile.png
+   :class: icon
+   :scale: 50%
+
+.. |iconIdFile| image:: pics/idFile.png
+   :class: icon
+   :scale: 50%
+
+.. |iconImFile| image:: pics/imFile.png
+   :class: icon
+   :scale: 50%
+
+.. |iconIrFile| image:: pics/irFile.png
+   :class: icon
+   :scale: 50%
+
+.. |iconItFile| image:: pics/itFile.png
+   :class: icon
+   :scale: 50%
+
+.. |iconWaFile| image:: pics/waFile.png
+   :class: icon
+   :scale: 50%
+
+.. |iconWcFile| image:: pics/wcFile.png
+   :class: icon
+   :scale: 50%
+
+.. |iconWdFile| image:: pics/wdFile.png
+   :class: icon
+   :scale: 50%
+
+.. |iconWmFile| image:: pics/wmFile.png
+   :class: icon
+   :scale: 50%
+
+.. |iconWrFile| image:: pics/wrFile.png
+   :class: icon
+   :scale: 50%
+
+.. |iconWtFile| image:: pics/wtFile.png
+   :class: icon
+   :scale: 50%
+
+.. |iconWuFile| image:: pics/wuFile.png
+   :class: icon
+   :scale: 50%
+
+.. |iconGcFile| image:: pics/gcFile.png
+   :class: icon
+   :scale: 50%
+
+.. |iconGiFile| image:: pics/giFile.png
+   :class: icon
+   :scale: 50%
+
 Tool bar
 --------
 

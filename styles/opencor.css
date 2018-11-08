@@ -1,22 +1,33 @@
 table {
     margin: 1em 0em;
-    border: none;
+    border: 0px;
 }
 
 table > tbody > tr > td {
     vertical-align: baseline;
 }
 
+table.icons > colgroup > col,
 table.mathematics > colgroup > col,
 table.prefixes > colgroup > col,
 table.units > colgroup > col {
     width: 0%;
 }
 
+table.icons > tbody > tr > td,
 table.mathematics > tbody > tr > td,
 table.prefixes > tbody > tr > td,
 table.units > tbody > tr > td {
-    border: none;
+    border: 0px;
+}
+
+table.icons > tbody > tr > td {
+    padding: 0px;
+}
+
+table.mathematics > tbody > tr > td,
+table.prefixes > tbody > tr > td,
+table.units > tbody > tr > td {
     padding: 0em 1em;
 }
 
