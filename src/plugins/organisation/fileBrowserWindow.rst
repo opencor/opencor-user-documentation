@@ -31,17 +31,17 @@ Tool bar
 | |toolBarOxygenActionsGoNext|     Go to the next folder or file
 
 .. |toolBarOxygenActionsGoHome| image:: ../../pics/oxygen/actions/go-home.png
-   :class: toolBar
+   :class: toolbar
    :scale: 50%
 
 .. |toolBarOxygenActionsGoUp| image:: ../../pics/oxygen/actions/go-up.png
-   :class: toolBar
+   :class: toolbar
    :scale: 50%
 
 .. |toolBarOxygenActionsGoPrevious| image:: ../../pics/oxygen/actions/go-previous.png
-   :class: toolBar
+   :class: toolbar
    :scale: 50%
 
 .. |toolBarOxygenActionsGoNext| image:: ../../pics/oxygen/actions/go-next.png
-   :class: toolBar
+   :class: toolbar
    :scale: 50%

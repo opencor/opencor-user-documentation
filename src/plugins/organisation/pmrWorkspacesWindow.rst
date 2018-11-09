@@ -186,23 +186,23 @@ Tool bar
 | |toolBarLogOff|                            Log off from PMR
 
 .. |toolBarNewFolder| image:: ../../pics/newFolder.png
-   :class: toolBar
+   :class: toolbar
    :scale: 50%
 
 .. |toolBarOxygenActionsViewRefresh| image:: ../../pics/oxygen/actions/view-refresh.png
-   :class: toolBar
+   :class: toolbar
    :scale: 50%
 
 .. |toolBarOxygenCategoriesPreferencesSystem| image:: ../../pics/oxygen/categories/preferences-system.png
-   :class: toolBar
+   :class: toolbar
    :scale: 50%
 
 .. |toolBarLogOn| image:: pics/logOn.png
-   :class: toolBar
+   :class: toolbar
    :scale: 50%
 
 .. |toolBarLogOff| image:: pics/logOff.png
-   :class: toolBar
+   :class: toolbar
    :scale: 50%
 
 .. _plugins_organisation_pmrWorkspacesWindow_icons:

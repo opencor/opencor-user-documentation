@@ -57,9 +57,9 @@ Tool bar
 | |toolBarOxygenActionsEditDelete| Delete the current folder(s) and/or link(s) to the current file(s)
 
 .. |toolBarNewFolder| image:: ../../pics/newFolder.png
-   :class: toolBar
+   :class: toolbar
    :scale: 50%
 
 .. |toolBarOxygenActionsEditDelete| image:: ../../pics/oxygen/actions/edit-delete.png
-   :class: toolBar
+   :class: toolbar
    :scale: 50%

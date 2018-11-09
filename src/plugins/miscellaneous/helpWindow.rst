@@ -23,33 +23,33 @@ Tool bar
 | |toolBarOxygenActionsDocumentPrint| Print the help page contents
 
 .. |toolBarOxygenActionsGoHome| image:: ../../pics/oxygen/actions/go-home.png
-   :class: toolBar
+   :class: toolbar
    :scale: 50%
 
 .. |toolBarOxygenActionsGoPrevious| image:: ../../pics/oxygen/actions/go-previous.png
-   :class: toolBar
+   :class: toolbar
    :scale: 50%
 
 .. |toolBarOxygenActionsGoNext| image:: ../../pics/oxygen/actions/go-next.png
-   :class: toolBar
+   :class: toolbar
    :scale: 50%
 
 .. |toolBarOxygenActionsEditCopy| image:: ../../pics/oxygen/actions/edit-copy.png
-   :class: toolBar
+   :class: toolbar
    :scale: 50%
 
 .. |toolBarOxygenActionsZoomOriginal| image:: ../../pics/oxygen/actions/zoom-original.png
-   :class: toolBar
+   :class: toolbar
    :scale: 50%
 
 .. |toolBarOxygenActionsZoomIn| image:: ../../pics/oxygen/actions/zoom-in.png
-   :class: toolBar
+   :class: toolbar
    :scale: 50%
 
 .. |toolBarOxygenActionsZoomOut| image:: ../../pics/oxygen/actions/zoom-out.png
-   :class: toolBar
+   :class: toolbar
    :scale: 50%
 
 .. |toolBarOxygenActionsDocumentPrint| image:: ../../pics/oxygen/actions/document-print.png
-   :class: toolBar
+   :class: toolbar
    :scale: 50%

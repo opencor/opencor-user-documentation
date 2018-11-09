@@ -35,5 +35,5 @@ Tool bar
 | |toolBarOxygenActionsViewRefresh| Reload the list of exposures
 
 .. |toolBarOxygenActionsViewRefresh| image:: ../../pics/oxygen/actions/view-refresh.png
-   :class: toolBar
+   :class: toolbar
    :scale: 50%
