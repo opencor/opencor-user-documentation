@@ -25,23 +25,23 @@ Files can also be dragged from the :ref:`File Browser window <plugins_organisati
 Tool bar
 --------
 
-| |toolbarOxygenActionsGoHome|     Go to the home folder
-| |toolbarOxygenActionsGoUp|       Go to the parent folder
-| |toolbarOxygenActionsGoPrevious| Go to the previous folder or file
-| |toolbarOxygenActionsGoNext|     Go to the next folder or file
+| |toolBarOxygenActionsGoHome|     Go to the home folder
+| |toolBarOxygenActionsGoUp|       Go to the parent folder
+| |toolBarOxygenActionsGoPrevious| Go to the previous folder or file
+| |toolBarOxygenActionsGoNext|     Go to the next folder or file
 
-.. |toolbarOxygenActionsGoHome| image:: ../../pics/oxygen/actions/go-home.png
-   :class: toolbar
+.. |toolBarOxygenActionsGoHome| image:: ../../pics/oxygen/actions/go-home.png
+   :class: toolBar
    :scale: 50%
 
-.. |toolbarOxygenActionsGoUp| image:: ../../pics/oxygen/actions/go-up.png
-   :class: toolbar
+.. |toolBarOxygenActionsGoUp| image:: ../../pics/oxygen/actions/go-up.png
+   :class: toolBar
    :scale: 50%
 
-.. |toolbarOxygenActionsGoPrevious| image:: ../../pics/oxygen/actions/go-previous.png
-   :class: toolbar
+.. |toolBarOxygenActionsGoPrevious| image:: ../../pics/oxygen/actions/go-previous.png
+   :class: toolBar
    :scale: 50%
 
-.. |toolbarOxygenActionsGoNext| image:: ../../pics/oxygen/actions/go-next.png
-   :class: toolbar
+.. |toolBarOxygenActionsGoNext| image:: ../../pics/oxygen/actions/go-next.png
+   :class: toolBar
    :scale: 50%

@@ -11,7 +11,7 @@ Your virtual environment is remembered from one session to another and is origin
    :align: center
    :scale: 25%
 
-To create a (virtual) folder, you need to click on the |newFolder| button in the toolbar (or use the context menu):
+To create a (virtual) folder, you need to click on the |newFolder| button in the tool bar (or use the context menu):
 
 .. |newFolder| image:: ../../pics/newFolder.png
    :class: nonclickable
@@ -28,7 +28,7 @@ The folder can be renamed (by pressing ``F2`` on `Windows <https://en.wikipedia.
    :scale: 25%
 
 The (sub-)folders can be moved around by dragging and dropping them within your virtual environment.
-An existing (sub-)folder can be deleted by clicking on the |oxygenActionsEditDelete| button in the toolbar (or by using the context menu):
+An existing (sub-)folder can be deleted by clicking on the |oxygenActionsEditDelete| button in the tool bar (or by using the context menu):
 
 .. |oxygenActionsEditDelete| image:: ../../pics/oxygen/actions/edit-delete.png
    :class: nonclickable
@@ -53,13 +53,13 @@ As for folders, (virtual) files can be moved/deleted (together with folders or n
 Tool bar
 --------
 
-| |toolbarNewFolder|               Create a new folder
-| |toolbarOxygenActionsEditDelete| Delete the current folder(s) and/or link(s) to the current file(s)
+| |toolBarNewFolder|               Create a new folder
+| |toolBarOxygenActionsEditDelete| Delete the current folder(s) and/or link(s) to the current file(s)
 
-.. |toolbarNewFolder| image:: ../../pics/newFolder.png
-   :class: toolbar
+.. |toolBarNewFolder| image:: ../../pics/newFolder.png
+   :class: toolBar
    :scale: 50%
 
-.. |toolbarOxygenActionsEditDelete| image:: ../../pics/oxygen/actions/edit-delete.png
-   :class: toolbar
+.. |toolBarOxygenActionsEditDelete| image:: ../../pics/oxygen/actions/edit-delete.png
+   :class: toolBar
    :scale: 50%

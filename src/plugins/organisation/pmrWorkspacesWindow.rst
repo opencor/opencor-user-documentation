@@ -179,30 +179,30 @@ Your workspace resynchronised, you can see the history of your changes in `PMR <
 Tool bar
 --------
 
-| |toolbarNewFolder|                         Create a new workspace
-| |toolbarOxygenActionsViewRefresh|          Reload the list of workspaces
-| |toolbarOxygenCategoriesPreferencesSystem| Preferences for PMR support
-| |toolbarLogOn|                             Log on to PMR
-| |toolbarLogOff|                            Log off from PMR
+| |toolBarNewFolder|                         Create a new workspace
+| |toolBarOxygenActionsViewRefresh|          Reload the list of workspaces
+| |toolBarOxygenCategoriesPreferencesSystem| Preferences for PMR support
+| |toolBarLogOn|                             Log on to PMR
+| |toolBarLogOff|                            Log off from PMR
 
-.. |toolbarNewFolder| image:: ../../pics/newFolder.png
-   :class: toolbar
+.. |toolBarNewFolder| image:: ../../pics/newFolder.png
+   :class: toolBar
    :scale: 50%
 
-.. |toolbarOxygenActionsViewRefresh| image:: ../../pics/oxygen/actions/view-refresh.png
-   :class: toolbar
+.. |toolBarOxygenActionsViewRefresh| image:: ../../pics/oxygen/actions/view-refresh.png
+   :class: toolBar
    :scale: 50%
 
-.. |toolbarOxygenCategoriesPreferencesSystem| image:: ../../pics/oxygen/categories/preferences-system.png
-   :class: toolbar
+.. |toolBarOxygenCategoriesPreferencesSystem| image:: ../../pics/oxygen/categories/preferences-system.png
+   :class: toolBar
    :scale: 50%
 
-.. |toolbarLogOn| image:: pics/logOn.png
-   :class: toolbar
+.. |toolBarLogOn| image:: pics/logOn.png
+   :class: toolBar
    :scale: 50%
 
-.. |toolbarLogOff| image:: pics/logOff.png
-   :class: toolbar
+.. |toolBarLogOff| image:: pics/logOff.png
+   :class: toolBar
    :scale: 50%
 
 .. _plugins_organisation_pmrWorkspacesWindow_icons:

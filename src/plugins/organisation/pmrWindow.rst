@@ -32,8 +32,8 @@ You can also right click on any of them to view them in `PMR <https://models.phy
 Tool bar
 --------
 
-| |toolbarOxygenActionsViewRefresh| Reload the list of exposures
+| |toolBarOxygenActionsViewRefresh| Reload the list of exposures
 
-.. |toolbarOxygenActionsViewRefresh| image:: ../../pics/oxygen/actions/view-refresh.png
-   :class: toolbar
+.. |toolBarOxygenActionsViewRefresh| image:: ../../pics/oxygen/actions/view-refresh.png
+   :class: toolBar
    :scale: 50%

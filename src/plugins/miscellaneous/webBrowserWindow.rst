@@ -14,43 +14,43 @@ It renders Web sites in the same way as any other Web browser, as illustrated wi
 Tool bar
 --------
 
-| |toolbarOxygenActionsTrashEmpty|    Clear the page
-| |toolbarOxygenActionsGoPrevious|    Go back
-| |toolbarOxygenActionsGoNext|        Go forward
-| |toolbarOxygenActionsEditCopy|      Copy the selection to the clipboard
-| |toolbarOxygenActionsZoomOriginal|  Reset the size of the help page contents
-| |toolbarOxygenActionsZoomIn|        Zoom in the help page contents
-| |toolbarOxygenActionsZoomOut|       Zoom out the help page contents
-| |toolbarOxygenActionsDocumentPrint| Print the help page contents
+| |toolBarOxygenActionsTrashEmpty|    Clear the page
+| |toolBarOxygenActionsGoPrevious|    Go back
+| |toolBarOxygenActionsGoNext|        Go forward
+| |toolBarOxygenActionsEditCopy|      Copy the selection to the clipboard
+| |toolBarOxygenActionsZoomOriginal|  Reset the size of the help page contents
+| |toolBarOxygenActionsZoomIn|        Zoom in the help page contents
+| |toolBarOxygenActionsZoomOut|       Zoom out the help page contents
+| |toolBarOxygenActionsDocumentPrint| Print the help page contents
 
-.. |toolbarOxygenActionsTrashEmpty| image:: ../../pics/oxygen/actions/trash-empty.png
-   :class: toolbar
+.. |toolBarOxygenActionsTrashEmpty| image:: ../../pics/oxygen/actions/trash-empty.png
+   :class: toolBar
    :scale: 50%
 
-.. |toolbarOxygenActionsGoPrevious| image:: ../../pics/oxygen/actions/go-previous.png
-   :class: toolbar
+.. |toolBarOxygenActionsGoPrevious| image:: ../../pics/oxygen/actions/go-previous.png
+   :class: toolBar
    :scale: 50%
 
-.. |toolbarOxygenActionsGoNext| image:: ../../pics/oxygen/actions/go-next.png
-   :class: toolbar
+.. |toolBarOxygenActionsGoNext| image:: ../../pics/oxygen/actions/go-next.png
+   :class: toolBar
    :scale: 50%
 
-.. |toolbarOxygenActionsEditCopy| image:: ../../pics/oxygen/actions/edit-copy.png
-   :class: toolbar
+.. |toolBarOxygenActionsEditCopy| image:: ../../pics/oxygen/actions/edit-copy.png
+   :class: toolBar
    :scale: 50%
 
-.. |toolbarOxygenActionsZoomOriginal| image:: ../../pics/oxygen/actions/zoom-original.png
-   :class: toolbar
+.. |toolBarOxygenActionsZoomOriginal| image:: ../../pics/oxygen/actions/zoom-original.png
+   :class: toolBar
    :scale: 50%
 
-.. |toolbarOxygenActionsZoomIn| image:: ../../pics/oxygen/actions/zoom-in.png
-   :class: toolbar
+.. |toolBarOxygenActionsZoomIn| image:: ../../pics/oxygen/actions/zoom-in.png
+   :class: toolBar
    :scale: 50%
 
-.. |toolbarOxygenActionsZoomOut| image:: ../../pics/oxygen/actions/zoom-out.png
-   :class: toolbar
+.. |toolBarOxygenActionsZoomOut| image:: ../../pics/oxygen/actions/zoom-out.png
+   :class: toolBar
    :scale: 50%
 
-.. |toolbarOxygenActionsDocumentPrint| image:: ../../pics/oxygen/actions/document-print.png
-   :class: toolbar
+.. |toolBarOxygenActionsDocumentPrint| image:: ../../pics/oxygen/actions/document-print.png
+   :class: toolBar
    :scale: 50%
