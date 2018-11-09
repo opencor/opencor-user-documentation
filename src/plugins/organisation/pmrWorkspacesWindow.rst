@@ -26,10 +26,27 @@ There are three instances of `PMR <https://models.physiomeproject.org/>`__:
 Both the `primary instance <https://models.physiomeproject.org>`__ and the `teaching instance <https://teaching.physiomeproject.org>`__ require you to create an account before you can start interacting with them.
 On the `staging instance <https://staging.physiomeproject.org>`__, your `primary instance <https://models.physiomeproject.org>`__ account may work, but if not then you need to create an account (on the `staging instance <https://staging.physiomeproject.org>`__).
 
+.. _plugins_organisation_pmrWorkspacesWindow_instanceOfPmr:
+
+Specify an instance of PMR
+--------------------------
+
+You can specify which instance of `PMR <https://models.physiomeproject.org/>`__ to use by clicking on the |oxygenCategoriesPreferencesSystem| button in the tool bar, or by selecting the ``Tools`` | ``Preferences...`` menu item and then the ``PMRSupport`` section:
+
+.. |oxygenCategoriesPreferencesSystem| image:: ../../pics/oxygen/categories/preferences-system.png
+   :class: nonclickable
+   :scale: 33%
+
+.. image:: pics/PMRWorkspacesWindowScreenshot14.png
+   :align: center
+   :scale: 25%
+
+This is also where you must specify your name and email address, if you want to be able to :ref:`synchronise <plugins_organisation_pmrWorkspacesWindow_synchroniseWithPmr>` your workspaces with `PMR <https://models.physiomeproject.org/>`__.
+
 Log on to PMR
 -------------
 
-To log on to `PMR <https://models.physiomeproject.org/>`__, you need to click on the |logOn| button in the toolbar.
+To log on to `PMR <https://models.physiomeproject.org/>`__, you need to click on the |logOn| button in the tool bar.
 This brings up a window inviting you to log in to `PMR <https://models.physiomeproject.org/>`__:
 
 .. |logOn| image:: pics/logOn.png
@@ -61,7 +78,7 @@ Make a local copy of a public workspace
 
 The :ref:`PMR Window <plugins_organisation_pmrWindow>` lists published exposures, which reference a specific state of a public workspace.
 Say that you want to experiment with the `Hodgkin–Huxley model <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1392413/pdf/jphysiol01442-0106.pdf>`__.
-You can do so by switching to the teaching instance (through :ref:`preferences <plugins_organisation_pmrWorkspacesWindow_preferences>`), looking for the `Hodgkin–Huxley model <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1392413/pdf/jphysiol01442-0106.pdf>`__, right clicking on it and by selecting the ``Make Local Copy...`` menu item:
+You can do so by switching to the teaching instance (see :ref:`above <plugins_organisation_pmrWorkspacesWindow_instanceOfPmr>`), looking for the `Hodgkin–Huxley model <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1392413/pdf/jphysiol01442-0106.pdf>`__, right clicking on it and by selecting the ``Make Local Copy...`` menu item:
 
 .. image:: pics/PMRWorkspacesWindowScreenshot05.png
    :align: center
@@ -77,7 +94,7 @@ The local copy completed, you can double click on it to reveal its contents:
 Create a new workspace
 ----------------------
 
-You can create a workspace by clicking on the |newFolder| button in the toolbar.
+You can create a workspace by clicking on the |newFolder| button in the tool bar.
 You need to provide both a name and the path to a folder (it *does not* have to be empty).
 You may also provide a description:
 
@@ -105,6 +122,8 @@ The model files are preceded by the |waFile| icon, meaning that they are indeed 
 .. |unstagedOwnedWorkspace| image:: pics/unstagedOwnedWorkspace.png
    :class: nonclickable
    :scale: 33%
+
+.. _plugins_organisation_pmrWorkspacesWindow_synchroniseWithPmr:
 
 Synchronise with PMR
 --------------------
@@ -323,19 +342,6 @@ Similarly, different icons are used to distinguish the different states of a fil
    :class: icon
    :scale: 50%
 
-.. _plugins_organisation_pmrWorkspacesWindow_preferences:
-
-Preferences
------------
-
-You can specify which instance you want to interact with by clicking on the |oxygenCategoriesPreferencesSystem| button in the toolbar, or by selecting the ``Tools`` | ``Preferences...`` menu item and then the ``PMRSupport`` section:
-
-.. |oxygenCategoriesPreferencesSystem| image:: ../../pics/oxygen/categories/preferences-system.png
-   :class: nonclickable
-   :scale: 33%
-
-.. image:: pics/PMRWorkspacesWindowScreenshot14.png
-   :align: center
-   :scale: 25%
-
-This is also where you must specify your name and email address, if you want to be able to synchronise your workspaces with `PMR <https://models.physiomeproject.org/>`__.
+**Note:** you should always see the *unstaged* version of an icon.
+The only case where you will see the *staged* version is if something went wrong during the synchronisation.
+Indeed, the synchronisation is done using `Git <https://git-scm.com/>`__ and it may be that something caused it to fail (e.g. loss of Internet connection), in which case you will have to sort it out using `Git <https://git-scm.com/>`__ directly.
