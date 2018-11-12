@@ -34,7 +34,7 @@ Specify an instance of PMR
 You can specify which instance of `PMR <https://models.physiomeproject.org/>`__ to use by clicking on the |oxygenCategoriesPreferencesSystem| button in the tool bar, or by selecting the ``Tools`` | ``Preferences...`` menu item and then the ``PMRSupport`` section:
 
 .. |oxygenCategoriesPreferencesSystem| image:: ../../pics/oxygen/categories/preferences-system.png
-   :class: nonclickable
+   :class: inlineicon
    :width: 16px
 
 .. image:: pics/PMRWorkspacesWindowScreenshot02.png
@@ -50,7 +50,7 @@ To log on to `PMR <https://models.physiomeproject.org/>`__, you need to click on
 This brings up a window inviting you to log in to `PMR <https://models.physiomeproject.org/>`__:
 
 .. |logOn| image:: pics/logOn.png
-   :class: nonclickable
+   :class: inlineicon
    :width: 16px
 
 .. image:: pics/PMRWorkspacesWindowScreenshot03.png
@@ -66,7 +66,7 @@ Logged in, you can grant OpenCOR access to `PMR <https://models.physiomeproject.
 This closes the window and replaces the |logOn| button with the |logOff| button, and displays a message indicating that no workspaces were found:
 
 .. |logOff| image:: pics/logOff.png
-   :class: nonclickable
+   :class: inlineicon
    :width: 16px
 
 .. image:: pics/PMRWorkspacesWindowScreenshot05.png
@@ -99,7 +99,7 @@ You need to provide both a name and the path to a folder (it *does not* have to 
 You may also provide a description:
 
 .. |newFolder| image:: ../../pics/newFolder.png
-   :class: nonclickable
+   :class: inlineicon
    :width: 16px
 
 .. image:: pics/PMRWorkspacesWindowScreenshot08.png
@@ -116,11 +116,11 @@ For example, if you provide a folder containing the `models <https://github.com/
 The model files are preceded by the |waFile| icon, meaning that they are indeed new, while the workspace folder is preceded by the |unstagedOwnedWorkspace| icon, meaning that it is owned by you and that it contains changes that have yet to be synchronised with `PMR <https://models.physiomeproject.org/>`__ (see :ref:`below <plugins_organisation_pmrWorkspacesWindow_icons>` for a full list of possible icons).
 
 .. |waFile| image:: pics/waFile.png
-   :class: nonclickable
+   :class: inlineicon
    :width: 16px
 
 .. |unstagedOwnedWorkspace| image:: pics/unstagedOwnedWorkspace.png
-   :class: nonclickable
+   :class: inlineicon
    :width: 16px
 
 .. _plugins_organisation_pmrWorkspacesWindow_synchroniseWithPmr:
@@ -135,7 +135,7 @@ For `CellML <https://www.cellml.org/>`__ files, changes can be seen using either
 Simply toggle the |logo| button as needed:
 
 .. |logo| image:: pics/logo.png
-   :class: nonclickable
+   :class: inlineicon
    :width: 16px
 
 .. image:: pics/PMRWorkspacesWindowScreenshot10.png
@@ -146,11 +146,11 @@ Provide a description for your changes and click on the ``OK`` button to synchro
 As you can see, the model files are now preceded by the |file| icon and the workspace folder by the |ownedWorkspace| icon:
 
 .. |file| image:: pics/file.png
-   :class: nonclickable
+   :class: inlineicon
    :width: 16px
 
 .. |ownedWorkspace| image:: pics/ownedWorkspace.png
-   :class: nonclickable
+   :class: inlineicon
    :width: 16px
 
 .. image:: pics/PMRWorkspacesWindowScreenshot11.png

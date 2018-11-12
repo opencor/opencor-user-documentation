@@ -31,7 +31,7 @@ Next, you need to specify a `BioModels.net qualifier <http://biomodels.net/quali
 If you do not know which one to use, click on the |oxygenCategoriesApplicationInternet| button to get some information about the current `BioModels.net qualifier <http://biomodels.net/qualifiers/>`__:
 
 .. |oxygenCategoriesApplicationInternet| image:: ../../pics/oxygen/categories/applications-internet.png
-   :class: nonclickable
+   :class: inlineicon
    :width: 16px
 
 .. image:: pics/CellMLAnnotationViewScreenshot04.png
@@ -68,7 +68,7 @@ Similarly, if you want to know more about the `GO <http://www.geneontology.org/>
 Now, assuming that you are happy with your choice, you can associate the ontological term with the ``sodium_channel`` component by clicking on its corresponding |oxygenActionsListAdd| button:
 
 .. |oxygenActionsListAdd| image:: ../../pics/oxygen/actions/list-add.png
-   :class: nonclickable
+   :class: inlineicon
    :width: 16px
 
 .. image:: pics/CellMLAnnotationViewScreenshot09.png
@@ -78,7 +78,7 @@ Now, assuming that you are happy with your choice, you can associate the ontolog
 As you can see, the ontological term you have added cannot be added anymore, but it can be removed by clicking on its corresponding |oxygenActionsListRemove| button.
 
 .. |oxygenActionsListRemove| image:: ../../pics/oxygen/actions/list-remove.png
-   :class: nonclickable
+   :class: inlineicon
    :width: 16px
 
 Now, say that you also want to add another ontological term.
