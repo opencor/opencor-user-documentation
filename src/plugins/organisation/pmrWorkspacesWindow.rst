@@ -37,7 +37,7 @@ You can specify which instance of `PMR <https://models.physiomeproject.org/>`__ 
    :class: nonclickable
    :width: 16px
 
-.. image:: pics/PMRWorkspacesWindowScreenshot14.png
+.. image:: pics/PMRWorkspacesWindowScreenshot02.png
    :align: center
    :scale: 25%
 
@@ -53,13 +53,13 @@ This brings up a window inviting you to log in to `PMR <https://models.physiomep
    :class: nonclickable
    :width: 16px
 
-.. image:: pics/PMRWorkspacesWindowScreenshot02.png
+.. image:: pics/PMRWorkspacesWindowScreenshot03.png
    :align: center
    :scale: 25%
 
 Logged in, you can grant OpenCOR access to `PMR <https://models.physiomeproject.org/>`__ by clicking on the ``Grant access`` button:
 
-.. image:: pics/PMRWorkspacesWindowScreenshot03.png
+.. image:: pics/PMRWorkspacesWindowScreenshot04.png
    :align: center
    :scale: 25%
 
@@ -69,7 +69,7 @@ This closes the window and replaces the |logOn| button with the |logOff| button,
    :class: nonclickable
    :width: 16px
 
-.. image:: pics/PMRWorkspacesWindowScreenshot04.png
+.. image:: pics/PMRWorkspacesWindowScreenshot05.png
    :align: center
    :scale: 25%
 
@@ -80,14 +80,14 @@ The :ref:`PMR Window <plugins_organisation_pmrWindow>` lists published exposures
 Say that you want to experiment with the `Hodgkin–Huxley model <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1392413/pdf/jphysiol01442-0106.pdf>`__.
 You can do so by switching to the teaching instance (see :ref:`above <plugins_organisation_pmrWorkspacesWindow_instanceOfPmr>`), looking for the `Hodgkin–Huxley model <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1392413/pdf/jphysiol01442-0106.pdf>`__, right clicking on it and by selecting the ``Make Local Copy...`` menu item:
 
-.. image:: pics/PMRWorkspacesWindowScreenshot05.png
+.. image:: pics/PMRWorkspacesWindowScreenshot06.png
    :align: center
    :scale: 25%
 
 You need to provide the path to an *empty* folder.
 The local copy completed, you can double click on it to reveal its contents:
 
-.. image:: pics/PMRWorkspacesWindowScreenshot06.png
+.. image:: pics/PMRWorkspacesWindowScreenshot07.png
    :align: center
    :scale: 25%
 
@@ -102,14 +102,14 @@ You may also provide a description:
    :class: nonclickable
    :width: 16px
 
-.. image:: pics/PMRWorkspacesWindowScreenshot07.png
+.. image:: pics/PMRWorkspacesWindowScreenshot08.png
    :align: center
    :scale: 25%
 
 Any file already present in the folder will be considered as new.
 For example, if you provide a folder containing the `models <https://github.com/opencor/opencor/tree/master/models>`__ shipped with OpenCOR, you will get something like the following upon creation of the workspace:
 
-.. image:: pics/PMRWorkspacesWindowScreenshot08.png
+.. image:: pics/PMRWorkspacesWindowScreenshot09.png
    :align: center
    :scale: 25%
 
@@ -138,7 +138,7 @@ Simply toggle the |logo| button as needed:
    :class: nonclickable
    :width: 16px
 
-.. image:: pics/PMRWorkspacesWindowScreenshot09.png
+.. image:: pics/PMRWorkspacesWindowScreenshot10.png
    :align: center
    :scale: 25%
 
@@ -153,26 +153,26 @@ As you can see, the model files are now preceded by the |file| icon and the work
    :class: nonclickable
    :width: 16px
 
-.. image:: pics/PMRWorkspacesWindowScreenshot10.png
+.. image:: pics/PMRWorkspacesWindowScreenshot11.png
    :align: center
    :scale: 25%
 
 You can check your workspace in `PMR <https://models.physiomeproject.org/>`__ by right clicking on any of the files/folders in your workspace and by selecting the ``Synchronise Workspace With PMR...`` menu item:
 
-.. image:: pics/PMRWorkspacesWindowScreenshot11.png
+.. image:: pics/PMRWorkspacesWindowScreenshot12.png
    :align: center
    :scale: 25%
 
 If you modify the model files and decide to resynchronise your workspace with `PMR <https://models.physiomeproject.org/>`__, you will see something like the following where all the model files have been selected.
 This allows you to see all their changes at once, be they additions (in green) or deletions (in red):
 
-.. image:: pics/PMRWorkspacesWindowScreenshot12.png
+.. image:: pics/PMRWorkspacesWindowScreenshot13.png
    :align: center
    :scale: 25%
 
 Your workspace resynchronised, you can see the history of your changes in `PMR <https://models.physiomeproject.org/>`__:
 
-.. image:: pics/PMRWorkspacesWindowScreenshot13.png
+.. image:: pics/PMRWorkspacesWindowScreenshot14.png
    :align: center
    :scale: 25%
 
