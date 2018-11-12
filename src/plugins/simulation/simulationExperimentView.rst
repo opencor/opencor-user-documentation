@@ -78,3 +78,17 @@ For example, if you select ``Euler (forward)``, you will see that it has only on
 .. image:: pics/SimulationExperimentViewScreenshot04.png
    :align: center
    :scale: 25%
+
+You can start the simulation by pressing ``F9`` or by clicking on the |oxygenActionsMediaPlaybackStart| button.
+Then, or before, you can add a graph.
+All the model parameters are listed to the bottom-left of the view, grouped by components in which they were originally defined.
+To add a graph, right click on a model parameter and select against which other model parameter you want it to be plotted.
+For example, to create a graph for ``V`` (from the ``membrane`` component) against the variable of integration (i.e. time since the simulation properties are expressed in milliseconds):
+
+.. |oxygenActionsMediaPlaybackStart| image:: ../../pics/oxygen/actions/media-playback-start.png
+   :class: inlineicon
+   :width: 16px
+
+.. image:: pics/SimulationExperimentViewScreenshot05.png
+   :align: center
+   :scale: 25%
