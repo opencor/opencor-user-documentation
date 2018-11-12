@@ -35,7 +35,7 @@ You can specify which instance of `PMR <https://models.physiomeproject.org/>`__ 
 
 .. |oxygenCategoriesPreferencesSystem| image:: ../../pics/oxygen/categories/preferences-system.png
    :class: nonclickable
-   :scale: 33%
+   :width: 16px
 
 .. image:: pics/PMRWorkspacesWindowScreenshot14.png
    :align: center
@@ -51,7 +51,7 @@ This brings up a window inviting you to log in to `PMR <https://models.physiomep
 
 .. |logOn| image:: pics/logOn.png
    :class: nonclickable
-   :scale: 33%
+   :width: 16px
 
 .. image:: pics/PMRWorkspacesWindowScreenshot02.png
    :align: center
@@ -67,7 +67,7 @@ This closes the window and replaces the |logOn| button with the |logOff| button,
 
 .. |logOff| image:: pics/logOff.png
    :class: nonclickable
-   :scale: 33%
+   :width: 16px
 
 .. image:: pics/PMRWorkspacesWindowScreenshot04.png
    :align: center
@@ -100,7 +100,7 @@ You may also provide a description:
 
 .. |newFolder| image:: ../../pics/newFolder.png
    :class: nonclickable
-   :scale: 33%
+   :width: 16px
 
 .. image:: pics/PMRWorkspacesWindowScreenshot07.png
    :align: center
@@ -117,11 +117,11 @@ The model files are preceded by the |waFile| icon, meaning that they are indeed 
 
 .. |waFile| image:: pics/waFile.png
    :class: nonclickable
-   :scale: 33%
+   :width: 16px
 
 .. |unstagedOwnedWorkspace| image:: pics/unstagedOwnedWorkspace.png
    :class: nonclickable
-   :scale: 33%
+   :width: 16px
 
 .. _plugins_organisation_pmrWorkspacesWindow_synchroniseWithPmr:
 
@@ -136,7 +136,7 @@ Simply toggle the |logo| button as needed:
 
 .. |logo| image:: pics/logo.png
    :class: nonclickable
-   :scale: 63%
+   :width: 16px
 
 .. image:: pics/PMRWorkspacesWindowScreenshot09.png
    :align: center
@@ -147,11 +147,11 @@ As you can see, the model files are now preceded by the |file| icon and the work
 
 .. |file| image:: pics/file.png
    :class: nonclickable
-   :scale: 33%
+   :width: 16px
 
 .. |ownedWorkspace| image:: pics/ownedWorkspace.png
    :class: nonclickable
-   :scale: 33%
+   :width: 16px
 
 .. image:: pics/PMRWorkspacesWindowScreenshot10.png
    :align: center
@@ -187,23 +187,23 @@ Tool bar
 
 .. |toolBarNewFolder| image:: ../../pics/newFolder.png
    :class: toolbar
-   :scale: 50%
+   :width: 24px
 
 .. |toolBarOxygenActionsViewRefresh| image:: ../../pics/oxygen/actions/view-refresh.png
    :class: toolbar
-   :scale: 50%
+   :width: 24px
 
 .. |toolBarOxygenCategoriesPreferencesSystem| image:: ../../pics/oxygen/categories/preferences-system.png
    :class: toolbar
-   :scale: 50%
+   :width: 24px
 
 .. |toolBarLogOn| image:: pics/logOn.png
    :class: toolbar
-   :scale: 50%
+   :width: 24px
 
 .. |toolBarLogOff| image:: pics/logOff.png
    :class: toolbar
-   :scale: 50%
+   :width: 24px
 
 .. _plugins_organisation_pmrWorkspacesWindow_icons:
 
@@ -227,35 +227,35 @@ Different icons are used to distinguish between the different states of a worksp
 
 .. |iconWorkspace| image:: pics/workspace.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconStagedWorkspace| image:: pics/stagedWorkspace.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconUnstagedWorkspace| image:: pics/unstagedWorkspace.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconConflictWorkspace| image:: pics/conflictWorkspace.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconOwnedWorkspace| image:: pics/ownedWorkspace.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconStagedOwnedWorkspace| image:: pics/stagedOwnedWorkspace.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconUnstagedOwnedWorkspace| image:: pics/unstagedOwnedWorkspace.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconConflictOwnedWorkspace| image:: pics/conflictOwnedWorkspace.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 Similarly, different icons are used to distinguish the different states of a file:
 
@@ -284,63 +284,63 @@ Similarly, different icons are used to distinguish the different states of a fil
 
 .. |iconFile| image:: pics/file.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconIaFile| image:: pics/iaFile.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconIdFile| image:: pics/idFile.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconImFile| image:: pics/imFile.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconIrFile| image:: pics/irFile.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconItFile| image:: pics/itFile.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconWaFile| image:: pics/waFile.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconWcFile| image:: pics/wcFile.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconWdFile| image:: pics/wdFile.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconWmFile| image:: pics/wmFile.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconWrFile| image:: pics/wrFile.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconWtFile| image:: pics/wtFile.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconWuFile| image:: pics/wuFile.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconGcFile| image:: pics/gcFile.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 .. |iconGiFile| image:: pics/giFile.png
    :class: icon
-   :scale: 50%
+   :width: 24px
 
 **Note:** you should always see the *unstaged* version of an icon.
 The only case where you will see the *staged* version is if something went wrong during the synchronisation.

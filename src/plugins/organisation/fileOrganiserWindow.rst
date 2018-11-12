@@ -15,7 +15,7 @@ To create a (virtual) folder, you need to click on the |newFolder| button in the
 
 .. |newFolder| image:: ../../pics/newFolder.png
    :class: nonclickable
-   :scale: 33%
+   :width: 16px
 
 .. image:: pics/FileOrganiserWindowScreenshot02.png
    :align: center
@@ -32,7 +32,7 @@ An existing (sub-)folder can be deleted by clicking on the |oxygenActionsEditDel
 
 .. |oxygenActionsEditDelete| image:: ../../pics/oxygen/actions/edit-delete.png
    :class: nonclickable
-   :scale: 33%
+   :width: 16px
 
 .. image:: pics/FileOrganiserWindowScreenshot04.png
    :align: center
@@ -58,8 +58,8 @@ Tool bar
 
 .. |toolBarNewFolder| image:: ../../pics/newFolder.png
    :class: toolbar
-   :scale: 50%
+   :width: 24px
 
 .. |toolBarOxygenActionsEditDelete| image:: ../../pics/oxygen/actions/edit-delete.png
    :class: toolbar
-   :scale: 50%
+   :width: 24px

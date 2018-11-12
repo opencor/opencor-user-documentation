@@ -25,32 +25,32 @@ Tool bar
 
 .. |toolBarOxygenActionsTrashEmpty| image:: ../../pics/oxygen/actions/trash-empty.png
    :class: toolbar
-   :scale: 50%
+   :width: 24px
 
 .. |toolBarOxygenActionsGoPrevious| image:: ../../pics/oxygen/actions/go-previous.png
    :class: toolbar
-   :scale: 50%
+   :width: 24px
 
 .. |toolBarOxygenActionsGoNext| image:: ../../pics/oxygen/actions/go-next.png
    :class: toolbar
-   :scale: 50%
+   :width: 24px
 
 .. |toolBarOxygenActionsEditCopy| image:: ../../pics/oxygen/actions/edit-copy.png
    :class: toolbar
-   :scale: 50%
+   :width: 24px
 
 .. |toolBarOxygenActionsZoomOriginal| image:: ../../pics/oxygen/actions/zoom-original.png
    :class: toolbar
-   :scale: 50%
+   :width: 24px
 
 .. |toolBarOxygenActionsZoomIn| image:: ../../pics/oxygen/actions/zoom-in.png
    :class: toolbar
-   :scale: 50%
+   :width: 24px
 
 .. |toolBarOxygenActionsZoomOut| image:: ../../pics/oxygen/actions/zoom-out.png
    :class: toolbar
-   :scale: 50%
+   :width: 24px
 
 .. |toolBarOxygenActionsDocumentPrint| image:: ../../pics/oxygen/actions/document-print.png
    :class: toolbar
-   :scale: 50%
+   :width: 24px

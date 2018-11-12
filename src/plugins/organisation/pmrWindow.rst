@@ -36,4 +36,4 @@ Tool bar
 
 .. |toolBarOxygenActionsViewRefresh| image:: ../../pics/oxygen/actions/view-refresh.png
    :class: toolbar
-   :scale: 50%
+   :width: 24px

@@ -32,16 +32,16 @@ Tool bar
 
 .. |toolBarOxygenActionsGoHome| image:: ../../pics/oxygen/actions/go-home.png
    :class: toolbar
-   :scale: 50%
+   :width: 24px
 
 .. |toolBarOxygenActionsGoUp| image:: ../../pics/oxygen/actions/go-up.png
    :class: toolbar
-   :scale: 50%
+   :width: 24px
 
 .. |toolBarOxygenActionsGoPrevious| image:: ../../pics/oxygen/actions/go-previous.png
    :class: toolbar
-   :scale: 50%
+   :width: 24px
 
 .. |toolBarOxygenActionsGoNext| image:: ../../pics/oxygen/actions/go-next.png
    :class: toolbar
-   :scale: 50%
+   :width: 24px

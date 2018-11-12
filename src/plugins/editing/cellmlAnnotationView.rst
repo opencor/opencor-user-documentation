@@ -32,7 +32,7 @@ If you do not know which one to use, click on the |oxygenCategoriesApplicationIn
 
 .. |oxygenCategoriesApplicationInternet| image:: ../../pics/oxygen/categories/applications-internet.png
    :class: nonclickable
-   :scale: 33%
+   :width: 16px
 
 .. image:: pics/CellMLAnnotationViewScreenshot04.png
    :align: center
@@ -69,7 +69,7 @@ Now, assuming that you are happy with your choice, you can associate the ontolog
 
 .. |oxygenActionsListAdd| image:: ../../pics/oxygen/actions/list-add.png
    :class: nonclickable
-   :scale: 33%
+   :width: 16px
 
 .. image:: pics/CellMLAnnotationViewScreenshot09.png
    :align: center
@@ -79,7 +79,7 @@ As you can see, the ontological term you have added cannot be added anymore, but
 
 .. |oxygenActionsListRemove| image:: ../../pics/oxygen/actions/list-remove.png
    :class: nonclickable
-   :scale: 33%
+   :width: 16px
 
 Now, say that you also want to add another ontological term.
 You can obviously do so by clicking on its corresponding |oxygenActionsListAdd| button, but you can also enter its resource-id duple, e.g. ``go/GO:0005248`` (i.e. ``<resource>/<id>``) in the term field.
