@@ -59,3 +59,22 @@ In the ``Parameters`` section, all the model parameters have an icon associated 
 .. |iconAlgebraic| image:: pics/algebraic.png
    :class: icon
    :width: 16px
+
+Run an ODE model
+----------------
+
+To run a model, you need to provide some information about the simulation itself, i.e. its starting point, ending point and point interval.
+Then, you need to specify the solver(s) that you want to use.
+The solvers available to you depend on which :ref:`solver plugins <plugins_solver>` you selected, as well as on the type of your model (i.e. `ODE <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__ or `DAE <https://en.wikipedia.org/wiki/Differential_algebraic_equation>`__).
+If you are dealing with an ODE model and all the solver plugins are selected, then `CVODE <http://computation.llnl.gov/projects/sundials/cvode>`__, forward `Euler <https://en.wikipedia.org/wiki/Euler_method>`__, `Heun <https://en.wikipedia.org/wiki/Heun's_method>`__, and second-order and fourth-order `Runge-Kutta <https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods>`__ will be available to you:
+
+.. image:: pics/SimulationExperimentViewScreenshot03.png
+   :align: center
+   :scale: 25%
+
+Each solver comes with its own set of properties, which can be customised.
+For example, if you select ``Euler (forward)``, you will see that it has only one property (``Step``):
+
+.. image:: pics/SimulationExperimentViewScreenshot04.png
+   :align: center
+   :scale: 25%

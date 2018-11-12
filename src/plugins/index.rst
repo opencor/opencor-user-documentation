@@ -93,6 +93,8 @@ Simulation plugins are used to simulate files:
 
    - :ref:`SimulationExperimentView <plugins_simulation_simulationExperimentView>`\ : a plugin to edit and run a simulation experiment.
 
+.. _plugins_solver:
+
 Solver
 ------
 
