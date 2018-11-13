@@ -132,9 +132,9 @@ Your workspace created, you may want to syncrhonise it with `PMR <https://models
 This is done by right clicking on any of the files/folders in your workspace and by selecting the ``Synchronise Workspace With PMR...`` menu item.
 This brings up a window where you can see *which* files have changed and *what* exactly has changed.
 For `CellML <https://www.cellml.org/>`__ files, changes can be seen using either the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>` or the raw CellML format (i.e. `XML <https://www.w3.org/XML/>`__-based).
-Simply toggle the |logo| button as needed:
+Simply toggle the |cellmlLogo| button as needed:
 
-.. |logo| image:: pics/logo.png
+.. |cellmlLogo| image:: ../../pics/cellmlLogo.png
    :class: inlineicon
    :width: 16px
 
