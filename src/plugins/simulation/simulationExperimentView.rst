@@ -240,3 +240,27 @@ Simulations running in the background display a small progress bar in the top ta
 .. image:: pics/SimulationExperimentViewScreenshot17.png
    :align: center
    :scale: 25%
+
+SED-ML support
+--------------
+
+An important aspect of modelling is reproducibility.
+To that end, a simulation can be exported to `SED-ML <http://www.sed-ml.org/>`__ by clicking on the |sedmlLogo| button.
+The export can then be done either to a `SED-ML <http://www.sed-ml.org/>`__ file or a `COMBINE <http://co.mbine.org/>`__ archive, both of which can then be re-run by OpenCOR and any `SED-ML <http://www.sed-ml.org/>`__ capable software (e.g. `SED-ML Web Tools <http://sysbioapps.dyndns.org/SED-ML_Web_Tools>`__).
+
+.. |sedmlLogo| image:: ../../pics/sedmlLogo.png
+   :class: inlineicon
+   :width: 16px
+
+A `SED-ML <http://www.sed-ml.org/>`__ file (or a `COMBINE <http://co.mbine.org/>`__ archive) contains all the information needed to reproduce a simulation, i.e. a reference to the model (or even the model itself in the case of a `COMBINE <http://co.mbine.org/>`__ archive; the referenced model can be opened by clicking on the |cellmlLogo| button), the parameters of the simulation, the solver and its properties, the number of graph panels, and the graphs to be plotted in each graph panel.
+Thus, once open, a simulation can be re-run by pressing ``F9`` or by clicking on the |oxygenActionsMediaPlaybackStart| button:
+
+.. |cellmlLogo| image:: ../../pics/cellmlLogo.png
+   :class: inlineicon
+   :width: 16px
+
+.. image:: pics/SimulationExperimentViewScreenshot18.png
+   :align: center
+   :scale: 25%
+
+Please note that changes to model parameters (either before or in the middle of a simulation) are not currently supported, and will therefore be ignored, if present.
