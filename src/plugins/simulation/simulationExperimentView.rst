@@ -304,3 +304,62 @@ The plotting area offers several features that can be activated by:
 - **Copying the contents of the plotting area to the clipboard:**
 
   - Using the context menu.
+
+Tool bar
+--------
+
+| |toolBarOxygenActionsMediaPlaybackStart| Run the simulation
+| |toolBarOxygenActionsMediaPlaybackPause| Pause the simulation
+| |toolBarOxygenActionsMediaPlaybackStop|  Stop the simulation
+| |toolBarOxygenActionsViewRefresh|        Reset all the model parameters
+| |toolBarOxygenActionsTrashEmpty|         Clear the simulation data
+| |toolBarOxygenActionsRunBuildConfigure|  Enable/disable the development mode
+| |toolBarOxygenActionsListAdd|            Add a graph panel
+| |toolBarOxygenActionsListRemove|         Remove the current graph panel or all the graph panels
+| |toolBarCellmlLogo|                      Open the referenced CellML file
+| |toolBarSedmlLogo|                       Export the simulation to SED-ML
+| |toolBarOxygenActionsDocumentExport|     Export the simulation data
+
+.. |toolBarOxygenActionsMediaPlaybackStart| image:: ../../pics/oxygen/actions/media-playback-start.png
+   :class: toolbar
+   :width: 24px
+
+.. |toolBarOxygenActionsMediaPlaybackPause| image:: ../../pics/oxygen/actions/media-playback-pause.png
+   :class: toolbar
+   :width: 24px
+
+.. |toolBarOxygenActionsMediaPlaybackStop| image:: ../../pics/oxygen/actions/media-playback-stop.png
+   :class: toolbar
+   :width: 24px
+
+.. |toolBarOxygenActionsViewRefresh| image:: ../../pics/oxygen/actions/view-refresh.png
+   :class: toolbar
+   :width: 24px
+
+.. |toolBarOxygenActionsTrashEmpty| image:: ../../pics/oxygen/actions/trash-empty.png
+   :class: toolbar
+   :width: 24px
+
+.. |toolBarOxygenActionsRunBuildConfigure| image:: ../../pics/oxygen/actions/run-build-configure.png
+   :class: toolbar
+   :width: 24px
+
+.. |toolBarOxygenActionsListAdd| image:: ../../pics/oxygen/actions/list-add.png
+   :class: toolbar
+   :width: 24px
+
+.. |toolBarOxygenActionsListRemove| image:: ../../pics/oxygen/actions/list-remove.png
+   :class: toolbar
+   :width: 24px
+
+.. |toolBarCellmlLogo| image:: ../../pics/cellmlLogo.png
+   :class: toolbar
+   :width: 24px
+
+.. |toolBarSedmlLogo| image:: ../../pics/sedmlLogo.png
+   :class: toolbar
+   :width: 24px
+
+.. |toolBarOxygenActionsDocumentExport| image:: ../../pics/oxygen/actions/document-export.png
+   :class: toolbar
+   :width: 24px
