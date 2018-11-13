@@ -212,3 +212,12 @@ The current graph panel or all the graph panels (but the first one) can be remov
 .. |oxygenActionsListRemove| image:: ../../pics/oxygen/actions/list-remove.png
    :class: inlineicon
    :width: 16px
+
+Simulate a DAE model
+--------------------
+
+To simulate a `DAE <https://en.wikipedia.org/wiki/Differential_algebraic_equation>`__ model is similar to simulating an `ODE <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__ model, except that OpenCOR will also need to solve one or several systems of `non-linear algebraic <https://en.wikipedia.org/wiki/Nonlinear_system#Nonlinear_algebraic_equations>`__ equations:
+
+.. image:: pics/SimulationExperimentViewScreenshot15.png
+   :align: center
+   :scale: 25%
