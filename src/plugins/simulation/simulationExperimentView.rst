@@ -264,3 +264,43 @@ Thus, once open, a simulation can be re-run by pressing ``F9`` or by clicking on
    :scale: 25%
 
 Please note that changes to model parameters (either before or in the middle of a simulation) are not currently supported, and will therefore be ignored, if present.
+
+Plotting area
+-------------
+
+The plotting area offers several features that can be activated by:
+
+- **Synchronising the X and/or Y axes:**
+
+  - Using the context menu.
+
+- **Using custom axes:**
+
+  - Using the context menu.
+
+- **Zooming in/out:**
+
+  - Holding the right mouse button down, and moving the mouse to the bottom-right/top-left to zoom in/out; or
+  - Moving the mouse wheel up/down; or
+  - Using the context menu.
+
+- **Resetting the zoom level:**
+
+  - Double-clicking on the left mouse button; or
+  - Using the context menu.
+
+- **Zooming into a region of interest:**
+
+  - Pressing ``Ctrl`` and holding the right mouse button down, and moving the mouse around.
+
+- **Panning:**
+
+  - Holding the left mouse button down, and moving the mouse around.
+
+- **Showing the coordinates of any point:**
+
+  - Pressing ``Shift`` and holding the left mouse button down, and moving the mouse around.
+
+- **Copying the contents of the plotting area to the clipboard:**
+
+  - Using the context menu.
