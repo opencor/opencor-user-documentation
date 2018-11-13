@@ -98,3 +98,22 @@ You can get the information associated with a graph by double clicking on it:
 .. image:: pics/SimulationExperimentViewScreenshot06.png
    :align: center
    :scale: 25%
+
+The ``Model`` property is used to associate the graph with a particular file.
+By default, it has a value of ``Current``, which means that the graph is associated with the current file.
+You can, however, explicitly associate it with another one.
+The |oxygenStatusTaskAttention| icon will be shown next to the check box, if the association cannot be done, and next to the ``X`` and/or ``Y`` properties to highlight which model parameter(s) could not be found in the other file.
+The |oxygenStatusObjectUnlocked| icon indicates that the graph is not locked, i.e. its ``Model`` property has a value of ``Current``, while the |oxygenStatusObjectLocked| icon is used when a graph is associated with a specific file (resulting in a red trace rather than a blue one).
+The ``X`` and ``Y`` properties can be modified either by editing their value or by right clicking on them and selecting another model parameter from the context menu, which can also be used to add or remove a graph.
+
+.. |oxygenStatusTaskAttention| image:: ../../pics/oxygen/status/task-attention.png
+   :class: inlineicon
+   :width: 16px
+
+.. |oxygenStatusObjectUnlocked| image:: ../../pics/oxygen/status/object-unlocked.png
+   :class: inlineicon
+   :width: 16px
+
+.. |oxygenStatusObjectLocked| image:: ../../pics/oxygen/status/object-locked.png
+   :class: inlineicon
+   :width: 16px
