@@ -117,3 +117,25 @@ The ``X`` and ``Y`` properties can be modified either by editing their value or 
 .. |oxygenStatusObjectLocked| image:: ../../pics/oxygen/status/object-locked.png
    :class: inlineicon
    :width: 16px
+
+Back to the simulation, you can see that it failed with several model parameters having a value of ``nan`` (i.e. `not a number <https://en.wikipedia.org/wiki/NaN>`__).
+This is because the solver is not properly set up: its ``Step`` property is too big.
+If you set it to ``0.01 milliseconds``, reset all the model parameters (by clicking on the |oxygenActionsViewRefresh| button), clear the simulation data (by clicking on the |oxygenActionsTrashEmpty| button) and restart the simulation, then you will get something like:
+
+.. |oxygenActionsViewRefresh| image:: ../../pics/oxygen/actions/view-refresh.png
+   :class: inlineicon
+   :width: 16px
+
+.. |oxygenActionsTrashEmpty| image:: ../../pics/oxygen/actions/trash-empty.png
+   :class: inlineicon
+   :width: 16px
+
+.. image:: pics/SimulationExperimentViewScreenshot07.png
+   :align: center
+   :scale: 25%
+
+Roughly the same trace can be obtained using the ``CVODE`` solver:
+
+.. image:: pics/SimulationExperimentViewScreenshot08.png
+   :align: center
+   :scale: 25%
