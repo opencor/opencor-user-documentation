@@ -167,3 +167,48 @@ To resume the simulation will then give you something like:
 .. image:: pics/SimulationExperimentViewScreenshot10.png
    :align: center
    :scale: 25%
+
+If you want, you can export some or all of the simulation data to a BioSignalML or a `CSV <https://en.wikipedia.org/wiki/Comma-separated_values>`__ file.
+To do so, click on the |oxygenActionsDocumentExport| button.
+In the case of BioSignalML, you will be asked to provide some (optional) information, as well as specify which model parameters you want to export:
+
+.. |oxygenActionsDocumentExport| image:: ../../pics/oxygen/actions/document-export.png
+   :class: inlineicon
+   :width: 16px
+
+.. image:: pics/SimulationExperimentViewScreenshot11.png
+   :align: center
+   :scale: 25%
+
+In the case of `CSV <https://en.wikipedia.org/wiki/Comma-separated_values>`__, you will only need to specify the model parameters you want to export:
+
+.. image:: pics/SimulationExperimentViewScreenshot12.png
+   :align: center
+   :scale: 25%
+
+If you want to create other graphs, but do not want them on the same graph panel as the existing one, you can click on the |oxygenActionsListAdd| button to create a new graph panel:
+
+.. |oxygenActionsListAdd| image:: ../../pics/oxygen/actions/list-add.png
+   :class: inlineicon
+   :width: 16px
+
+.. image:: pics/SimulationExperimentViewScreenshot13.png
+   :align: center
+   :scale: 25%
+
+You might have noticed that the bottom graph panel has a blue vertical line to its left.
+This is to indicate that it is the currently selected graph panel (a graph panel can be selected by clicking on it).
+Something else that you might have noticed is that the ``Graphs`` panel is now empty.
+This is because there are currently no graphs associated with the graph panel.
+Just for illustration, you can create a graph to plot ``V`` (from the ``membrane`` component) against ``V'`` (also from the ``membrane`` component):
+
+.. image:: pics/SimulationExperimentViewScreenshot14.png
+   :align: center
+   :scale: 25%
+
+You can create as many graph panels (and graphs) as you want.
+The current graph panel or all the graph panels (but the first one) can be removed by clicking on the |oxygenActionsListRemove| button.
+
+.. |oxygenActionsListRemove| image:: ../../pics/oxygen/actions/list-remove.png
+   :class: inlineicon
+   :width: 16px
