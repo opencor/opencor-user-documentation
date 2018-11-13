@@ -92,3 +92,9 @@ For example, to create a graph for ``V`` (from the ``membrane`` component) again
 .. image:: pics/SimulationExperimentViewScreenshot05.png
    :align: center
    :scale: 25%
+
+You can get the information associated with a graph by double clicking on it:
+
+.. image:: pics/SimulationExperimentViewScreenshot06.png
+   :align: center
+   :scale: 25%
