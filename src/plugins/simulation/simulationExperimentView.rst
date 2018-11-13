@@ -230,3 +230,13 @@ So far, we have only simulated `CellML 1.0 <https://www.cellml.org/specification
 .. image:: pics/SimulationExperimentViewScreenshot16.png
    :align: center
    :scale: 25%
+
+Simulate several models at the same time
+----------------------------------------
+
+Each simulation is run in its own thread, which means that several simulations can be run at the same time.
+Simulations running in the background display a small progress bar in the top tab bar while the foreground simulation uses the main progress bar at the bottom of the view:
+
+.. image:: pics/SimulationExperimentViewScreenshot17.png
+   :align: center
+   :scale: 25%
