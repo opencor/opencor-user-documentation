@@ -308,17 +308,19 @@ The plotting area offers several features that can be activated by:
 Tool bar
 --------
 
-| |toolBarOxygenActionsMediaPlaybackStart| Run the simulation
-| |toolBarOxygenActionsMediaPlaybackPause| Pause the simulation
-| |toolBarOxygenActionsMediaPlaybackStop|  Stop the simulation
-| |toolBarOxygenActionsViewRefresh|        Reset all the model parameters
-| |toolBarOxygenActionsTrashEmpty|         Clear the simulation data
-| |toolBarOxygenActionsRunBuildConfigure|  Enable/disable the development mode
-| |toolBarOxygenActionsListAdd|            Add a graph panel
-| |toolBarOxygenActionsListRemove|         Remove the current graph panel or all the graph panels
-| |toolBarCellmlLogo|                      Open the referenced CellML file
-| |toolBarSedmlLogo|                       Export the simulation to SED-ML
-| |toolBarOxygenActionsDocumentExport|     Export the simulation data
+| |toolBarOxygenActionsMediaPlaybackStart|   Run the simulation
+| |toolBarOxygenActionsMediaPlaybackPause|   Pause the simulation
+| |toolBarOxygenActionsMediaPlaybackStop|    Stop the simulation
+| |toolBarResetStateModelParameters|         Reset the state model parameters
+| |toolBarOxygenActionsViewRefresh|          Reset all the model parameters
+| |toolBarOxygenActionsTrashEmpty|           Clear the simulation data
+| |toolBarOxygenActionsRunBuildConfigure|    Enable/disable the development mode
+| |toolBarOxygenActionsListAdd|              Add a graph panel
+| |toolBarOxygenActionsListRemove|           Remove the current graph panel or all the graph panels
+| |toolBarCellmlLogo|                        Open the referenced CellML file
+| |toolBarSedmlLogo|                         Export the simulation to SED-ML
+| |toolBarOxygenActionsDocumentExport|       Export the simulation data
+| |toolBarOxygenCategoriesPreferencesSystem| Preferences for the Simulation Experiment view
 
 .. |toolBarOxygenActionsMediaPlaybackStart| image:: ../../pics/oxygen/actions/media-playback-start.png
    :class: toolbar
@@ -329,6 +331,10 @@ Tool bar
    :width: 24px
 
 .. |toolBarOxygenActionsMediaPlaybackStop| image:: ../../pics/oxygen/actions/media-playback-stop.png
+   :class: toolbar
+   :width: 24px
+
+.. |toolBarResetStateModelParameters| image:: pics/resetStateModelParameters.png
    :class: toolbar
    :width: 24px
 
@@ -361,5 +367,9 @@ Tool bar
    :width: 24px
 
 .. |toolBarOxygenActionsDocumentExport| image:: ../../pics/oxygen/actions/document-export.png
+   :class: toolbar
+   :width: 24px
+
+.. |toolBarOxygenCategoriesPreferencesSystem| image:: ../../pics/oxygen/categories/preferences-system.png
    :class: toolbar
    :width: 24px
