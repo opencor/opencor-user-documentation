@@ -221,3 +221,12 @@ To simulate a `DAE <https://en.wikipedia.org/wiki/Differential_algebraic_equatio
 .. image:: pics/SimulationExperimentViewScreenshot15.png
    :align: center
    :scale: 25%
+
+Simulate a CellML 1.1 model
+---------------------------
+
+So far, we have only simulated `CellML 1.0 <https://www.cellml.org/specifications/cellml_1.0>`__ models, but you can also simulate `CellML 1.1 <https://www.cellml.org/specifications/cellml_1.1>`__ models, i.e. models that import units and/or components from other models:
+
+.. image:: pics/SimulationExperimentViewScreenshot16.png
+   :align: center
+   :scale: 25%
