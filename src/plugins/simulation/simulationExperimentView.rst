@@ -139,3 +139,31 @@ Roughly the same trace can be obtained using the ``CVODE`` solver:
 .. image:: pics/SimulationExperimentViewScreenshot08.png
    :align: center
    :scale: 25%
+
+However, the simulation is so quick to run that you will most probably not have had time to see its progress.
+Between the |oxygenActionsTrashEmpty| and |oxygenActionsRunBuildConfigure| buttons, there is a wheel that you can use to add a short delay between the plotting of two data points.
+Thus, by using a value of ``100,000`` (or a bigger/smaller value, depending on the speed of your computer), you can run the simulation and pause it at a point of interest:
+
+.. |oxygenActionsRunBuildConfigure| image:: ../../pics/oxygen/actions/run-build-configure.png
+   :class: inlineicon
+   :width: 16px
+
+.. image:: pics/SimulationExperimentViewScreenshot09.png
+   :align: center
+   :scale: 25%
+
+Now, you can modify any of the model parameters identified by either the |state| or |constant| icon (i.e. a state or a constant).
+Say that you want to set ``g_Na_max`` (from the ``sodium_channel`` component) to ``0 milliS_per_cm2``.
+To resume the simulation will then give you something like:
+
+.. |state| image:: pics/state.png
+   :class: inlineicon
+   :width: 16px
+
+.. |constant| image:: pics/constant.png
+   :class: inlineicon
+   :width: 16px
+
+.. image:: pics/SimulationExperimentViewScreenshot10.png
+   :align: center
+   :scale: 25%
