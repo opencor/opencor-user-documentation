@@ -19,7 +19,7 @@ If it cannot, then a message describing the issue is shown:
    :align: center
    :scale: 25%
 
-On the other hand, if you open a valid `CellML <https://www.cellml.org/>`__ file (e.g. |noble_model_1962.cellml|_, which is shipped with OpenCOR), then the view will look something like:
+On the other hand, if you open a valid `CellML <https://www.cellml.org/>`__ file (e.g. |noble_model_1962.cellml|_, which is shipped with OpenCOR), then the view looks something like:
 
 .. |noble_model_1962.cellml| replace:: ``[OpenCOR]/models/noble_model_1962.cellml``
 .. _noble_model_1962.cellml: https://raw.githubusercontent.com/opencor/opencor/master/models/noble_model_1962.cellml
@@ -69,14 +69,14 @@ Simulate an ODE model
 To simulate a model, you need to provide some information about the simulation itself, i.e. its starting point, ending point and point interval.
 Then, you need to specify the solver(s) that you want to use.
 The solvers available to you depend on which :ref:`solver plugins <plugins_solver>` you selected, as well as on the type of your model (i.e. `ODE <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__ or `DAE <https://en.wikipedia.org/wiki/Differential_algebraic_equation>`__).
-If you are dealing with an `ODE <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__ model and all the solver plugins are selected, then `CVODE <http://computation.llnl.gov/projects/sundials/cvode>`__, forward `Euler <https://en.wikipedia.org/wiki/Euler_method>`__, `Heun <https://en.wikipedia.org/wiki/Heun's_method>`__, and second-order and fourth-order `Runge-Kutta <https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods>`__ will be available to you:
+If you are dealing with an `ODE <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__ model and all the solver plugins are selected, then `CVODE <http://computation.llnl.gov/projects/sundials/cvode>`__, forward `Euler <https://en.wikipedia.org/wiki/Euler_method>`__, `Heun <https://en.wikipedia.org/wiki/Heun's_method>`__, and second-order and fourth-order `Runge-Kutta <https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods>`__ are available to you:
 
 .. image:: pics/SimulationExperimentViewScreenshot03.png
    :align: center
    :scale: 25%
 
 Each solver comes with its own set of properties, which can be customised.
-For example, if you select ``Euler (forward)``, you will see that it has only one property (``Step``):
+For example, if you select ``Euler (forward)``, you see that it has only one property (``Step``):
 
 .. image:: pics/SimulationExperimentViewScreenshot04.png
    :align: center
@@ -105,7 +105,7 @@ You can get the information associated with a graph by double clicking on it:
 The ``Model`` property is used to associate the graph with a particular file.
 By default, it has a value of ``Current``, which means that the graph is associated with the current file.
 You can, however, explicitly associate it with another one.
-The |oxygenStatusTaskAttention| icon will be shown next to the check box, if the association cannot be done, and next to the ``X`` and/or ``Y`` properties to highlight which model parameter(s) could not be found in the other file.
+The |oxygenStatusTaskAttention| icon is shown next to the check box, if the association cannot be done, and next to the ``X`` and/or ``Y`` properties to highlight which model parameter(s) could not be found in the other file.
 The |oxygenStatusObjectUnlocked| icon indicates that the graph is not locked, i.e. its ``Model`` property has a value of ``Current``, while the |oxygenStatusObjectLocked| icon is used when a graph is associated with a specific file (resulting in a red trace rather than a blue one).
 The ``X`` and ``Y`` properties can be modified either by editing their value or by right clicking on them and selecting another model parameter from the context menu, which can also be used to add or remove a graph.
 
@@ -123,7 +123,7 @@ The ``X`` and ``Y`` properties can be modified either by editing their value or 
 
 Back to the simulation, you can see that it failed with several model parameters having a value of ``nan`` (i.e. `not a number <https://en.wikipedia.org/wiki/NaN>`__).
 This is because the solver is not properly set up: its ``Step`` property is too big.
-If you set it to ``0.01 milliseconds``, reset all the model parameters (by clicking on the |oxygenActionsViewRefresh| button), clear the simulation data (by clicking on the |oxygenActionsTrashEmpty| button) and restart the simulation, then you will get something like:
+If you set it to ``0.01 milliseconds``, reset all the model parameters (by clicking on the |oxygenActionsViewRefresh| button), clear the simulation data (by clicking on the |oxygenActionsTrashEmpty| button) and restart the simulation, then you get something like:
 
 .. |oxygenActionsViewRefresh| image:: ../../pics/oxygen/actions/view-refresh.png
    :class: inlineicon
@@ -143,7 +143,7 @@ Roughly the same trace can be obtained using the ``CVODE`` solver:
    :align: center
    :scale: 25%
 
-However, the simulation is so quick to run that you will most probably not have time to see its progress.
+However, the simulation is so quick to run that you most probably do not have time to see its progress.
 Between the |oxygenActionsTrashEmpty| and |oxygenActionsRunBuildConfigure| buttons, there is a wheel that you can use to add a short delay between the plotting of two data points.
 Thus, by using a value of ``100,000`` (or a bigger/smaller value, depending on the speed of your computer), you can run the simulation and pause it at a point of interest:
 
@@ -157,7 +157,7 @@ Thus, by using a value of ``100,000`` (or a bigger/smaller value, depending on t
 
 Now, you can modify any of the model parameters identified by either the |state| or |constant| icon (i.e. a state or a constant).
 Say that you want to set ``g_Na_max`` (from the ``sodium_channel`` component) to ``0 milliS_per_cm2``.
-To resume the simulation will then give you something like:
+To resume the simulation then gives you something like:
 
 .. |state| image:: pics/state.png
    :class: inlineicon
@@ -173,7 +173,7 @@ To resume the simulation will then give you something like:
 
 If you want, you can export some or all of the simulation data to a BioSignalML or a `CSV <https://en.wikipedia.org/wiki/Comma-separated_values>`__ file.
 To do so, click on the |oxygenActionsDocumentExport| button.
-In the case of BioSignalML, you will be asked to provide some (optional) information, as well as specify which model parameters you want to export:
+In the case of BioSignalML, you are asked to provide some (optional) information, as well as specify which model parameters you want to export:
 
 .. |oxygenActionsDocumentExport| image:: ../../pics/oxygen/actions/document-export.png
    :class: inlineicon
@@ -183,7 +183,7 @@ In the case of BioSignalML, you will be asked to provide some (optional) informa
    :align: center
    :scale: 25%
 
-In the case of `CSV <https://en.wikipedia.org/wiki/Comma-separated_values>`__, you will only need to specify the model parameters you want to export:
+In the case of `CSV <https://en.wikipedia.org/wiki/Comma-separated_values>`__, you only need to specify the model parameters you want to export:
 
 .. image:: pics/SimulationExperimentViewScreenshot12.png
    :align: center
@@ -219,7 +219,7 @@ The current graph panel or all the graph panels (but the first one) can be remov
 Simulate a DAE model
 --------------------
 
-To simulate a `DAE <https://en.wikipedia.org/wiki/Differential_algebraic_equation>`__ model is similar to simulating an `ODE <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__ model, except that OpenCOR will also need to solve one or several systems of `non-linear algebraic <https://en.wikipedia.org/wiki/Nonlinear_system#Nonlinear_algebraic_equations>`__ equations (e.g. with |simple_dae_model.cellml|_):
+To simulate a `DAE <https://en.wikipedia.org/wiki/Differential_algebraic_equation>`__ model is similar to simulating an `ODE <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__ model, except that OpenCOR also needs to solve one or several systems of `non-linear algebraic <https://en.wikipedia.org/wiki/Nonlinear_system#Nonlinear_algebraic_equations>`__ equations (e.g. with |simple_dae_model.cellml|_):
 
 .. |simple_dae_model.cellml| replace:: ``[OpenCOR]/models/tests/cellml/simple_dae_model.cellml``
 .. _simple_dae_model.cellml: https://raw.githubusercontent.com/opencor/opencor/master/models/tests/cellml/simple_dae_model.cellml
@@ -275,7 +275,7 @@ Thus, once open, a simulation can be re-run by pressing ``F9`` or by clicking on
    :align: center
    :scale: 25%
 
-Please note that changes to model parameters (either before or in the middle of a simulation) are not currently supported, and will therefore be ignored, if present.
+Please note that changes to model parameters (either before or in the middle of a simulation) are not currently supported, and are therefore ignored, if present.
 
 Plotting area
 -------------
