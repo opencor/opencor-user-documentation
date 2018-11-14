@@ -359,6 +359,20 @@ Many aspects of a graph panel can be customised and that includes various types 
    :align: center
    :scale: 25%
 
+Note that you can specify some default settings for graphs and graph panels by clicking on the |oxygenCategoriesPreferencesSystem| button in the tool bar, or by selecting the ``Tools`` | ``Preferences...`` menu item and then the ``SimulationExperimentView`` section:
+
+.. |oxygenCategoriesPreferencesSystem| image:: ../../pics/oxygen/categories/preferences-system.png
+   :class: inlineicon
+   :width: 16px
+
+.. image:: pics/SimulationExperimentViewScreenshot27.png
+   :align: center
+   :scale: 25%
+
+.. image:: pics/SimulationExperimentViewScreenshot28.png
+   :align: center
+   :scale: 25%
+
 Plotting area
 -------------
 
