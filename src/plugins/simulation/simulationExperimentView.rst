@@ -19,7 +19,10 @@ If it cannot, then a message describing the issue is shown:
    :align: center
    :scale: 25%
 
-On the other hand, if you open a valid `CellML <https://www.cellml.org/>`__ file (e.g. ``models/noble_model_1962.cellml``, which is shipped with OpenCOR), then the view will look something like:
+On the other hand, if you open a valid `CellML <https://www.cellml.org/>`__ file (e.g. |noble_model_1962.cellml|_, which is shipped with OpenCOR), then the view will look something like:
+
+.. |noble_model_1962.cellml| replace:: ``[OpenCOR]/models/noble_model_1962.cellml``
+.. _noble_model_1962.cellml: https://raw.githubusercontent.com/opencor/opencor/master/models/noble_model_1962.cellml
 
 .. image:: pics/SimulationExperimentViewScreenshot02.png
    :align: center
@@ -216,7 +219,10 @@ The current graph panel or all the graph panels (but the first one) can be remov
 Simulate a DAE model
 --------------------
 
-To simulate a `DAE <https://en.wikipedia.org/wiki/Differential_algebraic_equation>`__ model is similar to simulating an `ODE <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__ model, except that OpenCOR will also need to solve one or several systems of `non-linear algebraic <https://en.wikipedia.org/wiki/Nonlinear_system#Nonlinear_algebraic_equations>`__ equations:
+To simulate a `DAE <https://en.wikipedia.org/wiki/Differential_algebraic_equation>`__ model is similar to simulating an `ODE <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__ model, except that OpenCOR will also need to solve one or several systems of `non-linear algebraic <https://en.wikipedia.org/wiki/Nonlinear_system#Nonlinear_algebraic_equations>`__ equations (e.g. with |simple_dae_model.cellml|_):
+
+.. |simple_dae_model.cellml| replace:: ``[OpenCOR]/models/tests/cellml/simple_dae_model.cellml``
+.. _simple_dae_model.cellml: https://raw.githubusercontent.com/opencor/opencor/master/models/tests/cellml/simple_dae_model.cellml
 
 .. image:: pics/SimulationExperimentViewScreenshot15.png
    :align: center
@@ -225,7 +231,10 @@ To simulate a `DAE <https://en.wikipedia.org/wiki/Differential_algebraic_equatio
 Simulate a CellML 1.1 model
 ---------------------------
 
-So far, we have only simulated `CellML 1.0 <https://www.cellml.org/specifications/cellml_1.0>`__ models, but you can also simulate `CellML 1.1 <https://www.cellml.org/specifications/cellml_1.1>`__ models, i.e. models that import units and/or components from other models:
+So far, we have only simulated `CellML 1.0 <https://www.cellml.org/specifications/cellml_1.0>`__ models, but you can also simulate `CellML 1.1 <https://www.cellml.org/specifications/cellml_1.1>`__ models, i.e. models that import units and/or components from other models (e.g. with |periodic-stimulus.xml|_):
+
+.. |periodic-stimulus.xml| replace:: ``[OpenCOR]/models/tests/cellml/cellml_1_1/experiments/periodic-stimulus.xml``
+.. _periodic-stimulus.xml: https://raw.githubusercontent.com/opencor/opencor/master/models/tests/cellml/cellml_1_1/experiments/periodic-stimulus.xml
 
 .. image:: pics/SimulationExperimentViewScreenshot16.png
    :align: center
