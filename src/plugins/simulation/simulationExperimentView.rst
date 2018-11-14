@@ -262,7 +262,10 @@ The export can then be done either to a `SED-ML <http://www.sed-ml.org/>`__ file
    :width: 16px
 
 A `SED-ML <http://www.sed-ml.org/>`__ file (or a `COMBINE <http://co.mbine.org/>`__ archive) contains all the information needed to reproduce a simulation, i.e. a reference to the model (or even the model itself in the case of a `COMBINE <http://co.mbine.org/>`__ archive; the referenced model can be opened by clicking on the |cellmlLogo| button), the parameters of the simulation, the solver and its properties, the number of graph panels, and the graphs to be plotted in each graph panel.
-Thus, once open, a simulation can be re-run by pressing ``F9`` or by clicking on the |oxygenActionsMediaPlaybackStart| button:
+Thus, once open, a simulation can be re-run by pressing ``F9`` or by clicking on the |oxygenActionsMediaPlaybackStart| button (e.g. with |noble_1962.omex|_):
+
+.. |noble_1962.omex| replace:: ``[OpenCOR]/models/tests/combine/noble_1962.omex``
+.. _noble_1962.omex: https://raw.githubusercontent.com/opencor/opencor/master/models/tests/combine/noble_1962.omex
 
 .. |cellmlLogo| image:: ../../pics/cellmlLogo.png
    :class: inlineicon
