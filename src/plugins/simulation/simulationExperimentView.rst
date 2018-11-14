@@ -292,6 +292,23 @@ For example, if you plot ``i_K`` and ``i_Leak`` against the variable of integrat
    :align: center
    :scale: 25%
 
+However, the curve can be further customised by changing the ``style``, ``width`` and ``colour`` of its line in the ``Graphs`` panel.
+Possible values for the ``style`` are ``None``, ``Solid``, ``Dash``, ``Dot``, ``DashDot`` and ``DashDotDot``:
+
+.. image:: pics/SimulationExperimentViewScreenshot21.png
+   :align: center
+   :scale: 25%
+
+The ``colour`` can be changed manually by providing an `RGB <https://en.wikipedia.org/wiki/RGB_color_model>`__ or `RGBA <https://en.wikipedia.org/wiki/RGBA_color_space>`__ value, i.e. ``#RRGGBB`` or ``#RRGGBBAA`` with ``RR``, ``GG``, ``BB`` and ``AA`` corresponding to the value of the red, green, blue and alpha channel of the colour, respectively.
+Each value consists of two hexadecimal digits between ``0`` and ``f``.
+Thus, the blue used for the first graph has an `RGB <https://en.wikipedia.org/wiki/RGB_color_model>`__ value of ``#0072bd``.
+However, an easier way to change the ``colour`` is by double clicking on the square next to the `RGB <https://en.wikipedia.org/wiki/RGB_color_model>`__ or `RGBA <https://en.wikipedia.org/wiki/RGBA_color_space>`__ value.
+This brings up a colour dialog, from which you can choose the colour you want:
+
+.. image:: pics/SimulationExperimentViewScreenshot22.png
+   :align: center
+   :scale: 25%
+
 Plotting area
 -------------
 
