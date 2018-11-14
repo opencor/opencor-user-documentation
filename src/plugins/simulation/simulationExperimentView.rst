@@ -279,31 +279,31 @@ Please note that changes to model parameters (either before or in the middle of 
 Customise graphs
 ----------------
 
-By default, the curve of a graph is two-pixel wide and blue, as can be seen when plotting ``i_Na`` against the variable of integration using |noble_model_1962.cellml|_:
+By default, the line of a graph is two-pixel wide and blue, as can be seen when plotting ``i_Na`` against the variable of integration using |noble_model_1962.cellml|_:
 
 .. image:: pics/SimulationExperimentViewScreenshot19.png
    :align: center
    :scale: 25%
 
-Subsequent graphs use a different colour for their curve.
+Subsequent graphs use a different line colour.
 For example, if you plot ``i_K`` and ``i_Leak`` against the variable of integration, you get:
 
 .. image:: pics/SimulationExperimentViewScreenshot20.png
    :align: center
    :scale: 25%
 
-However, the curve can be further customised by changing the ``style``, ``width`` and ``colour`` of its line in the ``Graphs`` panel.
-Possible values for the ``style`` are ``None``, ``Solid``, ``Dash``, ``Dot``, ``DashDot`` and ``DashDotDot``:
+However, the line can be further customised by changing its ``style``, ``width`` and ``colour`` in the ``Graphs`` panel.
+Possible values for the line ``style`` are ``None``, ``Solid``, ``Dash``, ``Dot``, ``DashDot`` and ``DashDotDot``:
 
 .. image:: pics/SimulationExperimentViewScreenshot21.png
    :align: center
    :scale: 25%
 
-The ``colour`` can be changed manually by providing an `RGB <https://en.wikipedia.org/wiki/RGB_color_model>`__ or `RGBA <https://en.wikipedia.org/wiki/RGBA_color_space>`__ value, i.e. ``#RRGGBB`` or ``#RRGGBBAA`` with ``RR``, ``GG``, ``BB`` and ``AA`` corresponding to the value of the red, green, blue and alpha channel of the colour, respectively.
+The line ``colour`` can be changed manually by providing an `RGB <https://en.wikipedia.org/wiki/RGB_color_model>`__ or `RGBA <https://en.wikipedia.org/wiki/RGBA_color_space>`__ value, i.e. ``#RRGGBB`` or ``#RRGGBBAA`` with ``RR``, ``GG``, ``BB`` and ``AA`` corresponding to the value of the red, green, blue and alpha channel of the line colour, respectively.
 Each value consists of two hexadecimal digits between ``0`` and ``f``.
-Thus, the blue used for the first graph has an `RGB <https://en.wikipedia.org/wiki/RGB_color_model>`__ value of ``#0072bd``.
-However, an easier way to change the ``colour`` is by double clicking on the square next to the `RGB <https://en.wikipedia.org/wiki/RGB_color_model>`__ or `RGBA <https://en.wikipedia.org/wiki/RGBA_color_space>`__ value.
-This brings up a colour dialog, from which you can choose the colour you want:
+Thus, the blue line colour used for the first graph has an `RGB <https://en.wikipedia.org/wiki/RGB_color_model>`__ value of ``#0072bd``.
+However, an easier way to change the line ``colour`` is by double clicking on the square next to its `RGB <https://en.wikipedia.org/wiki/RGB_color_model>`__ or `RGBA <https://en.wikipedia.org/wiki/RGBA_color_space>`__ value.
+This brings up a colour dialog, from which you can choose the line colour you want to use:
 
 .. image:: pics/SimulationExperimentViewScreenshot22.png
    :align: center
