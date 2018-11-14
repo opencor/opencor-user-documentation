@@ -309,6 +309,14 @@ This brings up a colour dialog, from which you can choose the colour you want to
    :align: center
    :scale: 25%
 
+In addition to a line, a graph can have a symbol rendered at each of its data points.
+As for a line, a symbol can be customised by changing the value of one or several of its properties (``Style``, ``Size``, ``Colour``, ``Filled`` and ``Fill colour``).
+Possible values for ``Style`` are ``None``, ``Circle``, ``Square``, ``Diamond``, ``Triangle``, ``Down Triangle``, ``Cross``, ``X Cross``, ``Horizontal Line``, ``Vertical Line`` ``Star``:
+
+.. image:: pics/SimulationExperimentViewScreenshot23.png
+   :align: center
+   :scale: 25%
+
 Plotting area
 -------------
 
