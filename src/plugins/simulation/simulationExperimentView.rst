@@ -200,7 +200,7 @@ If you want to create other graphs, but do not want them on the same graph panel
 
 You might have noticed that the bottom graph panel has a blue vertical line to its left.
 This is to indicate that it is the currently selected graph panel (a graph panel can be selected by clicking on it).
-Something else that you might have noticed is that the ``Graphs`` panel is now empty.
+Something else that you might have noticed is that the ``Graphs`` section is now empty.
 This is because there are currently no graphs associated with the graph panel.
 Just for illustration, you can create a graph to plot ``V`` (from the ``membrane`` component) against ``V'`` (also from the ``membrane`` component):
 
@@ -276,8 +276,8 @@ Thus, once open, a simulation can be re-run by pressing ``F9`` or by clicking on
 
 Please note that changes to model parameters (either before or in the middle of a simulation) are not currently supported, and are therefore ignored, if present.
 
-Customise graphs
-----------------
+Customise graphs and graph panels
+---------------------------------
 
 By default, the line of a graph is two-pixel wide and blue, as can be seen when plotting ``i_Na`` against the variable of integration using |noble_model_1962.cellml|_:
 
@@ -292,7 +292,7 @@ For example, if you plot ``i_K`` and ``i_Leak`` against the variable of integrat
    :align: center
    :scale: 25%
 
-However, the line can be further customised by changing the value of one or several of its properties (``Style``, ``Width`` and ``Colour``) in the ``Graphs`` panel.
+However, the line can be further customised by changing the value of one or several of its properties (``Style``, ``Width`` and ``Colour``) in the ``Graphs`` section.
 Possible values for ``Style`` are ``None``, ``Solid``, ``Dash``, ``Dot``, ``DashDot`` and ``DashDotDot``:
 
 .. image:: pics/SimulationExperimentViewScreenshot21.png
@@ -314,6 +314,26 @@ As for a line, a symbol can be customised by changing the value of one or severa
 Possible values for ``Style`` are ``None``, ``Circle``, ``Square``, ``Diamond``, ``Triangle``, ``Down Triangle``, ``Cross``, ``X Cross``, ``Horizontal Line``, ``Vertical Line`` ``Star``:
 
 .. image:: pics/SimulationExperimentViewScreenshot23.png
+   :align: center
+   :scale: 25%
+
+A graph panel can also be customised, but for this you need to switch to the ``Graph Panel`` section by clicking to the top-right of the ``Graphs`` section.
+This brings up a context menu allowing you to switch between the ``Graphs`` and ``Graph Panel`` sections:
+
+.. image:: pics/SimulationExperimentViewScreenshot24.png
+   :align: center
+   :scale: 25%
+
+.. image:: pics/SimulationExperimentViewScreenshot25.png
+   :align: center
+   :scale: 25%
+
+Many aspects of a graph panel can be customised and that includes various types of colours, styles, widths, etc., as well as whether the legend should be shown, a logarithmic scale should be used for the X and/or Y axes, etc., as illustrated by running |noble_1962_local.sedml|_:
+
+.. |noble_1962_local.sedml| replace:: ``[OpenCOR]/models/tests/sedml/noble_1962_local.sedml``
+.. _noble_1962_local.sedml: https://raw.githubusercontent.com/opencor/opencor/master/models/tests/sedml/noble_1962_local.sedml
+
+.. image:: pics/SimulationExperimentViewScreenshot26.png
    :align: center
    :scale: 25%
 
