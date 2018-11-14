@@ -277,6 +277,22 @@ Thus, once open, a simulation can be re-run by pressing ``F9`` or by clicking on
 
 Please note that changes to model parameters (either before or in the middle of a simulation) are not currently supported, and are therefore ignored, if present.
 
+Customise graphs
+----------------
+
+By default, the curve of a graph is two-pixel wide and blue, as can be seen when plotting ``i_Na`` against the variable of integration using |noble_model_1962.cellml|_:
+
+.. image:: pics/SimulationExperimentViewScreenshot19.png
+   :align: center
+   :scale: 25%
+
+Subsequent graphs use a different colour for their curve.
+Thus, if you plot ``i_K`` and ``i_Leak`` against the variable of integration, then you get something like:
+
+.. image:: pics/SimulationExperimentViewScreenshot20.png
+   :align: center
+   :scale: 25%
+
 Plotting area
 -------------
 
