@@ -60,10 +60,10 @@ In the ``Parameters`` section, all the model parameters have an icon associated 
    :class: icon
    :width: 16px
 
-Run an ODE model
-----------------
+Simulate an ODE model
+---------------------
 
-To run a model, you need to provide some information about the simulation itself, i.e. its starting point, ending point and point interval.
+To simulate a model, you need to provide some information about the simulation itself, i.e. its starting point, ending point and point interval.
 Then, you need to specify the solver(s) that you want to use.
 The solvers available to you depend on which :ref:`solver plugins <plugins_solver>` you selected, as well as on the type of your model (i.e. `ODE <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__ or `DAE <https://en.wikipedia.org/wiki/Differential_algebraic_equation>`__).
 If you are dealing with an `ODE <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__ model and all the solver plugins are selected, then `CVODE <http://computation.llnl.gov/projects/sundials/cvode>`__, forward `Euler <https://en.wikipedia.org/wiki/Euler_method>`__, `Heun <https://en.wikipedia.org/wiki/Heun's_method>`__, and second-order and fourth-order `Runge-Kutta <https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods>`__ will be available to you:
@@ -140,7 +140,7 @@ Roughly the same trace can be obtained using the ``CVODE`` solver:
    :align: center
    :scale: 25%
 
-However, the simulation is so quick to run that you will most probably not have had time to see its progress.
+However, the simulation is so quick to run that you will most probably not have time to see its progress.
 Between the |oxygenActionsTrashEmpty| and |oxygenActionsRunBuildConfigure| buttons, there is a wheel that you can use to add a short delay between the plotting of two data points.
 Thus, by using a value of ``100,000`` (or a bigger/smaller value, depending on the speed of your computer), you can run the simulation and pause it at a point of interest:
 
