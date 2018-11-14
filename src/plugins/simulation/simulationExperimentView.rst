@@ -19,7 +19,7 @@ If it cannot, then a message describing the issue is shown:
    :align: center
    :scale: 25%
 
-On the other hand, if you open a valid `CellML <https://www.cellml.org/>`__ file (e.g. |noble_model_1962.cellml|_, which is shipped with OpenCOR), then the view looks something like:
+On the other hand, if you open a valid `CellML <https://www.cellml.org/>`__ file (e.g. |noble_model_1962.cellml|_, which is shipped with OpenCOR), then the view looks as follows:
 
 .. |noble_model_1962.cellml| replace:: ``[OpenCOR]/models/noble_model_1962.cellml``
 .. _noble_model_1962.cellml: https://raw.githubusercontent.com/opencor/opencor/master/models/noble_model_1962.cellml
@@ -123,7 +123,7 @@ The ``X`` and ``Y`` properties can be modified either by editing their value or 
 
 Back to the simulation, you can see that it failed with several model parameters having a value of ``nan`` (i.e. `not a number <https://en.wikipedia.org/wiki/NaN>`__).
 This is because the solver is not properly set up: its ``Step`` property is too big.
-If you set it to ``0.01 milliseconds``, reset all the model parameters (by clicking on the |oxygenActionsViewRefresh| button), clear the simulation data (by clicking on the |oxygenActionsTrashEmpty| button) and restart the simulation, then you get something like:
+If you set it to ``0.01 milliseconds``, reset all the model parameters (by clicking on the |oxygenActionsViewRefresh| button), clear the simulation data (by clicking on the |oxygenActionsTrashEmpty| button) and restart the simulation, then you get:
 
 .. |oxygenActionsViewRefresh| image:: ../../pics/oxygen/actions/view-refresh.png
    :class: inlineicon
@@ -156,8 +156,7 @@ Thus, by using a value of ``100,000`` (or a bigger/smaller value, depending on t
    :scale: 25%
 
 Now, you can modify any of the model parameters identified by either the |state| or |constant| icon (i.e. a state or a constant).
-Say that you want to set ``g_Na_max`` (from the ``sodium_channel`` component) to ``0 milliS_per_cm2``.
-To resume the simulation then gives you something like:
+Thus, if you set ``g_Na_max`` (from the ``sodium_channel`` component) to ``0 milliS_per_cm2``, you get:
 
 .. |state| image:: pics/state.png
    :class: inlineicon
@@ -287,7 +286,7 @@ By default, the curve of a graph is two-pixel wide and blue, as can be seen when
    :scale: 25%
 
 Subsequent graphs use a different colour for their curve.
-Thus, if you plot ``i_K`` and ``i_Leak`` against the variable of integration, then you get something like:
+For example, if you plot ``i_K`` and ``i_Leak`` against the variable of integration, you get:
 
 .. image:: pics/SimulationExperimentViewScreenshot20.png
    :align: center
