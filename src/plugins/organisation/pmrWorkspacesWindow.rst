@@ -310,10 +310,6 @@ Similarly, different icons are used to distinguish the different states of a fil
    :class: icon
    :width: 24px
 
-.. |iconWcFile| image:: pics/wcFile.png
-   :class: icon
-   :width: 24px
-
 .. |iconWdFile| image:: pics/wdFile.png
    :class: icon
    :width: 24px
