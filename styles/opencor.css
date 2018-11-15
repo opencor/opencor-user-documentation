@@ -1,3 +1,28 @@
+a.icon,
+a.inlineicon,
+a.toolbar {
+    pointer-events: none;
+}
+
+img.icon,
+img.toolbar {
+    padding: 3px 13px;
+}
+
+img.inlineicon {
+    vertical-align: -2px;
+}
+
+span.math {
+    color: rgb(103, 103, 103);
+}
+
+span.subitalic {
+    font-style: italic;
+    font-size: 0.83em;
+    vertical-align: sub;
+}
+
 table {
     margin: 1em 0em;
     border: 0px;
