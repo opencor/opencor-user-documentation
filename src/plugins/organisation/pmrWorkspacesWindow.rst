@@ -123,7 +123,7 @@ You may also provide a description:
    :align: center
    :scale: 25%
 
-Any file already present in the folder will be considered as new.
+Any file already present in the folder will be considered new.
 For example, if you provide a folder containing the `models <https://github.com/opencor/opencor/tree/master/models>`__ shipped with OpenCOR, you will get something like the following upon creation of the workspace:
 
 .. image:: pics/PMRWorkspacesWindowScreenshot09.png
@@ -160,7 +160,7 @@ Simply toggle the |cellmlLogo| button as needed:
    :scale: 25%
 
 Provide a description for your changes and click on the ``OK`` button to synchronise your workspace with `PMR <https://models.physiomeproject.org/>`__.
-As you can see, the model files are now preceded by the |file| icon and the workspace folder by the |ownedWorkspace| icon:
+The model files are now preceded by the |file| icon and the workspace folder by the |ownedWorkspace| icon:
 
 .. |file| image:: pics/file.png
    :class: inlineicon
@@ -356,5 +356,5 @@ Similarly, different icons are used to distinguish the different states of a fil
    :width: 24px
 
 **Note:** you should always see the *unstaged* version of an icon.
-The only case where you will see the *staged* version is if something went wrong during the synchronisation.
-Indeed, the synchronisation is done using `Git <https://git-scm.com/>`__ and it may be that something caused it to fail (e.g. loss of Internet connection), in which case you will have to sort it out using `Git <https://git-scm.com/>`__ directly.
+The only case where you will see the *staged* version is if something went wrong during synchronisation.
+Indeed, synchronisation is done using `Git <https://git-scm.com/>`__ and it may be that something caused it to fail (e.g. loss of Internet connection), in which case you will likely have to fix the problem yourself, using `Git <https://git-scm.com/>`__.
