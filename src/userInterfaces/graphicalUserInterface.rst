@@ -27,7 +27,7 @@ Alternatively, they can be undocked:
    :align: center
    :scale: 25%
 
-Or even closed, by either closing the window itself or by unticking the corresponding menu item (under the ``View`` menu, or the ``Help`` menu for the Help window).
+Or even closed, by either closing the window itself or by unticking the corresponding menu item (under the ``View`` menu, or the ``Help`` menu for the :ref:`Help window <plugins_miscellaneous_helpWindow>`).
 Alternatively, all the docked windows can be closed at once:
 
 .. image:: pics/graphicalUserInterface04.png
