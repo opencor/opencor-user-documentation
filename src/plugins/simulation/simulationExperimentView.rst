@@ -23,16 +23,16 @@ Open a CellML file
 ------------------
 
 Upon opening a `CellML <https://www.cellml.org/>`__ file, OpenCOR checks that it can be used for simulation.
-If it cannot, then a message describing the issue is shown:
+If it cannot, a message describing the issue is shown:
 
 .. image:: pics/SimulationExperimentViewScreenshot01.png
    :align: center
    :scale: 25%
 
-On the other hand, if you open a valid `CellML <https://www.cellml.org/>`__ file (e.g. |noble_model_1962.cellml|_, which is shipped with OpenCOR), then the view looks as follows:
+On the other hand, if you open a valid `CellML <https://www.cellml.org/>`__ file (e.g. |noble_model_1962.cellml|_, which is shipped with OpenCOR), the view looks as follows:
 
 .. |noble_model_1962.cellml| replace:: ``[OpenCOR]/models/noble_model_1962.cellml``
-.. _noble_model_1962.cellml: https://raw.githubusercontent.com/opencor/opencor/master/models/noble_model_1962.cellml
+.. _noble_model_1962.cellml: opencor://openFile/https://raw.githubusercontent.com/opencor/opencor/master/models/noble_model_1962.cellml
 
 .. image:: pics/SimulationExperimentViewScreenshot02.png
    :align: center
@@ -40,7 +40,7 @@ On the other hand, if you open a valid `CellML <https://www.cellml.org/>`__ file
 
 It consists of two main parts, the first of which allows you to customise the simulation, the solver(s) and the model parameters, as well as to specify which graphs to plot.
 The second part is used to plot the requested graphs.
-In the ``Parameters`` section, all the model parameters have an icon associated with them to highlight their type:
+In the **Parameters** section, all the model parameters have an icon associated with them to highlight their type:
 
 | |iconVoi|              Variable of integration
 | |iconConstant|         (Editable) constant
@@ -81,7 +81,7 @@ Simulate an ODE model
 To simulate a model, you need to provide some information about the simulation itself, i.e. its starting point, ending point and point interval.
 Then, you need to specify the solver(s) that you want to use.
 The solvers available to you depend on which :ref:`solver plugins <plugins_solver>` you selected, as well as on the type of your model (i.e. `ODE <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__ or `DAE <https://en.wikipedia.org/wiki/Differential_algebraic_equation>`__).
-If you are dealing with an `ODE <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__ model and all the solver plugins are selected, then `CVODE <http://computation.llnl.gov/projects/sundials/cvode>`__, forward `Euler <https://en.wikipedia.org/wiki/Euler_method>`__, `Heun <https://en.wikipedia.org/wiki/Heun's_method>`__, and second-order and fourth-order `Runge-Kutta <https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods>`__ are available to you:
+If you are dealing with an `ODE <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__ model and all the solver plugins are selected, then `CVODE <http://computation.llnl.gov/projects/sundials/cvode>`__, forward `Euler <https://en.wikipedia.org/wiki/Euler_method>`__, `Heun <https://en.wikipedia.org/wiki/Heun's_method>`__, and the second-order and fourth-order of `Runge-Kutta <https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods>`__ are available to you:
 
 .. image:: pics/SimulationExperimentViewScreenshot03.png
    :align: center
@@ -98,7 +98,7 @@ You can start the simulation by pressing ``F9`` or by clicking on the |oxygenAct
 Then, or before, you can add a graph.
 All the model parameters are listed to the bottom-left of the view, grouped by components in which they were originally defined.
 To add a graph, right click on a model parameter and select against which other model parameter you want it to be plotted.
-For example, to create a graph for ``V`` (from the ``membrane`` component) against the variable of integration (i.e. time since the simulation properties are expressed in milliseconds):
+For example, to create a graph for ``V`` (from the ``membrane`` component) against the variable of integration (i.e. time since the simulation properties are expressed in milliseconds), you would do the following:
 
 .. |oxygenActionsMediaPlaybackStart| image:: ../../pics/oxygen/actions/media-playback-start.png
    :class: inlineicon
@@ -108,7 +108,7 @@ For example, to create a graph for ``V`` (from the ``membrane`` component) again
    :align: center
    :scale: 25%
 
-You can get the information associated with a graph by double clicking on it:
+From there, you can get the information associated with the graph by double clicking on it:
 
 .. image:: pics/SimulationExperimentViewScreenshot06.png
    :align: center
@@ -116,9 +116,9 @@ You can get the information associated with a graph by double clicking on it:
 
 The ``Model`` property is used to associate the graph with a particular file.
 By default, it has a value of ``Current``, which means that the graph is associated with the current file.
-You can, however, explicitly associate it with another one.
+However, you can explicitly associate it with another one.
 The |oxygenStatusTaskAttention| icon is shown next to the check box, if the association cannot be done, and next to the ``X`` and/or ``Y`` properties to highlight which model parameter(s) could not be found in the other file.
-The |oxygenStatusObjectUnlocked| icon indicates that the graph is not locked, i.e. its ``Model`` property has a value of ``Current``, while the |oxygenStatusObjectLocked| icon is used when a graph is associated with a specific file (resulting in a red trace rather than a blue one).
+The |oxygenStatusObjectUnlocked| icon indicates that the graph is not locked, i.e. its ``Model`` property has a value of ``Current``, while the |oxygenStatusObjectLocked| icon is used when a graph is associated with a specific file.
 The ``X`` and ``Y`` properties can be modified either by editing their value or by right clicking on them and selecting another model parameter from the context menu, which can also be used to add or remove a graph.
 
 .. |oxygenStatusTaskAttention| image:: ../../pics/oxygen/status/task-attention.png
@@ -212,7 +212,7 @@ If you want to create other graphs, but do not want them on the same graph panel
 
 You might have noticed that the bottom graph panel has a blue vertical line to its left.
 This is to indicate that it is the currently selected graph panel (a graph panel can be selected by clicking on it).
-Something else that you might have noticed is that the ``Graphs`` section is now empty.
+Something else that you might have noticed is that the **Graphs** section is now empty.
 This is because there are currently no graphs associated with the graph panel.
 Just for illustration, you can create a graph to plot ``V`` (from the ``membrane`` component) against ``V'`` (also from the ``membrane`` component):
 
@@ -235,7 +235,7 @@ Simulate a DAE model
 To simulate a `DAE <https://en.wikipedia.org/wiki/Differential_algebraic_equation>`__ model is similar to simulating an `ODE <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__ model, except that OpenCOR also needs to solve one or several systems of `non-linear algebraic <https://en.wikipedia.org/wiki/Nonlinear_system#Nonlinear_algebraic_equations>`__ equations (e.g. with |simple_dae_model.cellml|_):
 
 .. |simple_dae_model.cellml| replace:: ``[OpenCOR]/models/tests/cellml/simple_dae_model.cellml``
-.. _simple_dae_model.cellml: https://raw.githubusercontent.com/opencor/opencor/master/models/tests/cellml/simple_dae_model.cellml
+.. _simple_dae_model.cellml: opencor://openFile/https://raw.githubusercontent.com/opencor/opencor/master/models/tests/cellml/simple_dae_model.cellml
 
 .. image:: pics/SimulationExperimentViewScreenshot15.png
    :align: center
@@ -249,7 +249,7 @@ Simulate a CellML 1.1 model
 So far, we have only simulated `CellML 1.0 <https://www.cellml.org/specifications/cellml_1.0>`__ models, but you can also simulate `CellML 1.1 <https://www.cellml.org/specifications/cellml_1.1>`__ models, i.e. models that import units and/or components from other models (e.g. with |periodic-stimulus.xml|_):
 
 .. |periodic-stimulus.xml| replace:: ``[OpenCOR]/models/tests/cellml/cellml_1_1/experiments/periodic-stimulus.xml``
-.. _periodic-stimulus.xml: https://raw.githubusercontent.com/opencor/opencor/master/models/tests/cellml/cellml_1_1/experiments/periodic-stimulus.xml
+.. _periodic-stimulus.xml: opencor://openFile/https://raw.githubusercontent.com/opencor/opencor/master/models/tests/cellml/cellml_1_1/experiments/periodic-stimulus.xml
 
 .. image:: pics/SimulationExperimentViewScreenshot16.png
    :align: center
@@ -284,7 +284,7 @@ A `SED-ML <http://www.sed-ml.org/>`__ file (or a `COMBINE <http://co.mbine.org/>
 Thus, once open, a simulation can be re-run by pressing ``F9`` or by clicking on the |oxygenActionsMediaPlaybackStart| button (e.g. with |noble_1962.omex|_):
 
 .. |noble_1962.omex| replace:: ``[OpenCOR]/models/tests/combine/noble_1962.omex``
-.. _noble_1962.omex: https://raw.githubusercontent.com/opencor/opencor/master/models/tests/combine/noble_1962.omex
+.. _noble_1962.omex: opencor://openFile/https://raw.githubusercontent.com/opencor/opencor/master/models/tests/combine/noble_1962.omex
 
 .. |cellmlLogo| image:: ../../pics/cellmlLogo.png
    :class: inlineicon
@@ -314,7 +314,7 @@ For example, if you plot ``i_K`` and ``i_Leak`` against the variable of integrat
    :align: center
    :scale: 25%
 
-However, the line can be further customised by changing the value of one or several of its properties (``Style``, ``Width`` and ``Colour``) in the ``Graphs`` section.
+However, the line can be further customised by changing the value of one or several of its properties (``Style``, ``Width`` and ``Colour``) in the **Graphs** section.
 Possible values for ``Style`` are ``None``, ``Solid``, ``Dash``, ``Dot``, ``DashDot`` and ``DashDotDot``:
 
 .. image:: pics/SimulationExperimentViewScreenshot21.png
@@ -323,7 +323,7 @@ Possible values for ``Style`` are ``None``, ``Solid``, ``Dash``, ``Dot``, ``Dash
 
 ``Colour`` can be changed manually by providing an `RGB <https://en.wikipedia.org/wiki/RGB_color_model>`__ or `RGBA <https://en.wikipedia.org/wiki/RGBA_color_space>`__ value, i.e. ``#RRGGBB`` or ``#RRGGBBAA`` with ``RR``, ``GG``, ``BB`` and ``AA`` corresponding to the value of the red, green, blue and alpha channel of the colour, respectively.
 Each value consists of two hexadecimal digits between ``0`` and ``f``.
-Thus, the blue colour used for the first graph has an `RGB <https://en.wikipedia.org/wiki/RGB_color_model>`__ value of ``#0072bd``.
+For example, the blue colour used for the first graph has an `RGB <https://en.wikipedia.org/wiki/RGB_color_model>`__ value of ``#0072bd``.
 However, an easier way to change ``Colour`` is by double clicking on the square next to its `RGB <https://en.wikipedia.org/wiki/RGB_color_model>`__ or `RGBA <https://en.wikipedia.org/wiki/RGBA_color_space>`__ value.
 This brings up a colour dialog, from which you can choose the colour you want to use:
 
@@ -339,8 +339,8 @@ Possible values for ``Style`` are ``None``, ``Circle``, ``Square``, ``Diamond``,
    :align: center
    :scale: 25%
 
-A graph panel can also be customised, but for this you need to switch to the ``Graph Panel`` section by clicking to the top-right of the ``Graphs`` section.
-This brings up a context menu allowing you to switch between the ``Graphs`` and ``Graph Panel`` sections:
+A graph panel can also be customised, but for this you need to switch to the **Graph Panel** section by clicking in the top-right of the **Graphs** section.
+This brings up a context menu allowing you to switch between the **Graphs** and **Graph Panel** sections:
 
 .. image:: pics/SimulationExperimentViewScreenshot24.png
    :align: center
@@ -350,16 +350,16 @@ This brings up a context menu allowing you to switch between the ``Graphs`` and 
    :align: center
    :scale: 25%
 
-Many aspects of a graph panel can be customised and that includes various types of colours, styles, widths, etc., as well as whether the legend should be shown, a logarithmic scale should be used for the X and/or Y axes, etc., as illustrated by running |noble_1962_local.sedml|_:
+Many aspects of a graph panel can be customised and that includes various types of colours, styles, widths, etc., as well as whether the legend should be shown, a logarithmic scale used for the X and/or Y axes, etc., as illustrated by running |noble_1962_local.sedml|_:
 
 .. |noble_1962_local.sedml| replace:: ``[OpenCOR]/models/tests/sedml/noble_1962_local.sedml``
-.. _noble_1962_local.sedml: https://raw.githubusercontent.com/opencor/opencor/master/models/tests/sedml/noble_1962_local.sedml
+.. _noble_1962_local.sedml: opencor://openFile/https://raw.githubusercontent.com/opencor/opencor/master/models/tests/sedml/noble_1962_local.sedml
 
 .. image:: pics/SimulationExperimentViewScreenshot26.png
    :align: center
    :scale: 25%
 
-Note that you can specify some default settings for graphs and graph panels by clicking on the |oxygenCategoriesPreferencesSystem| button in the tool bar, or by selecting the ``Tools`` | ``Preferences...`` menu item and then the ``SimulationExperimentView`` section:
+Note that you can specify some default settings for graphs and graph panels by clicking on the |oxygenCategoriesPreferencesSystem| button in the tool bar, or by selecting the ``Tools`` | ``Preferences...`` menu item and then the **SimulationExperimentView** section:
 
 .. |oxygenCategoriesPreferencesSystem| image:: ../../pics/oxygen/categories/preferences-system.png
    :class: inlineicon
