@@ -4,15 +4,15 @@
  CellMLAnnotationView plugin
 =============================
 
-The CellMLAnnotationView plugin can be used to annotate `CellML <https://www.cellml.org/>`__ files by associating one or several ontological terms to a given CellML element.
-To open a CellML file that does not contain any annotations gives:
+The CellMLAnnotationView plugin can be used to annotate `CellML <https://www.cellml.org/>`__ files by associating one or several ontological terms to a given `CellML <https://www.cellml.org/>`__ element.
+To open a `CellML <https://www.cellml.org/>`__ file that does not contain any annotations gives:
 
 .. image:: pics/CellMLAnnotationViewScreenshot01.png
    :align: center
    :scale: 25%
 
-All the CellML elements that can be annotated are listed on the left of the view.
-Right click on any of them to get a popup menu, which you can use to expand/collapse all the child nodes, as well as remove the metadata associated with the current CellML element or any CellML element in the CellML file:
+All the `CellML <https://www.cellml.org/>`__ elements that can be annotated are listed on the left of the view.
+Right click on any of them to get a popup menu, which you can use to expand/collapse all the child nodes, as well as remove the metadata associated with the current `CellML <https://www.cellml.org/>`__ element or any `CellML <https://www.cellml.org/>`__ element in the `CellML <https://www.cellml.org/>`__ file:
 
 .. image:: pics/CellMLAnnotationViewScreenshot02.png
    :align: center
@@ -75,15 +75,15 @@ Now, assuming that you are happy with your choice, you can associate the ontolog
    :align: center
    :scale: 25%
 
-As you can see, the ontological term you have added cannot be added anymore, but it can be removed by clicking on its corresponding |oxygenActionsListRemove| button.
+The ontological term you have added cannot be added anymore, but it can be removed by clicking on its corresponding |oxygenActionsListRemove| button.
 
 .. |oxygenActionsListRemove| image:: ../../pics/oxygen/actions/list-remove.png
    :class: inlineicon
    :width: 16px
 
 Now, say that you also want to add another ontological term.
-You can obviously do so by clicking on its corresponding |oxygenActionsListAdd| button, but you can also enter its resource-id duple, e.g. ``go/GO:0005248`` (i.e. ``<resource>/<id>``) in the term field.
-OpenCOR will recognise this 'term' as being a resource-id duple and will offer you to add its corresponding ontological term directly:
+You can do so by clicking on its corresponding |oxygenActionsListAdd| button, but also by entering its resource-id duple, e.g. ``go/GO:0005248`` (i.e. ``<resource>/<id>``) in the term field.
+OpenCOR will recognise this "term" as being a resource-id duple and will offer you to add its corresponding ontological term directly:
 
 .. image:: pics/CellMLAnnotationViewScreenshot10.png
    :align: center
@@ -93,7 +93,7 @@ Unrecognised annotations
 ------------------------
 
 Annotations consist of `RDF triples <https://www.w3.org/TR/rdf-concepts/#section-triples>`__, which are made of a subject, a predicate and an object.
-OpenCOR recognises `RDF triples <https://www.w3.org/TR/rdf-concepts/#section-triples>`__, which subject identifies a CellML element while it expects the predicate to be a `BioModels.net qualifier <http://biomodels.net/qualifiers/>`__ and the object an ontological term.
+OpenCOR recognises `RDF triples <https://www.w3.org/TR/rdf-concepts/#section-triples>`__, which subject identifies a `CellML <https://www.cellml.org/>`__ element while it expects the predicate to be a `BioModels.net qualifier <http://biomodels.net/qualifiers/>`__ and the object an ontological term.
 
 Ontological terms used to be identified using `MIRIAM <https://www.ebi.ac.uk/miriam/main/mdb?section=use>`__ `URNs <https://en.wikipedia.org/wiki/Uniform_Resource_Name>`__, but these have now been deprecated in favour of `identifiers.org <http://www.identifiers.org/>`__ `URIs <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__.
 OpenCOR recognises both, but it will only serialise annotations using `identifiers.org <http://www.identifiers.org/>`__ `URIs <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__.
