@@ -5,7 +5,7 @@
 ======================
 
 The RawCellMLView plugin can be used to edit `CellML <https://www.cellml.org/>`__ files in their raw format using a text editor.
-If you open a `CellML <https://www.cellml.org/>`__ file, then it will look something like:
+If you open a `CellML <https://www.cellml.org/>`__ file, it will look something like:
 
 .. image:: pics/RawCellMLViewScreenshot01.png
    :align: center
