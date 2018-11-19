@@ -42,7 +42,7 @@ On the `staging instance <https://staging.physiomeproject.org>`__, your `primary
 Specify an instance of PMR
 --------------------------
 
-You can specify which instance of `PMR <https://models.physiomeproject.org/>`__ to use by clicking on the |oxygenCategoriesPreferencesSystem| button in the tool bar, or by selecting the ``Tools`` | ``Preferences...`` menu item and then the ``PMRSupport`` section:
+You can specify which instance of `PMR <https://models.physiomeproject.org/>`__ to use by clicking on the |oxygenCategoriesPreferencesSystem| button in the tool bar, or by selecting the ``Tools`` | ``Preferences...`` menu item and then the **PMRSupport** section:
 
 .. |oxygenCategoriesPreferencesSystem| image:: ../../pics/oxygen/categories/preferences-system.png
    :class: inlineicon
