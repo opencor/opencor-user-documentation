@@ -10,7 +10,7 @@ Windows, Linux and macOS
 ------------------------
 
 - By default, OpenCOR uses the system's language for menus, message boxes, etc., as long as it is either English or French (please `contact us <http://www.opencor.ws/contactUs.html>`__ if you would like OpenCOR to support other languages).
-  If the system uses another language, then OpenCOR will default to English.
+  If the system uses another language, OpenCOR will default to English.
   Otherwise, if you specify English or French, then please be aware that system messages, diaogs, etc. will still be displayed using the system's language (assuming it is not one of the languages supported by OpenCOR).
 - OpenCOR uses the `CellML API <https://github.com/cellmlapi/cellml-api/>`__, which is known to have the following limitations:
 
