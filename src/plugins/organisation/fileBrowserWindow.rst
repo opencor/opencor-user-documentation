@@ -11,14 +11,14 @@ By default, your home directory is selected:
    :align: center
    :scale: 25%
 
-As you would expect, to double click on a folder expands its contents, as can be seen by double clicking on the ``Windows`` directory:
+To double click on a folder expands its contents, as can be seen by double clicking on the ``Windows`` directory:
 
 .. image:: pics/FileBrowserWindowScreenshot02.png
    :align: center
    :scale: 25%
 
 Similarly, to double click on a file results in that file being opened in OpenCOR.
-Its rendering depends either on its type, if it is recognised, or on the view being currently selected.
+Its rendering depends on its type, if it is recognised, or on the view being currently selected.
 
 Files can also be dragged from the :ref:`File Browser window <plugins_organisation_fileBrowserWindow>` onto the :ref:`File Organiser window <plugins_organisation_fileOrganiserWindow>`.
 
