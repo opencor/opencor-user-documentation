@@ -4,7 +4,7 @@
  KINSOLSolver plugin
 =====================
 
-The KINSOLSolver plugin uses `KINSOL <http://computation.llnl.gov/projects/sundials/kinsol>`__ to solve systems of NLA equations and it can be customised through the following properties:
+The KINSOLSolver plugin uses `KINSOL <http://computation.llnl.gov/projects/sundials/kinsol>`__ to solve systems of `non-linear algebraic <https://en.wikipedia.org/wiki/Nonlinear_system#Nonlinear_algebraic_equations>`__ equations and it can be customised through the following properties:
 
 - **Maximum number of iterations:** the maximum number of iterations used by the solver to solve the system (default: :math:`200`).
 

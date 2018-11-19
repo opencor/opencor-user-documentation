@@ -4,7 +4,7 @@
  CVODESolver plugin
 ====================
 
-The CVODESolver plugin uses `CVODE <http://computation.llnl.gov/projects/sundials/cvode>`__ to solve ODEs and it can be customised through the following properties:
+The CVODESolver plugin uses `CVODE <http://computation.llnl.gov/projects/sundials/cvode>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__ and it can be customised through the following properties:
 
 - **Maximum step:** the maximum step used by the solver (default: :math:`0`).
 
@@ -81,5 +81,5 @@ The default settings should work with most models.
 However, some models may require some minor adjustments.
 This is the case with cardiac cellular electrophysiological models that need a stimulus protocol to generate an action potential.
 Such a protocol is likely to be ignored by `CVODE <http://computation.llnl.gov/projects/sundials/cvode>`__, if **Maximum step** and **Interpolate solution** are set to their default values of :math:`0` and ``True``, respectively.
-To address this issue, you can either set **Maximum step** to the length of the stimulus protocol or set **Interpolate solution** to ``False``.
+To address this issue, you can either set **Maximum step** to the length of the stimulus protocol or **Interpolate solution** to ``False``.
 The former approach will yield (slightly) less accurate results, but they will be obtained (much) faster.
