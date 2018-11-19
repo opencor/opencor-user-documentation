@@ -27,8 +27,8 @@ About
 ::
 
   $ ./OpenCOR -a
-  OpenCOR Version 0.6
-  macOS High Sierra (10.13)
+  OpenCOR Snapshot 2018-11-19
+  macOS Mojave (10.14)
   Copyright 2011-2018
 
   OpenCOR is a cross-platform modelling environment, which can be used to organise, edit, simulate and analyse CellML files.
@@ -133,4 +133,4 @@ Version
 ::
 
   $ ./OpenCOR -v
-  OpenCOR Version 0.6
+  OpenCOR Snapshot 2018-11-19
