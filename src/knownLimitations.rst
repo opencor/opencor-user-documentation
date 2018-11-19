@@ -21,9 +21,8 @@ Windows and Linux
 -----------------
 
 - A scaled display will, on `Windows 7 <https://en.wikipedia.org/wiki/Windows_7>`__ and `Linux <https://en.wikipedia.org/wiki/Linux>`__, result in some aspects of OpenCOR being rendered at the wrong size (e.g. icons will be smaller and scroll bars bigger).
-  On `Windows 10 <https://en.wikipedia.org/wiki/Windows_10>`__, OpenCOR should scale itself automatically, meaning that  everything should be at the right size, although it will look more or less blurry depending on your display scaling and screen resolution.
-  There are cases where the rendering will, on `Windows 10 <https://en.wikipedia.org/wiki/Windows_10>`__, be the same as on `Windows 7 <https://en.wikipedia.org/wiki/Windows_7>`__ and `Linux <https://en.wikipedia.org/wiki/Linux>`__.
-  In this case, you might want to turn off fix scaling for apps:
+  On `Windows 10 <https://en.wikipedia.org/wiki/Windows_10>`__, OpenCOR should scale itself automatically, although it will look more or less blurry depending on your display scaling and screen resolution.
+  In case OpenCOR does not scale itself, turn off *Fix scaling for apps*:
 
     .. image:: pics/windowsSettings01.png
        :align: center
@@ -37,7 +36,7 @@ Windows and Linux
        :align: center
        :scale: 25%
 
-  or better, you might want to locate your copy of OpenCOR, right click on ``[OpenCOR]\bin\OpenCOR.exe``, click on the ``Properties`` menu item, and have the high DPI scaling performed by the system:
+  or better, locate your copy of OpenCOR, right click on ``[OpenCOR]\bin\OpenCOR.exe``, click on the ``Properties`` menu item, and have the high DPI scaling performed by the system:
 
     .. image:: pics/opencorProperties01.png
        :align: center
