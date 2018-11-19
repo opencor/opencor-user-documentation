@@ -79,7 +79,7 @@ Various information about OpenCOR and its use can be found in the following page
 
 ..
 
-- :ref:`licensing`
+- `Licensing <http://www.opencor.ws/licensing.html>`__
 
 .. toctree::
    :hidden:
@@ -114,7 +114,6 @@ Various information about OpenCOR and its use can be found in the following page
    uriScheme
    knownLimitations
    supportedPlatforms
-   licensing
 
 You might also be interested in our `published article <https://dx.doi.org/10.3389/fphys.2015.00026>`__.
 
