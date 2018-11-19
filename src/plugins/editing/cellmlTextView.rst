@@ -5,7 +5,7 @@
 =======================
 
 The CellMLTextView plugin can be used to edit `CellML <https://www.cellml.org/>`__ files using a text editor that supports the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`.
-If you open a `CellML <https://www.cellml.org/>`__ file, then it will look something like:
+If you open a `CellML <https://www.cellml.org/>`__ file, it will look something like:
 
 .. image:: pics/CellMLTextViewScreenshot01.png
    :align: center
@@ -20,14 +20,14 @@ People familiar with `COR <http://www.opencor.ws/cor/index.html>`__ will find th
 
 - :ref:`Comments <plugins_editing_cellmlTextView_comments>`;
 - The ``import`` element (i.e. support for `CellML 1.1 <https://www.cellml.org/specifications/cellml_1.1>`__);
-- The ``cmeta:id`` attribute on all CellML elements (i.e. support for CellML annotation);
+- The ``cmeta:id`` attribute on all `CellML <https://www.cellml.org/>`__ elements (i.e. support for `CellML <https://www.cellml.org/>`__ annotation);
 - The ``degree`` qualifier for the ``diff`` element (i.e. support for higher-order derivatives);
 - The ``notanumber`` and ``infinity`` constants; and
 - An unlimited number of group types (in `COR <http://www.opencor.ws/cor/index.html>`__, a group can only specify one ``encapsulation`` and/or one ``containment`` type).
 
 However, note that the COR format has some limitations that are also present in the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`:
 
-- The ``reaction`` element is not supported (its use is not only discouraged, but it has also been removed from `CellML 2.0 <https://www.cellml.org/specifications/cellml_2.0>`__, the next version of CellML);
+- The ``reaction`` element is not supported (its use is not only discouraged, but it has also been removed from `CellML 2.0 <https://www.cellml.org/specifications/cellml_2.0>`__, the next version of `CellML <https://www.cellml.org/>`__);
 - A ``piecewise`` statement can only be used as part of a top-level ``eq`` statement, and nested ``piecewise`` statements are not allowed (the latter is not a limitation *per se* since an equation can always be rewritten without the need for nested ``piecewise`` statements; more importantly, it is easier to read and maintain an equation that uses only one top-level ``piecewise`` statement); and
 - A ``component`` element may contain a set of ``math`` elements, but its rendering is such that when serialised back, only one ``math`` element will remain, with all the equations in that one and unique ``math`` element.
 
@@ -54,7 +54,7 @@ Alternatively, if one or several lines are partially selected, then the comment 
        ...
    enddef;
 
-Note that ``/* XXX */`` comments are only for convenience and are not serialised back to CellML.
+Note that ``/* XXX */`` comments are only for convenience and are not serialised back to `CellML <https://www.cellml.org/>`__.
 Indeed, such comments can be inserted anywhere, including within an equation, e.g.
 
 .. code-block:: cellmlText
@@ -71,12 +71,12 @@ However, the rendering of certain elements using the :ref:`CellML Text format <p
 CellML Text format
 ------------------
 
-The :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>` offers, for the large part, a one-to-one mapping to the CellML format with the view of making it easier to create and edit CellML files.
+The :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>` offers, for the large part, a one-to-one mapping to the `CellML <https://www.cellml.org/>`__ format with the view of making it easier to create and edit `CellML <https://www.cellml.org/>`__ files.
 
 Model structure
 ~~~~~~~~~~~~~~~
 
-To define a model of name ``my_model``, we would use:
+To define a model of name ``my_model``, we use:
 
 .. code-block:: cellmlText
 
@@ -91,7 +91,7 @@ The model definition sits between ``as`` and ``enddef;``, and can consist of :re
 Imports
 ~~~~~~~
 
-To define an import for units and components defined in a CellML file, which `URI <https://en.wikipedia.org/wiki/Uniform_resource_identifier>`__ is ``my_imported_model_uri``, we would use:
+To define an import for units and components defined in a `CellML <https://www.cellml.org/>`__ file, which `URI <https://en.wikipedia.org/wiki/Uniform_resource_identifier>`__ is ``my_imported_model_uri``, we would use:
 
 .. code-block:: cellmlText
 
@@ -243,7 +243,7 @@ Both ``pub`` and ``priv`` can take any of the following values: ``none``, ``in``
 Mathematical equations
 ~~~~~~~~~~~~~~~~~~~~~~
 
-A mathematical equation must either have an identifier or an ODE on its left hand side, i.e. :math:`x=...` and :math:`\frac{dx}{dt}=...`, respectively.
+A mathematical equation must either have an identifier or an `ODE <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__ on its left hand side, i.e. :math:`x=...` and :math:`\frac{dx}{dt}=...`, respectively.
 To write such equations, we would use:
 
 .. code-block:: cellmlText
@@ -256,13 +256,13 @@ and
 
    ode(x, t) = ...;
 
-The ODE is a first-order ODE and could also be written:
+The `ODE <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__ is a first-order `ODE <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__ and could also be written:
 
 .. code-block:: cellmlText
 
    ode(x, t, 1{dimensionless})
 
-As can be seen, the order of the ODE is specified using a constant value of unit ``dimensionless``, which means that to write :math:`\frac{d^2 x}{dt^2}`, :math:`\frac{d^3 x}{dt^3}`, etc., we would use:
+As can be seen, the order of the `ODE <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__ is specified using a constant value of unit ``dimensionless``, which means that to have :math:`\frac{d^2 x}{dt^2}`, :math:`\frac{d^3 x}{dt^3}`, etc., we would use:
 
 .. code-block:: cellmlText
 
@@ -270,7 +270,7 @@ As can be seen, the order of the ODE is specified using a constant value of unit
    ode(x, t, 3{dimensionless})
    ...
 
-The right hand side of a mathematical equation can use any of the following mathematical operators, elements and constants:
+The right-hand side of a mathematical equation can use any of the following mathematical operators, elements and constants:
 
 - Relational operators:
 
@@ -523,7 +523,7 @@ The right hand side of a mathematical equation can use any of the following math
      |           |                |    e                       |
      +-----------+----------------+----------------------------+
 
-A piecewise statement can also be used in the top-level of the right hand side of a mathematical equation.
+A piecewise statement can also be used in the top-level of the right-hand side of a mathematical equation.
 For example, to define :math:`x` as being equal to :math:`y+z` when :math:`x > 0` and :math:`y-z` otherwise, we would use:
 
 .. code-block:: cellmlText
