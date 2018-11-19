@@ -11,6 +11,17 @@ By default, it looks as follows:
    :align: center
    :scale: 25%
 
+The following topics are covered:
+
+- :ref:`Instances of PMR <plugins_organisation_pmrWorkspacesWindow_instancesOfPmr>`
+- :ref:`Specify an instance of PMR <plugins_organisation_pmrWorkspacesWindow_specifyInstanceOfPmr>`
+- :ref:`Log on to PMR <plugins_organisation_pmrWorkspacesWindow_logOnToPmr>`
+- :ref:`Make a local copy of a public workspace <plugins_organisation_pmrWorkspacesWindow_makeLocalCopyPublicWorkspace>`
+- :ref:`Create a new workspace <plugins_organisation_pmrWorkspacesWindow_createNewWorkspace>`
+- :ref:`Synchronise with PMR <plugins_organisation_pmrWorkspacesWindow_synchroniseWithPmr>`
+
+.. _plugins_organisation_pmrWorkspacesWindow_instancesOfPmr:
+
 Instances of PMR
 ----------------
 
@@ -26,7 +37,7 @@ There are three instances of `PMR <https://models.physiomeproject.org/>`__:
 Both the `primary instance <https://models.physiomeproject.org>`__ and the `teaching instance <https://teaching.physiomeproject.org>`__ require you to create an account before you can start interacting with them.
 On the `staging instance <https://staging.physiomeproject.org>`__, your `primary instance <https://models.physiomeproject.org>`__ account may work, but if not then you need to create an account (on the `staging instance <https://staging.physiomeproject.org>`__).
 
-.. _plugins_organisation_pmrWorkspacesWindow_instanceOfPmr:
+.. _plugins_organisation_pmrWorkspacesWindow_specifyInstanceOfPmr:
 
 Specify an instance of PMR
 --------------------------
@@ -42,6 +53,8 @@ You can specify which instance of `PMR <https://models.physiomeproject.org/>`__ 
    :scale: 25%
 
 This is also where you must specify your name and email address, if you want to be able to :ref:`synchronise <plugins_organisation_pmrWorkspacesWindow_synchroniseWithPmr>` your workspaces with `PMR <https://models.physiomeproject.org/>`__.
+
+.. _plugins_organisation_pmrWorkspacesWindow_logOnToPmr:
 
 Log on to PMR
 -------------
@@ -73,12 +86,14 @@ This closes the window and replaces the |logOn| button with the |logOff| button,
    :align: center
    :scale: 25%
 
+.. _plugins_organisation_pmrWorkspacesWindow_makeLocalCopyPublicWorkspace:
+
 Make a local copy of a public workspace
 ---------------------------------------
 
 The :ref:`PMR Window <plugins_organisation_pmrWindow>` lists published exposures, which reference a specific state of a public workspace.
 Say that you want to experiment with the `Hodgkin–Huxley model <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1392413/pdf/jphysiol01442-0106.pdf>`__.
-You can do so by switching to the teaching instance (see :ref:`above <plugins_organisation_pmrWorkspacesWindow_instanceOfPmr>`), looking for the `Hodgkin–Huxley model <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1392413/pdf/jphysiol01442-0106.pdf>`__, right clicking on it and by selecting the ``Make Local Copy...`` menu item:
+You can do so by switching to the teaching instance (see :ref:`above <plugins_organisation_pmrWorkspacesWindow_specifyInstanceOfPmr>`), looking for the `Hodgkin–Huxley model <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1392413/pdf/jphysiol01442-0106.pdf>`__, right clicking on it and by selecting the ``Make Local Copy...`` menu item:
 
 .. image:: pics/PMRWorkspacesWindowScreenshot06.png
    :align: center
@@ -90,6 +105,8 @@ The local copy completed, you can double click on it to reveal its contents:
 .. image:: pics/PMRWorkspacesWindowScreenshot07.png
    :align: center
    :scale: 25%
+
+.. _plugins_organisation_pmrWorkspacesWindow_createNewWorkspace:
 
 Create a new workspace
 ----------------------
