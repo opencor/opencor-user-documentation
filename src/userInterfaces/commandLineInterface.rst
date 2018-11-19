@@ -27,7 +27,7 @@ About
 ::
 
   $ ./OpenCOR -a
-  OpenCOR Snapshot 2018-11-19
+  OpenCOR Version 0.6
   macOS Mojave (10.14)
   Copyright 2011-2018
 
@@ -133,4 +133,4 @@ Version
 ::
 
   $ ./OpenCOR -v
-  OpenCOR Snapshot 2018-11-19
+  OpenCOR Version 0.6
