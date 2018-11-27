@@ -46,14 +46,14 @@ Editing plugins are used to edit files:
    - :ref:`CellMLAnnotationView <plugins_editing_cellmlAnnotationView>`\ : a plugin to annotate `CellML <https://www.cellml.org/>`__ files.
    - :ref:`CellMLTextView <plugins_editing_cellmlTextView>`\ : a plugin to edit `CellML <https://www.cellml.org/>`__ files using the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`.
    - :ref:`RawCellMLView <plugins_editing_rawCellmlView>`\ : a plugin to edit `CellML <https://www.cellml.org/>`__ files using an `XML <https://www.w3.org/XML/>`__ editor.
-   - :ref:`RawSEDMLView <plugins_editing_rawSedmlView>`\ : a plugin to edit `SED-ML <http://www.sed-ml.org/>`__ files using an `XML <https://www.w3.org/XML/>`__ editor.
+   - :ref:`RawSEDMLView <plugins_editing_rawSedmlView>`\ : a plugin to edit `SED-ML <https://sed-ml.github.io/>`__ files using an `XML <https://www.w3.org/XML/>`__ editor.
    - :ref:`RawTextView <plugins_editing_rawTextView>`\ : a plugin to edit text-based files using a text editor.
 
 There are also some non-selectable editing plugins:
 
 - **CellMLEditingView:** a plugin that provides core `CellML <https://www.cellml.org/>`__ editing view facilities.
 - **EditingView:** a plugin that provides core editing view facilities.
-- **SEDMLEditingView:** a plugin that provides core `SED-ML <http://www.sed-ml.org/>`__ editing view facilities.
+- **SEDMLEditingView:** a plugin that provides core `SED-ML <https://sed-ml.github.io/>`__ editing view facilities.
 
 Miscellaneous
 -------------
@@ -102,11 +102,11 @@ Solver plugins are used to access various solvers:
 
 .. rst-class:: internal reference
 
-   - :ref:`CVODESolver <plugins_solver_cvodeSolver>`\ : a plugin that uses `CVODE <http://computation.llnl.gov/projects/sundials/cvode>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
+   - :ref:`CVODESolver <plugins_solver_cvodeSolver>`\ : a plugin that uses `CVODE <https://computation.llnl.gov/projects/sundials/cvode>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
    - :ref:`ForwardEulerSolver <plugins_solver_forwardEulerSolver>`\ : a plugin that implements the `Forward Euler method <https://en.wikipedia.org/wiki/Euler_method>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
    - :ref:`FourthOrderRungeKuttaSolver <plugins_solver_fourthOrderRungeKuttaSolver>`\ : a plugin that implements the fourth-order `Runge-Kutta method <https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
    - :ref:`HeunSolver <plugins_solver_heunSolver>`\ : a plugin that implements the `Heun's method <https://en.wikipedia.org/wiki/Heun's_method>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
-   - :ref:`KINSOLSolver <plugins_solver_kinsolSolver>`\ : a plugin that uses `KINSOL <http://computation.llnl.gov/projects/sundials/kinsol>`__ to solve `non-linear algebraic systems <https://en.wikipedia.org/wiki/Nonlinear_system#Nonlinear_algebraic_equations>`__.
+   - :ref:`KINSOLSolver <plugins_solver_kinsolSolver>`\ : a plugin that uses `KINSOL <https://computation.llnl.gov/projects/sundials/kinsol>`__ to solve `non-linear algebraic systems <https://en.wikipedia.org/wiki/Nonlinear_system#Nonlinear_algebraic_equations>`__.
    - :ref:`SecondOrderRungeKuttaSolver <plugins_solver_secondOrderRungeKuttaSolver>`\ : a plugin that implements the second-order `Runge-Kutta method <https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods>`__ to solve `ODEs <https://en.wikipedia.org/wiki/Ordinary_differential_equation>`__.
 
 Support
@@ -135,13 +135,13 @@ Non-selectable third-party plugins are used to access to various third-party lib
 - **libSBML:** a plugin to access `libSBML <http://sbml.org/Software/libSBML/>`__.
 - **libSEDML:** a plugin to access `libSEDML <https://github.com/fbergmann/libSEDML/>`__.
 - **LibXDiff:** a plugin to access `LibXDiff <http://www.xmailserver.org/xdiff-lib.html>`__.
-- **LLVMClang:** a plugin to access `LLVM <http://www.llvm.org/>`__ and `Clang <http://clang.llvm.org/>`__.
+- **LLVMClang:** a plugin to access `LLVM <https://llvm.org/>`__ and `Clang <https://clang.llvm.org/>`__.
 - **OAuth:** a plugin to access `OAuth for Qt <https://github.com/pipacs/o2>`__.
-- **OpenSSL:** a plugin to access `OpenSSL <http://www.openssl.org/>`__.
+- **OpenSSL:** a plugin to access `OpenSSL <https://www.openssl.org/>`__.
 - **QScintilla:** a plugin to access `QScintilla <https://riverbankcomputing.com/software/qscintilla/intro>`__.
 - **Qwt:** a plugin to access `Qwt <http://qwt.sourceforge.net/>`__.
-- **SUNDIALS:** a plugin to access the `ARKode <http://computation.llnl.gov/projects/sundials/arkode>`__, `CVODES <http://computation.llnl.gov/projects/sundials/cvodes>`__, `IDAS <http://computation.llnl.gov/projects/sundials/idas>`__ and `KINSOL <http://computation.llnl.gov/projects/sundials/kinsol>`__ solvers from the `SUNDIALS <http://computation.llnl.gov/projects/sundials>`__ library.
-- **zlib:** a plugin to access `zlib <http://www.zlib.net/>`__.
+- **SUNDIALS:** a plugin to access the `ARKode <https://computation.llnl.gov/projects/sundials/arkode>`__, `CVODES <https://computation.llnl.gov/projects/sundials/cvodes>`__, `IDAS <https://computation.llnl.gov/projects/sundials/idas>`__ and `KINSOL <https://computation.llnl.gov/projects/sundials/kinsol>`__ solvers from the `SUNDIALS <https://computation.llnl.gov/projects/sundials>`__ library.
+- **zlib:** a plugin to access `zlib <https://zlib.net/>`__.
 
 Tools
 -----

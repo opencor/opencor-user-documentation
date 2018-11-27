@@ -24,9 +24,9 @@ to export ``myfile.cellml`` to CellML 1.0, or by entering:
 
 .. code-block:: shell
 
-   $ ./OpenCOR -c CellMLTools::export http://mydomain.com/myfile.cellml myformat.xml
+   $ ./OpenCOR -c CellMLTools::export https://mydomain.com/myfile.cellml myformat.xml
 
-to export ``http://mydomain.com/myfile.cellml`` file using the user-defined format described in ``myformat.xml``.
+to export ``https://mydomain.com/myfile.cellml`` file using the user-defined format described in ``myformat.xml``.
 
 Some sample user-defined formats can be found in the OpenCOR distribution package.
 They are for `C <https://raw.githubusercontent.com/opencor/opencor/master/formats/C.xml>`__, `FORTRAN 77 <https://raw.githubusercontent.com/opencor/opencor/master/formats/F77.xml>`__, `MATLAB <https://raw.githubusercontent.com/opencor/opencor/master/formats/MATLAB.xml>`__ and `Python <https://raw.githubusercontent.com/opencor/opencor/master/formats/Python.xml>`__.

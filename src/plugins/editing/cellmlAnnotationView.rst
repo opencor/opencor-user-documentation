@@ -27,8 +27,10 @@ To annotate, say, the ``sodium_channel`` component, you first need to select it:
    :align: center
    :scale: 25%
 
-Next, you need to specify a `BioModels.net qualifier <http://biomodels.net/qualifiers/>`__.
-If you do not know which one to use, click on the |oxygenCategoriesApplicationInternet| button to get some information about the current `BioModels.net qualifier <http://biomodels.net/qualifiers/>`__:
+Next, you need to specify a `BioModels.net qualifier <https://co.mbine.
+org/standards/qualifiers>`__.
+If you do not know which one to use, click on the |oxygenCategoriesApplicationInternet| button to get some information about the current `BioModels.net qualifier <https://co.mbine.
+org/standards/qualifiers>`__:
 
 .. |oxygenCategoriesApplicationInternet| image:: ../../pics/oxygen/categories/applications-internet.png
    :class: inlineicon
@@ -38,7 +40,8 @@ If you do not know which one to use, click on the |oxygenCategoriesApplicationIn
    :align: center
    :scale: 25%
 
-From there, go through the list of `BioModels.net qualifiers <http://biomodels.net/qualifiers/>`__ until you find the one that suits your needs best, e.g. ``bio:isVersionOf``:
+From there, go through the list of `BioModels.net qualifiers <https://co.mbine.
+org/standards/qualifiers>`__ until you find the one that suits your needs best, e.g. ``bio:isVersionOf``:
 
 .. image:: pics/CellMLAnnotationViewScreenshot05.png
    :align: center
@@ -93,10 +96,11 @@ Unrecognised annotations
 ------------------------
 
 Annotations consist of `RDF triples <https://www.w3.org/TR/rdf-concepts/#section-triples>`__, which are made of a subject, a predicate and an object.
-OpenCOR recognises `RDF triples <https://www.w3.org/TR/rdf-concepts/#section-triples>`__, which subject identifies a `CellML <https://www.cellml.org/>`__ element while it expects the predicate to be a `BioModels.net qualifier <http://biomodels.net/qualifiers/>`__ and the object an ontological term.
+OpenCOR recognises `RDF triples <https://www.w3.org/TR/rdf-concepts/#section-triples>`__, which subject identifies a `CellML <https://www.cellml.org/>`__ element while it expects the predicate to be a `BioModels.net qualifier <https://co.mbine.
+org/standards/qualifiers>`__ and the object an ontological term.
 
-Ontological terms used to be identified using `MIRIAM <https://www.ebi.ac.uk/miriam/main/mdb?section=use>`__ `URNs <https://en.wikipedia.org/wiki/Uniform_Resource_Name>`__, but these have now been deprecated in favour of `identifiers.org <http://www.identifiers.org/>`__ `URIs <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__.
-OpenCOR recognises both, but it will only serialise annotations using `identifiers.org <http://www.identifiers.org/>`__ `URIs <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__.
+Ontological terms used to be identified using `MIRIAM <https://www.ebi.ac.uk/miriam/main/mdb?section=use>`__ `URNs <https://en.wikipedia.org/wiki/Uniform_Resource_Name>`__, but these have now been deprecated in favour of `identifiers.org <https://identifiers.org/>`__ `URIs <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__.
+OpenCOR recognises both, but it will only serialise annotations using `identifiers.org <https://identifiers.org/>`__ `URIs <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__.
 
 Now, it may happen that a file contains annotations that are not recognised by OpenCOR.
 In this case, OpenCOR will display the annotations as a simple list of `RDF triples <https://www.w3.org/TR/rdf-concepts/#section-triples>`__:
