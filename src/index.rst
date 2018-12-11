@@ -75,7 +75,7 @@ Various information about OpenCOR and its use can be found in the following page
 
 ..
 
-- :ref:`supportedPlatforms`
+- `Supported platforms <http://www.opencor.ws/supportedPlatforms.html>`__
 
 ..
 
@@ -113,7 +113,6 @@ Various information about OpenCOR and its use can be found in the following page
    preferences
    uriScheme
    knownLimitations
-   supportedPlatforms
 
 You might also be interested in our `published article <https://dx.doi.org/10.3389/fphys.2015.00026>`__.
 

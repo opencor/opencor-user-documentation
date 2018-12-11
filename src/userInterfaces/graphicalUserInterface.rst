@@ -4,7 +4,7 @@
  Graphical User Interface (GUI)
 ================================
 
-OpenCOR offers a consistent `GUI <https://en.wikipedia.org/wiki/Graphical_user_interface>`__ across the :ref:`different platforms <supportedPlatforms>` it supports.
+OpenCOR offers a consistent `GUI <https://en.wikipedia.org/wiki/Graphical_user_interface>`__ across the `different platforms <http://www.opencor.ws/supportedPlatforms.html>`__ it supports.
 The look and feel of the interface is determined by the :ref:`plugins <plugins_index>` that are selected.
 The first time you run OpenCOR, it will look something like:
 
