@@ -4,7 +4,7 @@
  Known limitations
 ===================
 
-The following limitations have been noticed when using OpenCOR on our :ref:`supported platforms <supportedPlatforms>`.
+The following limitations have been noticed when using OpenCOR on our `supported platforms <http://www.opencor.ws/supportedPlatforms.html>`__.
 
 Windows, Linux and macOS
 ------------------------
