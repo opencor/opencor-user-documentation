@@ -33,3 +33,14 @@ They are for `C <https://raw.githubusercontent.com/opencor/opencor/master/format
 
 | **Note #1:** the CellML 1.0 export is adapted from `Jonathan Cooper's CellML 1.1 to 1.0 converter <https://www.cellml.org/tools/jonathan-cooper-s-cellml-1-1-to-1-0-converter/versionconverter-tar.bz2/view>`__ and therefore has the same limitations.
 | **Note #2:** the sample user-defined formats come from the `CellML API <https://github.com/cellmlapi/cellml-api/>`__ and should be used with caution.
+
+Validate CellML file
+--------------------
+
+The validation of a `CellML <https://www.cellml.org/>`__ file can be done by entering the following command:
+
+.. code-block:: shell
+
+   $ ./OpenCOR -c CellMLTools::validate myfile.cellml
+
+Both errors and warnings, if any, get listed and an exit code value of ``0`` means that the `CellML <https://www.cellml.org/>`__ file is valid, i.e. no errors were found.
