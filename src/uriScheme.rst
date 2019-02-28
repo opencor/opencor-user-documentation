@@ -66,6 +66,28 @@ The following commands are supported by OpenCOR itself:
 .. |cellmlFile| replace:: ``https://models.physiomeproject.org/.../cell-model.xml``
 .. _cellmlFile: https://models.physiomeproject.org/workspace/49e/rawfile/0a252e033bdf5e65d5a6490c9d3ade9035fef04e/experiments/cell-model.xml
 
+- ``importFile``: import a file (or open it if it cannot be imported), which `path <https://en.wikipedia.org/wiki/Path_(computing)>`__/`URL <https://en.wikipedia.org/wiki/URL>`__ is given as an argument.
+
+  - Example #1: |importFile01|_ to import ``/home/user/file``.
+  - Example #2: |importFile02|_ to import ``https://my.domain.com/file``.
+
+.. |importFile01| replace:: ``opencor://importFile//home/user/file``
+.. _importFile01: opencor://importFile//home/user/file
+
+.. |importFile02| replace:: ``opencor://importFile/https://my.domain.com/file``
+.. _importFile02: opencor://importFile/https://my.domain.com/file
+
+- ``importFiles``: import several files (or open one/several of them if it/they cannot be imported), which `path <https://en.wikipedia.org/wiki/Path_(computing)>`__/`URL <https://en.wikipedia.org/wiki/URL>`__ is given as arguments, separated by ``|``.
+
+  - Example #1: |importFiles01|_ to import ``/home/user/file1`` and ``/home/user/file2``.
+  - Example #2: |importFiles02|_ to import ``https://my.domain.com/file1`` and ``https://my.domain.com/file2``.
+
+.. |importFiles01| replace:: ``opencor://importFiles//home/user/file1|/home/user/file2``
+.. _importFiles01: opencor://importFiles//home/user/file1|/home/user/file2
+
+.. |importFiles02| replace:: ``opencor://importFiles/https://my.domain.com/file1|https://my.domain.com/file2``
+.. _importFiles02: opencor://importFiles/https://my.domain.com/file1|https://my.domain.com/file2
+
 As hinted above, a command can be sent to a given plugin.
 For example, we can ask the :ref:`Core <plugins_miscellaneous_core_uriScheme>` plugin to select a particular mode or view.
 
