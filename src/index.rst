@@ -27,6 +27,7 @@ Various information about OpenCOR and its use can be found in the following page
 
     - :ref:`CellMLAnnotationView <plugins_editing_cellmlAnnotationView>`
     - :ref:`CellMLTextView <plugins_editing_cellmlTextView>`
+    - :ref:`EditingView <plugins_editing_editingView>`
     - :ref:`RawCellMLView <plugins_editing_rawCellmlView>`
     - :ref:`RawSEDMLView <plugins_editing_rawSedmlView>`
     - :ref:`RawTextView <plugins_editing_rawTextView>`

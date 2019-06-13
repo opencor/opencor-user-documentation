@@ -52,7 +52,7 @@ Editing plugins are used to edit files:
 There are also some non-selectable editing plugins:
 
 - **CellMLEditingView:** a plugin that provides core `CellML <https://www.cellml.org/>`__ editing view facilities.
-- **EditingView:** a plugin that provides core editing view facilities.
+- :ref:`EditingView <plugins_editing_editingView>`\ : a plugin that provides core editing view facilities.
 - **SEDMLEditingView:** a plugin that provides core `SED-ML <https://sed-ml.github.io/>`__ editing view facilities.
 
 Miscellaneous
