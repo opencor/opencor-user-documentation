@@ -93,6 +93,7 @@ Various information about OpenCOR and its use can be found in the following page
    plugins/dataStore/csvDataStore
    plugins/editing/cellmlAnnotationView
    plugins/editing/cellmlTextView
+   plugins/editing/editingView
    plugins/editing/rawCellmlView
    plugins/editing/rawSedmlView
    plugins/editing/rawTextView
