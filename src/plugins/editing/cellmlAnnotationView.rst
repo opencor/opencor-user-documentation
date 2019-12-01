@@ -109,4 +109,4 @@ In this case, OpenCOR will display the annotations as a simple list of `RDF trip
    :align: center
    :scale: 25%
 
-If you ever come across such a type of annotations and think that OpenCOR ought to recognise it, then please do `get in touch <http://www.opencor.ws/contactUs.html>`__.
+If you ever come across such a type of annotations and think that OpenCOR ought to recognise it, then please do `get in touch <https://opencor.ws/contactUs.html>`__.

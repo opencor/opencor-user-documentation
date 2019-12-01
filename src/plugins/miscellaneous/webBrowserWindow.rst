@@ -5,7 +5,7 @@
 =========================
 
 The WebBrowserWindow plugin is a basic `WebKit <https://webkit.org/>`__-based browser.
-It renders Web sites in the same way as any other Web browser, as illustrated with the `OpenCOR website <http://www.opencor.ws/>`__:
+It renders Web sites in the same way as any other Web browser, as illustrated with the `OpenCOR website <https://opencor.ws/>`__:
 
 .. image:: pics/WebBrowserWindowScreenshot01.png
    :align: center
