@@ -43,15 +43,15 @@ Editing plugins are used to edit files:
 
 .. rst-class:: internal reference
 
-   - :ref:`CellMLAnnotationView <plugins_editing_cellmlAnnotationView>`\ : a plugin to annotate `CellML <https://www.cellml.org/>`__ files.
-   - :ref:`CellMLTextView <plugins_editing_cellmlTextView>`\ : a plugin to edit `CellML <https://www.cellml.org/>`__ files using the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`.
-   - :ref:`RawCellMLView <plugins_editing_rawCellmlView>`\ : a plugin to edit `CellML <https://www.cellml.org/>`__ files using an `XML <https://www.w3.org/XML/>`__ editor.
-   - :ref:`RawSEDMLView <plugins_editing_rawSedmlView>`\ : a plugin to edit `SED-ML <https://sed-ml.github.io/>`__ files using an `XML <https://www.w3.org/XML/>`__ editor.
+   - :ref:`CellMLAnnotationView <plugins_editing_cellmlAnnotationView>`\ : a plugin to annotate `CellML <https://cellml.org/>`__ files.
+   - :ref:`CellMLTextView <plugins_editing_cellmlTextView>`\ : a plugin to edit `CellML <https://cellml.org/>`__ files using the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`.
+   - :ref:`RawCellMLView <plugins_editing_rawCellmlView>`\ : a plugin to edit `CellML <https://cellml.org/>`__ files using an `XML <https://w3.org/XML>`__ editor.
+   - :ref:`RawSEDMLView <plugins_editing_rawSedmlView>`\ : a plugin to edit `SED-ML <https://sed-ml.github.io/>`__ files using an `XML <https://w3.org/XML>`__ editor.
    - :ref:`RawTextView <plugins_editing_rawTextView>`\ : a plugin to edit text-based files using a text editor.
 
 There are also some non-selectable editing plugins:
 
-- **CellMLEditingView:** a plugin that provides core `CellML <https://www.cellml.org/>`__ editing view facilities.
+- **CellMLEditingView:** a plugin that provides core `CellML <https://cellml.org/>`__ editing view facilities.
 - :ref:`EditingView <plugins_editing_editingView>`\ : a plugin that provides core editing view facilities.
 - **SEDMLEditingView:** a plugin that provides core `SED-ML <https://sed-ml.github.io/>`__ editing view facilities.
 
@@ -134,10 +134,10 @@ Non-selectable third-party plugins are used to access to various third-party lib
 - **libNuML:** a plugin to access `libNuML <https://github.com/NuML/NuML/>`__.
 - **libSBML:** a plugin to access `libSBML <http://sbml.org/Software/libSBML/>`__.
 - **libSEDML:** a plugin to access `libSEDML <https://github.com/fbergmann/libSEDML/>`__.
-- **LibXDiff:** a plugin to access `LibXDiff <http://www.xmailserver.org/xdiff-lib.html>`__.
+- **LibXDiff:** a plugin to access `LibXDiff <http://xmailserver.org/xdiff-lib.html>`__.
 - **LLVMClang:** a plugin to access `LLVM <https://llvm.org/>`__ and `Clang <https://clang.llvm.org/>`__.
 - **OAuth:** a plugin to access `OAuth for Qt <https://github.com/pipacs/o2>`__.
-- **OpenSSL:** a plugin to access `OpenSSL <https://www.openssl.org/>`__.
+- **OpenSSL:** a plugin to access `OpenSSL <https://openssl.org/>`__.
 - **QScintilla:** a plugin to access `QScintilla <https://riverbankcomputing.com/software/qscintilla/intro>`__.
 - **Qwt:** a plugin to access `Qwt <http://qwt.sourceforge.net/>`__.
 - **SUNDIALS:** a plugin to access the `ARKode <https://computation.llnl.gov/projects/sundials/arkode>`__, `CVODES <https://computation.llnl.gov/projects/sundials/cvodes>`__, `IDAS <https://computation.llnl.gov/projects/sundials/idas>`__ and `KINSOL <https://computation.llnl.gov/projects/sundials/kinsol>`__ solvers from the `SUNDIALS <https://computation.llnl.gov/projects/sundials>`__ library.
@@ -150,7 +150,7 @@ Tools plugins are used to access to various tools:
 
 .. rst-class:: internal reference
 
-   - :ref:`CellMLTools <plugins_tools_cellmlTools>`\ : a plugin to access various `CellML <https://www.cellml.org/>`__-related tools.
+   - :ref:`CellMLTools <plugins_tools_cellmlTools>`\ : a plugin to access various `CellML <https://cellml.org/>`__-related tools.
 
 Widget
 ------
@@ -161,5 +161,5 @@ Non-selectable widget plugins are used to access various *ad hoc* widgets:
 
    - **EditorWidget:** a plugin to edit and display text.
    - **GraphPanelWidget:** a plugin to plot graphs.
-   - **MathMLViewerWidget:** a plugin to visualise `MathML <https://www.w3.org/Math/>`__ documents.
+   - **MathMLViewerWidget:** a plugin to visualise `MathML <https://w3.org/Math>`__ documents.
    - **WebViewerWidget:** a plugin to visualise Web documents.

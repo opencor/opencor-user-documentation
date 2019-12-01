@@ -92,8 +92,8 @@ Make a local copy of a public workspace
 ---------------------------------------
 
 The :ref:`PMR Window <plugins_organisation_pmrWindow>` lists published exposures, which reference a specific state of a public workspace.
-Say that you want to experiment with the `Hodgkin–Huxley model <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1392413/pdf/jphysiol01442-0106.pdf>`__.
-You can do so by switching to the teaching instance (see :ref:`above <plugins_organisation_pmrWorkspacesWindow_specifyInstanceOfPmr>`), looking for the `Hodgkin–Huxley model <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1392413/pdf/jphysiol01442-0106.pdf>`__, right clicking on it and by selecting the ``Make Local Copy...`` menu item:
+Say that you want to experiment with the `Hodgkin–Huxley model <https://ncbi.nlm.nih.gov/pmc/articles/PMC1392413/pdf/jphysiol01442-0106.pdf>`__.
+You can do so by switching to the teaching instance (see :ref:`above <plugins_organisation_pmrWorkspacesWindow_specifyInstanceOfPmr>`), looking for the `Hodgkin–Huxley model <https://ncbi.nlm.nih.gov/pmc/articles/PMC1392413/pdf/jphysiol01442-0106.pdf>`__, right clicking on it and by selecting the ``Make Local Copy...`` menu item:
 
 .. image:: pics/PMRWorkspacesWindowScreenshot06.png
    :align: center
@@ -148,7 +148,7 @@ Synchronise with PMR
 Your workspace created, you may want to syncrhonise it with `PMR <https://models.physiomeproject.org/>`__.
 This is done by right clicking on any of the files/folders in your workspace and by selecting the ``Synchronise Workspace With PMR...`` menu item.
 This brings up a window where you can see *which* files have changed and *what* exactly has changed.
-For `CellML <https://www.cellml.org/>`__ files, changes can be seen using either the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>` or the raw CellML format (i.e. `XML <https://www.w3.org/XML/>`__-based).
+For `CellML <https://cellml.org/>`__ files, changes can be seen using either the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>` or the raw CellML format (i.e. `XML <https://w3.org/XML>`__-based).
 Simply toggle the |cellmlLogo| button as needed:
 
 .. |cellmlLogo| image:: ../../pics/cellmlLogo.png

@@ -4,7 +4,7 @@
  CellMLTools plugin
 ====================
 
-The CellMLTools plugin consists of various `CellML <https://www.cellml.org/>`__-related tools, which can be accessed both through the :ref:`CLI <userInterfaces_commandLineInterface>` and the :ref:`GUI <userInterfaces_graphicalUserInterface>`.
+The CellMLTools plugin consists of various `CellML <https://cellml.org/>`__-related tools, which can be accessed both through the :ref:`CLI <userInterfaces_commandLineInterface>` and the :ref:`GUI <userInterfaces_graphicalUserInterface>`.
 
 CellML file export
 ------------------
@@ -31,16 +31,16 @@ to export ``https://mydomain.com/myfile.cellml`` file using the user-defined for
 Some sample user-defined formats can be found in the OpenCOR distribution package.
 They are for `C <https://raw.githubusercontent.com/opencor/opencor/master/formats/C.xml>`__, `FORTRAN 77 <https://raw.githubusercontent.com/opencor/opencor/master/formats/F77.xml>`__, `MATLAB <https://raw.githubusercontent.com/opencor/opencor/master/formats/MATLAB.xml>`__ and `Python <https://raw.githubusercontent.com/opencor/opencor/master/formats/Python.xml>`__.
 
-| **Note #1:** the CellML 1.0 export is adapted from `Jonathan Cooper's CellML 1.1 to 1.0 converter <https://www.cellml.org/tools/jonathan-cooper-s-cellml-1-1-to-1-0-converter/versionconverter-tar.bz2/view>`__ and therefore has the same limitations.
+| **Note #1:** the CellML 1.0 export is adapted from `Jonathan Cooper's CellML 1.1 to 1.0 converter <https://cellml.org/tools/jonathan-cooper-s-cellml-1-1-to-1-0-converter/versionconverter-tar.bz2/view>`__ and therefore has the same limitations.
 | **Note #2:** the sample user-defined formats come from the `CellML API <https://github.com/cellmlapi/cellml-api/>`__ and should be used with caution.
 
 Validate CellML file
 --------------------
 
-The validation of a `CellML <https://www.cellml.org/>`__ file can be done by entering the following command:
+The validation of a `CellML <https://cellml.org/>`__ file can be done by entering the following command:
 
 .. code-block:: shell
 
    $ ./OpenCOR -c CellMLTools::validate myfile.cellml
 
-Both errors and warnings, if any, get listed and an exit code value of ``0`` means that the `CellML <https://www.cellml.org/>`__ file is valid, i.e. no errors were found.
+Both errors and warnings, if any, get listed and an exit code value of ``0`` means that the `CellML <https://cellml.org/>`__ file is valid, i.e. no errors were found.

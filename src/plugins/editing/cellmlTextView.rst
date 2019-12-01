@@ -4,8 +4,8 @@
  CellMLTextView plugin
 =======================
 
-The CellMLTextView plugin can be used to edit `CellML <https://www.cellml.org/>`__ files using a text editor that supports the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`.
-If you open a `CellML <https://www.cellml.org/>`__ file, it will look something like:
+The CellMLTextView plugin can be used to edit `CellML <https://cellml.org/>`__ files using a text editor that supports the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`.
+If you open a `CellML <https://cellml.org/>`__ file, it will look something like:
 
 .. image:: pics/CellMLTextViewScreenshot01.png
    :align: center
@@ -19,15 +19,15 @@ Compatibility with COR
 People familiar with `COR <https://opencor.ws/cor/index.html>`__ will find that the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>` is compatible with the COR format, although it supports additional features:
 
 - :ref:`Comments <plugins_editing_cellmlTextView_comments>`;
-- The ``import`` element (i.e. support for `CellML 1.1 <https://www.cellml.org/specifications/cellml_1.1>`__);
-- The ``cmeta:id`` attribute on all `CellML <https://www.cellml.org/>`__ elements (i.e. support for `CellML <https://www.cellml.org/>`__ annotation);
+- The ``import`` element (i.e. support for `CellML 1.1 <https://cellml.org/specifications/cellml_1.1>`__);
+- The ``cmeta:id`` attribute on all `CellML <https://cellml.org/>`__ elements (i.e. support for `CellML <https://cellml.org/>`__ annotation);
 - The ``degree`` qualifier for the ``diff`` element (i.e. support for higher-order derivatives);
 - The ``notanumber`` and ``infinity`` constants; and
 - An unlimited number of group types (in `COR <https://opencor.ws/cor/index.html>`__, a group can only specify one ``encapsulation`` and/or one ``containment`` type).
 
 However, note that the COR format has some limitations that are also present in the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`:
 
-- The ``reaction`` element is not supported (its use is not only discouraged, but it has also been removed from `CellML 2.0 <https://www.cellml.org/specifications/cellml_2.0>`__, the next version of `CellML <https://www.cellml.org/>`__);
+- The ``reaction`` element is not supported (its use is not only discouraged, but it has also been removed from `CellML 2.0 <https://cellml.org/specifications/cellml_2.0>`__, the next version of `CellML <https://cellml.org/>`__);
 - A ``piecewise`` statement can only be used as part of a top-level ``eq`` statement, and nested ``piecewise`` statements are not allowed (the latter is not a limitation *per se* since an equation can always be rewritten without the need for nested ``piecewise`` statements; more importantly, it is easier to read and maintain an equation that uses only one top-level ``piecewise`` statement); and
 - A ``component`` element may contain a set of ``math`` elements, but its rendering is such that when serialised back, only one ``math`` element will remain, with all the equations in that one and unique ``math`` element.
 
@@ -54,7 +54,7 @@ Alternatively, if one or several lines are partially selected, then the comment 
        ...
    enddef;
 
-Note that ``/* XXX */`` comments are only for convenience and are not serialised back to `CellML <https://www.cellml.org/>`__.
+Note that ``/* XXX */`` comments are only for convenience and are not serialised back to `CellML <https://cellml.org/>`__.
 Indeed, such comments can be inserted anywhere, including within an equation, e.g.
 
 .. code-block:: cellmlText
@@ -71,7 +71,7 @@ However, the rendering of certain elements using the :ref:`CellML Text format <p
 CellML Text format
 ------------------
 
-The :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>` offers, for the large part, a one-to-one mapping to the `CellML <https://www.cellml.org/>`__ format with the view of making it easier to create and edit `CellML <https://www.cellml.org/>`__ files.
+The :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>` offers, for the large part, a one-to-one mapping to the `CellML <https://cellml.org/>`__ format with the view of making it easier to create and edit `CellML <https://cellml.org/>`__ files.
 
 Model structure
 ~~~~~~~~~~~~~~~
@@ -91,7 +91,7 @@ The model definition sits between ``as`` and ``enddef;``, and can consist of :re
 Imports
 ~~~~~~~
 
-To define an import for units and components defined in a `CellML <https://www.cellml.org/>`__ file, which `URI <https://en.wikipedia.org/wiki/Uniform_resource_identifier>`__ is ``my_imported_model_uri``, we would use:
+To define an import for units and components defined in a `CellML <https://cellml.org/>`__ file, which `URI <https://en.wikipedia.org/wiki/Uniform_resource_identifier>`__ is ``my_imported_model_uri``, we would use:
 
 .. code-block:: cellmlText
 
@@ -641,15 +641,15 @@ To map variables ``my_variable1a`` with ``my_variable2a``, ``my_variable1b`` wit
 Metadata
 ~~~~~~~~
 
-The :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>` does not support the editing of `CellML <https://www.cellml.org/>`__ annotations.
-However, ``cmeta:id``'s are used to make the link between `CellML <https://www.cellml.org/>`__ elements and `CellML <https://www.cellml.org/>`__ annotations.
+The :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>` does not support the editing of `CellML <https://cellml.org/>`__ annotations.
+However, ``cmeta:id``'s are used to make the link between `CellML <https://cellml.org/>`__ elements and `CellML <https://cellml.org/>`__ annotations.
 So, we need the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>` to support the use of ``cmeta:id``'s and this is done by enclosing a ``cmeta:id`` value (e.g. ``my_cmeta_id``) within curly brackets:
 
 .. code-block:: cellmlText
 
    {my_cmeta_id}
 
-which can then be used to annotate various `CellML <https://www.cellml.org/>`__ elements:
+which can then be used to annotate various `CellML <https://cellml.org/>`__ elements:
 
 .. code-block:: cellmlText
 
@@ -694,7 +694,7 @@ CLI support
 -----------
 
 The CellMLTextView plugin relies on the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`.
-CLI support has therefore been added to it so that a `CellML <https://www.cellml.org/>`__ file can, from the command line, be imported to the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`, and back.
+CLI support has therefore been added to it so that a `CellML <https://cellml.org/>`__ file can, from the command line, be imported to the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`, and back.
 
 For example, to import ``models/van_der_pol_model_1928.cellml`` to the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`, we would do the following:
 
@@ -717,13 +717,13 @@ For example, to import ``models/van_der_pol_model_1928.cellml`` to the :ref:`Cel
        enddef;
    enddef;
 
-Similarly, and assuming the above import has been saved to a file named ``van_der_pol_model_1928.txt``, we could get our original `CellML <https://www.cellml.org/>`__ file by doing the following:
+Similarly, and assuming the above import has been saved to a file named ``van_der_pol_model_1928.txt``, we could get our original `CellML <https://cellml.org/>`__ file by doing the following:
 
 ::
 
    $ ./OpenCOR -c CellMLTextView::export van_der_pol_model_1928.txt > van_der_pol_model_1928.cellml
 
-For precaution, the new `CellML <https://www.cellml.org/>`__ file relies on `CellML 1.1 <https://www.cellml.org/specifications/cellml_1.1>`__, as confirmed by ``diff``:
+For precaution, the new `CellML <https://cellml.org/>`__ file relies on `CellML 1.1 <https://cellml.org/specifications/cellml_1.1>`__, as confirmed by ``diff``:
 
 ::
 

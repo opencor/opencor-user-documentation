@@ -14,8 +14,8 @@ Windows, Linux and macOS
   Otherwise, if you specify English or French, then please be aware that system messages, diaogs, etc. will still be displayed using the system's language (assuming it is not one of the languages supported by OpenCOR).
 - OpenCOR uses the `CellML API <https://github.com/cellmlapi/cellml-api/>`__, which is known to have the following limitations:
 
-  - It will crash OpenCOR if you try to export a `CellML <https://www.cellml.org/>`__ file to a user-defined format that is described in a file that contains valid, but unknown, `XML <https://www.w3.org/XML/>`__.
-  - It may incorrectly (in)validate certain `CellML <https://www.cellml.org/>`__ files.
+  - It will crash OpenCOR if you try to export a `CellML <https://cellml.org/>`__ file to a user-defined format that is described in a file that contains valid, but unknown, `XML <https://w3.org/XML>`__.
+  - It may incorrectly (in)validate certain `CellML <https://cellml.org/>`__ files.
 
 Windows and Linux
 -----------------
@@ -51,9 +51,9 @@ Windows
 
 - The :ref:`File Browser window <plugins_organisation_fileBrowserWindow>` plugin may, on some systems, result in OpenCOR being slow to respond at startup.
   This has nothing to do with OpenCOR, but most likely with a `Windows <https://en.wikipedia.org/wiki/Microsoft_Windows>`__ shell add-on.
-  `This page <https://www.brighthub.com/computing/windows-platform/articles/86552.aspx>`__ may help address the issue, but if not then you might have to disable the :ref:`File Browser window <plugins_organisation_fileBrowserWindow>` plugin.
+  `This page <https://brighthub.com/computing/windows-platform/articles/86552.aspx>`__ may help address the issue, but if not then you might have to disable the :ref:`File Browser window <plugins_organisation_fileBrowserWindow>` plugin.
 
 macOS
 -----
 
-- `macOS Mojave <https://www.apple.com/macos/mojave/>`__ comes with a new `Dark Mode <https://support.apple.com/HT208976>`__, which is not currently supported by OpenCOR.
+- Starting with `macOS Mojave <https://apple.com/macos/mojave>`__, macOS has a `Dark Mode <https://support.apple.com/HT208976>`__, which is not currently supported by OpenCOR.
