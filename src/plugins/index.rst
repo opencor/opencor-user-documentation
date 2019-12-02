@@ -63,6 +63,7 @@ Miscellaneous plugins are plugins that do not fit in any other category:
 .. rst-class:: internal reference
 
    - :ref:`HelpWindow <plugins_miscellaneous_helpWindow>`\ : a plugin to provide help.
+   - :ref:`PythonConsoleWindow <plugins_miscellaneous_pythonConsoleWindow>`\ : a plugin to interact with `Python <https://python.org/>`__.
    - :ref:`WebBrowserWindow <plugins_miscellaneous_webBrowserWindow>`\ : a plugin to browse the Web.
 
 There are also some non-selectable Miscellaneous plugins:
@@ -71,6 +72,8 @@ There are also some non-selectable Miscellaneous plugins:
 
    - **Compiler:** a plugin to support code compilation.
    - :ref:`Core <plugins_miscellaneous_core>`\ : the core plugin.
+   - :ref:`JupyterKernel <plugins_miscellaneous_jupyterKernel>`\ : the `Jupyter <https://jupyter.org/>`__ kernel plugin.
+   - :ref:`PythonShell <plugins_miscellaneous_pythonShell>`\ : the `Python <https://python.org/>`__ shell plugin.
 
 Organisation
 ------------
