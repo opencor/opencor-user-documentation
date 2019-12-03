@@ -12,6 +12,9 @@ Various information about OpenCOR and its use can be found in the following page
 - :ref:`userInterfaces_index`
 
   - :ref:`userInterfaces_commandLineInterface`
+
+    - `Python <https://python.org/>`__-related :ref:`scripts <userInterfaces_commandLineInterfacePythonRelatedScripts>`
+
   - :ref:`userInterfaces_graphicalUserInterface`
 
 ..
@@ -90,6 +93,7 @@ Various information about OpenCOR and its use can be found in the following page
 
    userInterfaces/index
    userInterfaces/commandLineInterface
+   userInterfaces/commandLineInterfacePythonRelatedScripts
    userInterfaces/graphicalUserInterface
    plugins/index
    plugins/dataStore/biosignalmlDataStore

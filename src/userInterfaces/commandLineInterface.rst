@@ -4,6 +4,9 @@
  Command Line Interface (CLI)
 ==============================
 
+OpenCOR can be used from the `CLI <https://en.wikipedia.org/wiki/Command-line_interface>`__ using the ``OpenCOR`` script, as illustrated below.
+`Python <https://python.org/>`__-related :ref:`scripts <userInterfaces_commandLineInterfacePythonRelatedScripts>` are also provided.
+
 Help
 ----
 
