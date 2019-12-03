@@ -10,7 +10,7 @@ Help
 ::
 
   $ ./OpenCOR -h
-  Usage: OpenCOR [-a|--about] [-c|--command [<plugin>]::<command> <options>] [-e|--exclude <plugins>] [-h|--help] [-i|--include <plugins>] [-p|--plugins] [-r|--reset] [-s|--status] [-v|--version] [<files>]
+  Usage: OpenCOR [-a|--about] [-c|--command [<plugin>]::<command> [<argument> ...]] [-e|--exclude <plugins>] [-h|--help] [-i|--include <plugins>] [-p|--plugins] [-r|--reset] [-s|--status] [-v|--version] [<files>]
    -a, --about     Display some information about OpenCOR
    -c, --command   Send a command to one or all the CLI plugins
    -e, --exclude   Exclude the given plugin(s)
@@ -27,9 +27,9 @@ About
 ::
 
   $ ./OpenCOR -a
-  OpenCOR Version 0.6
-  macOS Mojave (10.14)
-  Copyright 2011-2018
+  OpenCOR Version 0.7
+  macOS 10.15
+  Copyright 2011-2019
 
   OpenCOR is a cross-platform modelling environment, which can be used to organise, edit, simulate and analyse CellML files.
 
@@ -54,6 +54,25 @@ Command
         export <file> <predefined_format>|<user_defined_format_file>
      <predefined_format> can take one of the following values:
         cellml_1_0: to export a CellML 1.1 file to CellML 1.0
+   * Validate <file>:
+        validate <file>
+
+  Commands supported by the JupyterKernel plugin:
+   * Display the commands supported by the JupyterKernel plugin:
+        help
+   * Start the OpenCOR Jupyter kernel:
+        kernel <connectionFile>
+
+  Commands supported by the PythonShell plugin:
+   * Display the commands supported by the PythonShell plugin:
+        help
+   * Run an interactive Python shell in OpenCOR's environment:
+        [python] [<option> ...] [-c <command> | -m <module> | <file> | -] [<argument> ...]
+     where
+        -c <command> executes a program passed in as a string
+        -m <module> runs a library module as a script
+        <file> runs a program read from a script file
+        - runs a program read from the standard input
 
 ::
 
@@ -65,6 +84,8 @@ Command
         export <file> <predefined_format>|<user_defined_format_file>
      <predefined_format> can take one of the following values:
         cellml_1_0: to export a CellML 1.1 file to CellML 1.0
+   * Validate <file>:
+        validate <file>
 
 Exclude
 -------
@@ -95,6 +116,8 @@ Plugins
   The following CLI plugins are available:
    - CellMLTextView: a plugin to edit CellML files using the CellML Text format.
    - CellMLTools: a plugin to access various CellML-related tools.
+   - JupyterKernel: the Jupyter kernel plugin.
+   - PythonShell: the Python shell plugin.
 
 Reset
 -----
@@ -116,16 +139,39 @@ Status
    - CellMLSupport: the plugin is loaded and fully functional.
    - CellMLTextView: the plugin is loaded and fully functional.
    - CellMLTools: the plugin is loaded and fully functional.
+   - COMBINESupport: the plugin is loaded and fully functional.
    - Compiler: the plugin is loaded and fully functional.
    - Core: the plugin is loaded and fully functional.
+   - CVODESolver: the plugin is loaded and fully functional.
+   - DataStore: the plugin is loaded and fully functional.
    - EditingView: the plugin is loaded and fully functional.
    - EditorWidget: the plugin is loaded and fully functional.
+   - ForwardEulerSolver: the plugin is loaded and fully functional.
+   - FourthOrderRungeKuttaSolver: the plugin is loaded and fully functional.
+   - HeunSolver: the plugin is loaded and fully functional.
+   - JupyterKernel: the plugin is loaded and fully functional.
+   - KINSOLSolver: the plugin is loaded and fully functional.
+   - libNuML: the plugin is loaded and fully functional.
+   - libSBML: the plugin is loaded and fully functional.
+   - libSEDML: the plugin is loaded and fully functional.
    - LLVMClang: the plugin is loaded and fully functional.
    - MathMLViewerWidget: the plugin is loaded and fully functional.
+   - Python: the plugin is loaded and fully functional.
+   - PythonPackages: the plugin is loaded and fully functional.
+   - PythonQt: the plugin is loaded and fully functional.
+   - PythonQtSupport: the plugin is loaded and fully functional.
+   - PythonShell: the plugin is loaded and fully functional.
+   - PythonSupport: the plugin is loaded and fully functional.
    - QScintilla: the plugin is loaded and fully functional.
-   - QScintillaSupport: the plugin is loaded and fully functional.
+   - QScintillaWidget: the plugin is loaded and fully functional.
    - Qwt: the plugin is loaded and fully functional.
+   - SecondOrderRungeKuttaSolver: the plugin is loaded and fully functional.
+   - SEDMLSupport: the plugin is loaded and fully functional.
+   - SimulationSupport: the plugin is loaded and fully functional.
    - StandardSupport: the plugin is loaded and fully functional.
+   - SUNDIALS: the plugin is loaded and fully functional.
+   - ZIPSupport: the plugin is loaded and fully functional.
+   - zlib: the plugin is loaded and fully functional.
 
 Version
 -------
@@ -133,4 +179,4 @@ Version
 ::
 
   $ ./OpenCOR -v
-  OpenCOR Version 0.6
+  OpenCOR Version 0.7
