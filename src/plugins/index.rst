@@ -72,7 +72,6 @@ There are also some non-selectable Miscellaneous plugins:
 
    - **Compiler:** a plugin to support code compilation.
    - :ref:`Core <plugins_miscellaneous_core>`\ : the core plugin.
-   - :ref:`JupyterKernel <plugins_miscellaneous_jupyterKernel>`\ : the `Jupyter <https://jupyter.org/>`__ kernel plugin.
    - :ref:`PythonShell <plugins_miscellaneous_pythonShell>`\ : the `Python <https://python.org/>`__ shell plugin.
 
 Organisation

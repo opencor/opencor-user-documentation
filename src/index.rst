@@ -36,7 +36,6 @@ Various information about OpenCOR and its use can be found in the following page
 
     - :ref:`Core <plugins_miscellaneous_core>`
     - :ref:`HelpWindow <plugins_miscellaneous_helpWindow>`
-    - :ref:`JupyterKernel <plugins_miscellaneous_jupyterKernel>`
     - :ref:`PythonConsoleWindow <plugins_miscellaneous_pythonConsoleWindow>`
     - :ref:`PythonShell <plugins_miscellaneous_pythonShell>`
     - :ref:`WebBrowserWindow <plugins_miscellaneous_webBrowserWindow>`
@@ -102,7 +101,6 @@ Various information about OpenCOR and its use can be found in the following page
    plugins/editing/rawTextView
    plugins/miscellaneous/core
    plugins/miscellaneous/helpWindow
-   plugins/miscellaneous/jupyterKernel
    plugins/miscellaneous/pythonConsoleWindow
    plugins/miscellaneous/pythonShell
    plugins/miscellaneous/webBrowserWindow
