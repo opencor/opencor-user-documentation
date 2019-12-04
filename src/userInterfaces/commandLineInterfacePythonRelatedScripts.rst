@@ -49,6 +49,8 @@ This, in OpenCOR's environment.
    :align: center
    :scale: 25%
 
+.. _userInterfaces_commandLineInterfacePythonRelatedScriptsPythonshell:
+
 ``pythonshell[.bat]``
 ---------------------
 
