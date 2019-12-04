@@ -70,6 +70,10 @@ Various information about OpenCOR and its use can be found in the following page
 
 ..
 
+- :ref:`pythonSupport`
+
+..
+
 - :ref:`preferences`
 
 ..
@@ -122,6 +126,7 @@ Various information about OpenCOR and its use can be found in the following page
    plugins/solver/kinsolSolver
    plugins/solver/secondOrderRungeKuttaSolver
    plugins/tools/cellmlTools
+   pythonSupport
    preferences
    uriScheme
    knownLimitations
