@@ -16,4 +16,4 @@ A `Jupyter <https://jupyter.org/>`__ kernel can be started by entering the follo
 
    $ ./OpenCOR -c JupyterKernel::kernel kernel.json
 
-where ``kernel.json`` is the `connection file <https://jupyter-client.readthedocs.io/en/stable/kernels.html#connection-files>`__.
+where ``kernel.json`` is the `connection file <https://jupyter-client.readthedocs.io/en/latest/kernels.html#connection-files>`__.
