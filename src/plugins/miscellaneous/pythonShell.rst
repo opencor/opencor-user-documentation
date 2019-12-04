@@ -46,7 +46,7 @@ From the :ref:`help <plugins_miscellaneous_pythonShellHelp>` section above, we c
   Type "help", "copyright", "credits" or "license" for more information.
   >>>
 
-OpenCOR ships with a `Python <https://python.org/>`__-related :ref:`script <userInterfaces_commandLineInterfacePythonRelatedScriptsPythonshell>` script, which is an alias to ``./OpenCOR -c PythonShell $*``.
+OpenCOR comes with the ``pythonshell[.bat]`` :ref:`script <userInterfaces_commandLineInterfacePythonRelatedScriptsPythonshell>`, which is an alias to ``./OpenCOR -c PythonShell $*``.
 So, a third way to launch an interactive `Python <https://python.org/>`__ shell is:
 
 ::

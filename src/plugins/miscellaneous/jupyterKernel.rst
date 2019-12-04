@@ -4,7 +4,7 @@
  JupyterKernel plugin
 ======================
 
-The JupyterKernel plugin provides a `Jupyter <https://jupyter.org/>`__ kernel, which is needed by the :ref:`PythonShell <plugins_miscellaneous_pythonShell>` plugin.
+The JupyterKernel plugin provides a `Jupyter <https://jupyter.org/>`__ kernel, which is needed by the :ref:`Python shell <plugins_miscellaneous_pythonShell>` plugin.
 Although there is a :ref:`CLI <userInterfaces_commandLineInterface>` interface, it is not meant to be used directly.
 
 Kernel

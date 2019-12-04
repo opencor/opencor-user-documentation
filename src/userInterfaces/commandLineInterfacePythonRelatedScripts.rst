@@ -54,7 +54,7 @@ This, in OpenCOR's environment.
 ``pythonshell[.bat]``
 ---------------------
 
-This script is a shortcut to using the :ref:`PythonShell <plugins_miscellaneous_pythonShell>` plugin.
+This script is a shortcut to using the :ref:`Python shell <plugins_miscellaneous_pythonShell>` plugin.
 Thus,
 
 ::
