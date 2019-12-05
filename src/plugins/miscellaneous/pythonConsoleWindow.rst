@@ -10,4 +10,4 @@ The PythonConsoleWindow plugin provides a console window from which you can inte
    :align: center
    :scale: 25%
 
-The console window uses `IPython <https://ipython.org/>`__ underneath, for which a tutorial can be found `here <https://ipython.readthedocs.io/en/stable/interactive/tutorial.html>`__.
+The `Python <https://python.org/>`__ Console window uses `IPython <https://ipython.org/>`__ underneath, for which a tutorial can be found `here <https://ipython.readthedocs.io/en/stable/interactive/tutorial.html>`__.
