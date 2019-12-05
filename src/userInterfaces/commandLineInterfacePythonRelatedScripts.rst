@@ -13,6 +13,8 @@ The following `Python <https://python.org/>`__-related scripts can be used to st
 
 This, in OpenCOR's environment.
 
+.. _userInterfaces_commandLineInterfacePythonRelatedScriptsJupyterconsole:
+
 ``jupyterconsole[.bat]``
 ------------------------
 
