@@ -5,7 +5,7 @@
 ================
 
 OpenCOR comes bundled with `Python <https://python.org/>`__, providing `Python <https://python.org/>`__ support to OpenCOR.
-The following `Python <https://python.org/>`__ packages are also bundled:
+The following `Python <https://python.org/>`__ packages are included:
 
 - `Matplotlib <https://matplotlib.org/>`__: a `Python <https://python.org/>`__ 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms;
 - `NumPy <https://numpy.org/>`__: the fundamental package for scientific computing with `Python <https://python.org/>`__; and
