@@ -11,7 +11,7 @@ The following `Python <https://python.org/>`__ packages are included:
 - `NumPy <https://numpy.org/>`__: the fundamental package for scientific computing with `Python <https://python.org/>`__; and
 - `SciPy <https://scipy.org/>`__: a `Python <https://python.org/>`__-based ecosystem of open-source software for mathematics, science and engineering.
 
-Some code illustrating the use of the OpenCOR `Python <https://python.org/>`__ module and wrappers can be found `here <https://github.com/opencor/opencor/blob/master/src/plugins/support/PythonSupport/tests/data/tests.py>`__.
+Some code illustrating the use of the OpenCOR `Python <https://python.org/>`__ module and wrappers can be found `here <https://github.com/opencor/opencor/blob/master/src/plugins/support/PythonSupport/tests/data/tests.py>`__ and its output `here <https://github.com/opencor/opencor/blob/master/src/plugins/support/PythonSupport/tests/data/tests.out>`__.
 
 Install a Python package
 ------------------------
@@ -40,42 +40,54 @@ The following OpenCOR classes have some `Python <https://python.org/>`__ wrapper
 
 - ``Simulation``:
 
-  - ``valid()``: return whether the simulation is valid.
-  - ``run()``: run the simulation.
-  - ``reset(all = True)``: reset all the model parameters (``all = True``) or only the state model parameters (``all = False``).
   - ``clear_results()``: clear the simulation results.
+  - ``data()``: return the simulation data.
   - ``issues()``: return a list of issues with the simulation.
+  - ``reset(all = True)``: reset all the model parameters (``all = True``) or only the state model parameters (``all = False``).
+  - ``results()``: return the results.
+  - ``run()``: run the simulation.
+  - ``valid()``: return whether the simulation is valid.
 
 - ``SimulationData``:
 
-  - ``set_starting_point(starting_point, recompute)``: set the starting point.
-  - ``set_ending_point(ending_point)``: set the ending point.
-  - ``set_point_interval(point_interval)``: set the point interval.
-  - ``set_ode_solver(ode_solver_name)``: set the ODE solver using the given ODE solver name.
-  - ``set_nla_solver(nla_solver_name)``: set the NLA solver using the given NLA solver name.
-  - ``constants()``: return the constants values.
-  - ``rates()``: return the rates values.
-  - ``states()``: return the states values.
-  - ``algebraic()``: return the algebraic values.
+  - ``algebraic()``: return the algebraic values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
+  - ``constants()``: return the constants values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
+  - ``ending_point()``: the ending point.
+  - ``nla_solver_name()``: return name of the NLA solver.
+  - ``ode_solver_name()``: return name of the ODE solver.
+  - ``point_interval()``: the point interval.
+  - ``rates()``: return the rates values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
+  - ``set_ending_point(value)``: set the ending point.
+  - ``set_nla_solver(name)``: set the NLA solver.
+  - ``set_nla_solver_property(name, value)``: set the NLA solver property.
+  - ``set_ode_solver(name)``: set the ODE solver using the given ODE solver name.
+  - ``set_ode_solver_property(name, value)``: set the ODE solver property.
+  - ``set_point_interval(value)``: set the point interval.
+  - ``set_starting_point(value)``: set the starting point.
+  - ``starting_point()``: the starting point.
+  - ``states()``: return the states values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
 
-    **Note:** neither ``set_ode_solver()`` nor ``set_nla_solver()`` currently updates the :ref:`GUI <userInterfaces_graphicalUserInterface>`.
+    **Note:** neither ``set_ode_solver()``, ``set_ode_solver_property()``, ``set_nla_solver()`` nor ``set_nla_solver_property()`` currently updates the :ref:`GUI <userInterfaces_graphicalUserInterface>`.
 
 - ``SimulationResults``:
 
-  - ``data_store()``: return the associated data store.
-  - ``voi()``: return the values for variable of integration.
+  - ``algebraic()``: return the algebraic values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
   - ``constants()``: return the constants values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
+  - ``data_store()``: return the associated data store.
   - ``rates()``: return the rates values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
   - ``states()``: return the states values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
-  - ``algebraic()``: return the algebraic values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
+  - ``voi()``: return the values for variable of integration.
 
 - ``DataStore``:
 
-  - ``voi()``: return the variable of integration.
   - ``variables()``: return the variables as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
+  - ``voi()``: return the variable of integration.
   - ``voi_and_variables()``: return the variable of integration and variables as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
 
 - ``DataStoreVariable``:
 
+  - ``name()``: return the name.
+  - ``unit()``: return the unit.
+  - ``uri()``: return the `URI <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__.
   - ``value(position, run = -1)``: return the value at the given position and for the given run (``run = -1`` corresponds to the last run).
   - ``values(run = -1)``: return the values for the given run (``run = -1`` corresponds to the last run) as a `NumPy array <https://numpy.org/doc/1.17/reference/generated/numpy.array.html>`__.
