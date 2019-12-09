@@ -36,7 +36,7 @@ A `Python <https://python.org/>`__ module, ``opencor``, is available and can be 
 Python wrappers
 ---------------
 
-The following OpenCOR classes have some `Python <https://python.org/>`__ wrappers that can be used to handle a simulation, some simulation data, some simulation results, a data store and a data store variable:
+The following OpenCOR classes have some `Python <https://python.org/>`__ wrappers that can be used to handle a simulation, simulation data, simulation results, a data store and a data store variable:
 
 - ``Simulation``:
 
