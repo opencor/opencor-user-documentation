@@ -48,6 +48,8 @@ The following OpenCOR classes have some `Python <https://python.org/>`__ wrapper
   - ``run()``: run the simulation.
   - ``valid()``: return whether the simulation is valid.
 
+..
+
 - ``SimulationData``:
 
   - ``algebraic()``: return the algebraic values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
@@ -69,6 +71,8 @@ The following OpenCOR classes have some `Python <https://python.org/>`__ wrapper
 
     **Note:** neither ``set_ode_solver()``, ``set_ode_solver_property()``, ``set_nla_solver()`` nor ``set_nla_solver_property()`` currently updates the :ref:`GUI <userInterfaces_graphicalUserInterface>`.
 
+..
+
 - ``SimulationResults``:
 
   - ``algebraic()``: return the algebraic values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
@@ -78,11 +82,15 @@ The following OpenCOR classes have some `Python <https://python.org/>`__ wrapper
   - ``states()``: return the states values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
   - ``voi()``: return the values for variable of integration.
 
+..
+
 - ``DataStore``:
 
   - ``variables()``: return the variables as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
   - ``voi()``: return the variable of integration.
   - ``voi_and_variables()``: return the variable of integration and variables as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
+
+..
 
 - ``DataStoreVariable``:
 
