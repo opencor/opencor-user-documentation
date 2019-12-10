@@ -95,7 +95,9 @@ The following OpenCOR classes have some `Python <https://python.org/>`__ wrapper
 - ``DataStoreVariable``:
 
   - ``name()``: return the name.
+  - ``runs_count()``: return the number of runs.
   - ``unit()``: return the unit.
   - ``uri()``: return the `URI <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__.
   - ``value(position, run = -1)``: return the value at the given position and for the given run (``run = -1`` corresponds to the last run).
   - ``values(run = -1)``: return the values for the given run (``run = -1`` corresponds to the last run) as a `NumPy array <https://numpy.org/doc/1.17/reference/generated/numpy.array.html>`__.
+  - ``values_count(run = -1)``: return the number of values for the given run (``run = -1`` corresponds to the last run).
