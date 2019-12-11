@@ -56,7 +56,9 @@ The following OpenCOR classes have some `Python <https://python.org/>`__ wrapper
   - ``constants()``: return the constants values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreValue`` objects.
   - ``ending_point()``: return the ending point.
   - ``nla_solver_name()``: return the name of the NLA solver.
+  - ``nla_solver_property(name)``: return the value of the NLA solver property.
   - ``ode_solver_name()``: return the name of the ODE solver.
+  - ``ode_solver_property(name)``: return the value of the ODE solver property.
   - ``point_interval()``: return the point interval.
   - ``rates()``: return the rates values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreValue`` objects.
   - ``set_ending_point(value)``: set the ending point.
