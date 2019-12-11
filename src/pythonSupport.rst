@@ -55,15 +55,15 @@ The following OpenCOR classes have some `Python <https://python.org/>`__ wrapper
   - ``algebraic()``: return the algebraic values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreValue`` objects.
   - ``constants()``: return the constants values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreValue`` objects.
   - ``ending_point()``: the ending point.
-  - ``nla_solver_name()``: return name of the NLA solver.
-  - ``ode_solver_name()``: return name of the ODE solver.
+  - ``nla_solver_name()``: return the name of the NLA solver.
+  - ``ode_solver_name()``: return the name of the ODE solver.
   - ``point_interval()``: the point interval.
   - ``rates()``: return the rates values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreValue`` objects.
   - ``set_ending_point(value)``: set the ending point.
   - ``set_nla_solver(name)``: set the NLA solver.
-  - ``set_nla_solver_property(name, value)``: set the NLA solver property.
+  - ``set_nla_solver_property(name, value)``: set the value of the NLA solver property.
   - ``set_ode_solver(name)``: set the ODE solver using the given ODE solver name.
-  - ``set_ode_solver_property(name, value)``: set the ODE solver property.
+  - ``set_ode_solver_property(name, value)``: set the value of the ODE solver property.
   - ``set_point_interval(value)``: set the point interval.
   - ``set_starting_point(value)``: set the starting point.
   - ``starting_point()``: the starting point.
