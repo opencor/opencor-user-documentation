@@ -92,6 +92,14 @@ The following OpenCOR classes have some `Python <https://python.org/>`__ wrapper
 
 ..
 
+- ``DataStoreValue``:
+
+  - ``set_value(value)``: set the value.
+  - ``uri()``: return the `URI <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__.
+  - ``value()``: return the value.
+
+..
+
 - ``DataStoreVariable``:
 
   - ``name()``: return the name.
