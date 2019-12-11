@@ -28,7 +28,7 @@ Python module
 A `Python <https://python.org/>`__ module, ``opencor``, is available and can be used to handle simulations in OpenCOR:
 
 - ``open_simulation(file_name_or_url)``: open and return the simulation for the given local or remote `CellML <https://cellml.org/>`__ file, `SED-ML <https://sed-ml.github.io/>`__ file or `COMBINE archive <https://co.mbine.org/documents/archive>`__.
-- ``close_simulation(simulation_object)``: close the given simulation.
+- ``close_simulation(simulation)``: close the given simulation.
 - ``simulation()``: return the current simulation.
 
   **Note:** ``simulation()`` is only available when using the :ref:`Python Console window <plugins_miscellaneous_pythonConsoleWindow>` plugin.
@@ -54,10 +54,10 @@ The following OpenCOR classes have some `Python <https://python.org/>`__ wrapper
 
   - ``algebraic()``: return the algebraic values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreValue`` objects.
   - ``constants()``: return the constants values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreValue`` objects.
-  - ``ending_point()``: the ending point.
+  - ``ending_point()``: return the ending point.
   - ``nla_solver_name()``: return the name of the NLA solver.
   - ``ode_solver_name()``: return the name of the ODE solver.
-  - ``point_interval()``: the point interval.
+  - ``point_interval()``: return the point interval.
   - ``rates()``: return the rates values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreValue`` objects.
   - ``set_ending_point(value)``: set the ending point.
   - ``set_nla_solver(name)``: set the NLA solver.
@@ -66,7 +66,7 @@ The following OpenCOR classes have some `Python <https://python.org/>`__ wrapper
   - ``set_ode_solver_property(name, value)``: set the value of the ODE solver property.
   - ``set_point_interval(value)``: set the point interval.
   - ``set_starting_point(value)``: set the starting point.
-  - ``starting_point()``: the starting point.
+  - ``starting_point()``: return the starting point.
   - ``states()``: return the states values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreValue`` objects.
 
     **Note:** neither ``set_ode_solver()``, ``set_ode_solver_property()``, ``set_nla_solver()`` nor ``set_nla_solver_property()`` currently updates the :ref:`GUI <userInterfaces_graphicalUserInterface>`.
