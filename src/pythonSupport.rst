@@ -11,7 +11,7 @@ The following `Python <https://python.org/>`__ packages are included:
 - `NumPy <https://numpy.org/>`__: the fundamental package for scientific computing with `Python <https://python.org/>`__; and
 - `SciPy <https://scipy.org/>`__: a `Python <https://python.org/>`__-based ecosystem of open-source software for mathematics, science and engineering.
 
-Some code illustrating the use of the OpenCOR `Python <https://python.org/>`__ module and wrappers can be found `here <https://github.com/opencor/opencor/blob/master/src/plugins/support/PythonSupport/tests/data/tests.py>`__ and its output `here <https://github.com/opencor/opencor/blob/master/src/plugins/support/PythonSupport/tests/data/tests.out>`__.
+Some code illustrating the use of the OpenCOR `Python <https://python.org/>`__ module and wrappers can be found `here <https://github.com/opencor/opencor/tree/master/src/plugins/support/PythonSupport/tests/data>`__.
 
 Install a Python package
 ------------------------
