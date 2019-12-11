@@ -52,13 +52,13 @@ The following OpenCOR classes have some `Python <https://python.org/>`__ wrapper
 
 - ``SimulationData``:
 
-  - ``algebraic()``: return the algebraic values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
-  - ``constants()``: return the constants values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
+  - ``algebraic()``: return the algebraic values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreValue`` objects.
+  - ``constants()``: return the constants values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreValue`` objects.
   - ``ending_point()``: the ending point.
   - ``nla_solver_name()``: return name of the NLA solver.
   - ``ode_solver_name()``: return name of the ODE solver.
   - ``point_interval()``: the point interval.
-  - ``rates()``: return the rates values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
+  - ``rates()``: return the rates values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreValue`` objects.
   - ``set_ending_point(value)``: set the ending point.
   - ``set_nla_solver(name)``: set the NLA solver.
   - ``set_nla_solver_property(name, value)``: set the NLA solver property.
@@ -67,7 +67,7 @@ The following OpenCOR classes have some `Python <https://python.org/>`__ wrapper
   - ``set_point_interval(value)``: set the point interval.
   - ``set_starting_point(value)``: set the starting point.
   - ``starting_point()``: the starting point.
-  - ``states()``: return the states values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
+  - ``states()``: return the states values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreValue`` objects.
 
     **Note:** neither ``set_ode_solver()``, ``set_ode_solver_property()``, ``set_nla_solver()`` nor ``set_nla_solver_property()`` currently updates the :ref:`GUI <userInterfaces_graphicalUserInterface>`.
 
@@ -75,20 +75,20 @@ The following OpenCOR classes have some `Python <https://python.org/>`__ wrapper
 
 - ``SimulationResults``:
 
-  - ``algebraic()``: return the algebraic values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
-  - ``constants()``: return the constants values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
+  - ``algebraic()``: return the algebraic values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreVariable`` objects.
+  - ``constants()``: return the constants values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreVariable`` objects.
   - ``data_store()``: return the associated data store.
-  - ``rates()``: return the rates values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
-  - ``states()``: return the states values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
+  - ``rates()``: return the rates values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreVariable`` objects.
+  - ``states()``: return the states values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreVariable`` objects.
   - ``voi()``: return the values for variable of integration.
 
 ..
 
 - ``DataStore``:
 
-  - ``variables()``: return the variables as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
+  - ``variables()``: return the variables as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreVariable`` objects.
   - ``voi()``: return the variable of integration.
-  - ``voi_and_variables()``: return the variable of integration and variables as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__.
+  - ``voi_and_variables()``: return the variable of integration and variables as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreVariable`` objects.
 
 ..
 
