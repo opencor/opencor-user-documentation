@@ -18,7 +18,7 @@ Install a Python package
 
 Additional `Python <https://python.org/>`__ packages can be installed either from the :ref:`CLI <userInterfaces_commandLineInterface>` (using the ``jupyterconsole[.bat]`` :ref:`script <userInterfaces_commandLineInterfacePythonRelatedScriptsJupyterconsole>`) or through the :ref:`GUI <userInterfaces_graphicalUserInterface>` (using the :ref:`Python Console window <plugins_miscellaneous_pythonConsoleWindow>` plugin):
 
-.. code-block::
+.. code-block:: shell
 
    !pip install package_name
 
