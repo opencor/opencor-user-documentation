@@ -24,7 +24,7 @@ import os
 
 now = datetime.datetime.now()
 
-os.system(  'mkdir _build; cd _build \
+os.system(  'cd ..; mkdir _build; cd _build \
           && git clone https://github.com/opencor/sphinx-theme theme \
           && cp ../src/conf.py . \
           && echo "copyright = u\'2011-%d, University of Auckland\'\nhtml_theme = \'theme\'\nhtml_show_sphinx = False\nhtml_show_copyright = False" >> conf.py \
