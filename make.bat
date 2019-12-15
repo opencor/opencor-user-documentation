@@ -12,7 +12,6 @@ set SOURCEDIR=src
 set BUILDDIR=build
 
 if "%1" == "" goto help
-if "%1" == "html" goto html
 
 %SPHINXBUILD% >NUL 2>NUL
 
@@ -29,17 +28,6 @@ if errorlevel 9009 (
 )
 
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS%
-
-goto end
-
-:html
-
-set ROOTDIR=%cd%
-
-%SPHINXBUILD% -M html %SOURCEDIR% %BUILDDIR% %SPHINXOPTS%
-python %ROOTDIR%\scripts\appendfile.py ^
-       %ROOTDIR%\%BUILDDIR%\html\_static\pygments.css ^
-       %ROOTDIR%\styles\cellmlText.css
 
 goto end
 
