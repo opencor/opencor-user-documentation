@@ -11,8 +11,13 @@ help:
 
 # Generate HTML
 
+ROOTDIR = $(shell pwd)
+
 html:
-	@python "$(shell pwd)/build.py"
+	@$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+	@python "$(ROOTDIR)/scripts/appendfile.py" \
+	        "$(ROOTDIR)/$(BUILDDIR)/html/_static/pygments.css" \
+	        "$(ROOTDIR)/styles/cellmlText.css"
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option
