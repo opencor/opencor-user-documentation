@@ -13,7 +13,7 @@ If you open a `SED-ML <https://sed-ml.github.io/>`__ file, it will look somethin
 
 Apart from using syntax highlighting, the view has the same features as the :ref:`Raw Text <plugins_editing_rawTextView>` view.
 
-The panel below the text editor is used to list any `SED-ML <https://sed-ml.github.io/>`__ issue that results from trying to validate a `SED-ML <https://sed-ml.github.io/>`__ file, which can be done either by pressing ``Ctrl``\ +\ ``T`` or through the ``Tools`` | ``SED-ML Validation`` menu or the context menu of the text editor:
+The panel below the text editor is used to list any `SED-ML <https://sed-ml.github.io/>`__ issue that results from trying to validate a `SED-ML <https://sed-ml.github.io/>`__ file, which can be done either by pressing ``Ctrl``\ +\ ``Shift``\ +\ ``T`` or through the ``Tools`` | ``SED-ML Validation`` menu or the context menu of the text editor:
 
 .. image:: pics/RawSEDMLViewScreenshot02.png
    :align: center
@@ -38,4 +38,4 @@ Otherwise, the bottom panel lists all the issues with the `SED-ML <https://sed-m
 To double click on an issue will get the text editor to navigate to the corresponding line.
 
 It may happen, while editing a `SED-ML <https://sed-ml.github.io/>`__ file, that the contents of the text editor is not properly formatted anymore.
-In this case, you can reformat it by pressing ``Ctrl``\ +\ ``R`` or through the ``Tools`` | ``Reformat`` menu or even the context menu of the text editor.
+In this case, you can reformat it by pressing ``Ctrl``\ +\ ``Shift``\ +\ ``R`` or through the ``Tools`` | ``Reformat`` menu or even the context menu of the text editor.
