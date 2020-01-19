@@ -22,8 +22,8 @@ Windows, Linux and macOS
 Windows and Linux
 -----------------
 
-- A scaled display will, on `Windows 7 <https://en.wikipedia.org/wiki/Windows_7>`__ and `Linux <https://en.wikipedia.org/wiki/Linux>`__, result in some aspects of OpenCOR being rendered at the wrong size (e.g. icons will be smaller and scroll bars bigger).
-  On `Windows 10 <https://en.wikipedia.org/wiki/Windows_10>`__, OpenCOR should scale itself automatically, although it will look more or less blurry depending on your display scaling and screen resolution.
+- A scaled display will, on `Linux <https://en.wikipedia.org/wiki/Linux>`__, result in some aspects of OpenCOR being rendered at the wrong size (e.g. icons will be smaller and scroll bars bigger).
+  On `Windows <https://en.wikipedia.org/wiki/Windows>`__, OpenCOR should scale itself automatically, although it will look more or less blurry depending on your display scaling and screen resolution.
   In case OpenCOR does not scale itself, turn off *Fix scaling for apps*:
 
     .. image:: pics/windowsSettings01.png
