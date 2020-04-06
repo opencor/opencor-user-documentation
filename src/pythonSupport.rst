@@ -82,7 +82,7 @@ The following OpenCOR classes have some `Python <https://python.org/>`__ wrapper
   - ``data_store()``: return the associated data store.
   - ``rates()``: return the rates values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreVariable`` objects.
   - ``states()``: return the states values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreVariable`` objects.
-  - ``voi()``: return the values for variable of integration.
+  - ``voi()``: return the variable of integration as a ``DataStoreVariable`` object.
 
 ..
 
