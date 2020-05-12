@@ -106,6 +106,7 @@ The following OpenCOR classes have some `Python <https://python.org/>`__ wrapper
 
   - ``name()``: return the name.
   - ``runs_count()``: return the number of runs.
+  - ``type()``: return the type of the variable (``1``: variable of integration, ``2``: state, ``3``: rate, ``4``: constant, ``5``: computed constant, and ``6``: algebraic).
   - ``unit()``: return the unit.
   - ``uri()``: return the `URI <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__.
   - ``value(position, run = -1)``: return the value at the given position and for the given run (``run = -1`` corresponds to the last run).
