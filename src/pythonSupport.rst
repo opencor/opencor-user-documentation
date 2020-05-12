@@ -41,10 +41,10 @@ The following OpenCOR classes have some `Python <https://python.org/>`__ wrapper
 - ``Simulation``:
 
   - ``clear_results()``: clear the simulation results.
-  - ``data()``: return the simulation data.
+  - ``data()``: return the simulation data as a ``SimulationData`` object.
   - ``issues()``: return a list of issues with the simulation.
   - ``reset(all = True)``: reset all the model parameters (``all = True``) or only the state model parameters (``all = False``).
-  - ``results()``: return the results.
+  - ``results()``: return the results as a ``SimulationResults`` object.
   - ``run()``: run the simulation.
   - ``valid()``: return whether the simulation is valid.
 
@@ -79,7 +79,7 @@ The following OpenCOR classes have some `Python <https://python.org/>`__ wrapper
 
   - ``algebraic()``: return the algebraic values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreVariable`` objects.
   - ``constants()``: return the constants values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreVariable`` objects.
-  - ``data_store()``: return the associated data store.
+  - ``data_store()``: return the associated data store as a ``DataStore`` object.
   - ``rates()``: return the rates values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreVariable`` objects.
   - ``states()``: return the states values as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreVariable`` objects.
   - ``voi()``: return the variable of integration as a ``DataStoreVariable`` object.
@@ -89,7 +89,7 @@ The following OpenCOR classes have some `Python <https://python.org/>`__ wrapper
 - ``DataStore``:
 
   - ``variables()``: return the variables as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreVariable`` objects.
-  - ``voi()``: return the variable of integration.
+  - ``voi()``: return the variable of integration as a ``DataStoreVariable`` object.
   - ``voi_and_variables()``: return the variable of integration and variables as a `Python dictionary <https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries>`__ of ``DataStoreVariable`` objects.
 
 ..
