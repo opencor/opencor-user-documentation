@@ -55,6 +55,17 @@ Windows
   This has nothing to do with OpenCOR, but most likely with a `Windows <https://en.wikipedia.org/wiki/Microsoft_Windows>`__ shell add-on.
   `This page <https://brighthub.com/computing/windows-platform/articles/86552.aspx>`__ may help address the issue, but if not then you might have to disable the :ref:`File Browser window <plugins_organisation_fileBrowserWindow>` plugin.
 
+Linux
+-----
+
+- The Python side of OpenCOR does not work out of the box on `Ubuntu 20.04 LTS (Focal Fossa) <https://en.wikipedia.org/wiki/Ubuntu_version_history#Ubuntu_20.04_LTS_(Focal_Fossa)>`__.
+  This is due to a difference in library versions with `Ubuntu 18.04 LTS (Bionic Beaver) <https://en.wikipedia.org/wiki/Ubuntu_version_history#Ubuntu_18.04_LTS_(Bionic_Beaver)>`__, which is the version on which OpenCOR is currently built.
+  At the moment, the only way to go around this problem is by executing the following from the command line:
+
+  ::
+
+    $ sudo ln -s [OpenCOR]/lib/libffi.so.6 /usr/lib/libffi.so.6
+
 macOS
 -----
 
