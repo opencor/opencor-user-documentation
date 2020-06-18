@@ -58,4 +58,4 @@ Windows
 macOS
 -----
 
-- Starting with `macOS Mojave <https://apple.com/macos/mojave>`__, macOS has a `Dark Mode <https://support.apple.com/HT208976>`__, which is not currently supported by OpenCOR.
+- Starting with `macOS Mojave <https://en.wikipedia.org/wiki/MacOS_Mojave>`__, macOS has a `Dark Mode <https://support.apple.com/HT208976>`__, which is not currently supported by OpenCOR.
