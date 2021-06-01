@@ -28,7 +28,6 @@ This, in OpenCOR's environment.
 
   In [1]:
 
-
 ``jupyterlab[.bat]``
 --------------------
 
