@@ -6,12 +6,37 @@
 
 The following `Python <https://python.org/>`__-related scripts can be used to start:
 
+- ``ipython[.bat]``: an `IPython <https://jupyter.org/>`__ session;
+- ``jupyter[.bat]``: a `Jupyter <https://jupyter.org/>`__ session;
 - ``jupyterconsole[.bat]``: a `Jupyter <https://jupyter.org/>`__ console, i.e. a terminal frontend for `Jupyter <https://jupyter.org/>`__ kernels;
 - ``jupyterlab[.bat|.vbs]``: a `JupyterLab <https://jupyterlab.readthedocs.io/en/latest/>`__, i.e. a Web-based interactive development environment for `Jupyter Notebooks <https://jupyter-notebook.readthedocs.io/en/latest/>`__, code and data;
 - ``jupyternotebook[.bat|.vbs]``: a `Jupyter Notebook <https://jupyter-notebook.readthedocs.io/en/latest/>`__, i.e. a Web application to create and share documents that contain live code, equations, visualizations and narrative text; and
 - ``pythonshell[.bat]``: a `Python <https://python.org/>`__ shell.
 
 This, in OpenCOR's environment.
+
+``ipython[.bat]``
+------------------------
+
+::
+
+  $ ./ipython
+  Python 3.7.5 (default, Mar 30 2021, 16:43:44)
+  Type 'copyright', 'credits' or 'license' for more information
+  IPython 7.8.0 -- An enhanced Interactive Python. Type '?' for help.
+
+  In [1]:
+
+``jupyter[.bat]``
+------------------------
+
+::
+
+  $ ./jupyter
+  usage: jupyter [-h] [--version] [--config-dir] [--data-dir] [--runtime-dir]
+                 [--paths] [--json] [--debug]
+                 [subcommand]
+  jupyter: error: one of the arguments --version subcommand --config-dir --data-dir --runtime-dir --paths is required
 
 .. _userInterfaces_commandLineInterfacePythonRelatedScriptsJupyterconsole:
 
