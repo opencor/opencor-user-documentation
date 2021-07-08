@@ -28,7 +28,6 @@ People familiar with `COR <https://opencor.ws/cor/index.html>`__ will find that 
 However, note that the COR format has some limitations that are also present in the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`:
 
 - The ``reaction`` element is not supported (its use is not only discouraged, but it has also been removed from `CellML 2.0 <https://cellml.org/specifications/cellml_2.0>`__, the next version of `CellML <https://cellml.org/>`__);
-- A ``piecewise`` statement can only be used as part of a top-level ``eq`` statement, and nested ``piecewise`` statements are not allowed (the latter is not a limitation *per se* since an equation can always be rewritten without the need for nested ``piecewise`` statements; more importantly, it is easier to read and maintain an equation that uses only one top-level ``piecewise`` statement); and
 - A ``component`` element may contain a set of ``math`` elements, but its rendering is such that when serialised back, only one ``math`` element will remain, with all the equations in that one and unique ``math`` element.
 
 .. _plugins_editing_cellmlTextView_comments:
@@ -270,7 +269,7 @@ As can be seen, the order of the `ODE <https://en.wikipedia.org/wiki/Ordinary_di
    ode(x, t, 3{dimensionless})
    ...
 
-The right-hand side of a mathematical equation can use any of the following mathematical operators, elements and constants:
+The right-hand side of an equation can use any of the following mathematical operators, elements and constants:
 
 - Relational operators:
 
@@ -523,7 +522,7 @@ The right-hand side of a mathematical equation can use any of the following math
      |           |                |    e                       |
      +-----------+----------------+----------------------------+
 
-A piecewise statement can also be used in the top-level of the right-hand side of a mathematical equation.
+A piecewise statement can also be used.
 For example, to define :math:`x` as being equal to :math:`y+z` when :math:`x > 0` and :math:`y-z` otherwise, we would use:
 
 .. code-block:: cellmlText
@@ -534,6 +533,14 @@ For example, to define :math:`x` as being equal to :math:`y+z` when :math:`x > 0
        otherwise:
            y-z;
    endsel;
+
+or
+
+.. code-block:: cellmlText
+
+   x = sel(case x > 0{dimensionless}: y+z, otherwise: y-z);
+
+The two syntaxes are equivalent, except that the former syntax can only be used in the top-level (of the right-hand side) of an equation while the latter syntax can be used anywhere (on the right hand-side of an equation).
 
 .. _plugins_editing_cellmlTextView_groupDefinitions:
 
