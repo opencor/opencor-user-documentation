@@ -134,3 +134,5 @@ Various information about OpenCOR and its use can be found in the following page
 You might also be interested in our `published article <https://dx.doi.org/10.3389/fphys.2015.00026>`__.
 
 Finally, here is how you can `contact us <https://opencor.ws/contactUs.html>`__.
+
+**Note:** the user documentation for the latest snapshot can be found `here <https://opencor.readthedocs.io/en/latest/>`__.
