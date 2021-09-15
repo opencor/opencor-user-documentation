@@ -54,6 +54,8 @@ Windows
 - The :ref:`File Browser window <plugins_organisation_fileBrowserWindow>` plugin may, on some systems, result in OpenCOR being slow to respond at startup.
   This has nothing to do with OpenCOR, but most likely with a `Windows <https://en.wikipedia.org/wiki/Microsoft_Windows>`__ shell add-on.
   `This page <https://brighthub.com/computing/windows-platform/articles/86552.aspx>`__ may help address the issue, but if not then you might have to disable the :ref:`File Browser window <plugins_organisation_fileBrowserWindow>` plugin.
+- If OpenCOR was installed in a system folder using the `ZIP <https://en.wikipedia.org/wiki/ZIP_(file_format)>`__ file then the first time OpenCOR is run it will have to be run as administrator.
+  This is so that OpenCOR can update the `shebang <https://en.wikipedia.org/wiki/Shebang_(Unix)>`__ of its `Python <https://en.wikipedia.org/wiki/Python_(programming_language)>`__ scripts to point to its copy of Python.
 
 macOS
 -----
