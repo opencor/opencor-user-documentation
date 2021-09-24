@@ -274,7 +274,7 @@ SED-ML support
 
 An important aspect of modelling is reproducibility.
 To that end, a simulation can be exported to `SED-ML <https://sed-ml.github.io/>`__ by clicking on the |sedmlLogo| button.
-The export can then be done either to a `SED-ML <https://sed-ml.github.io/>`__ file or a `COMBINE archive <https://co.mbine.org/documents/archive>`__, both of which can then be re-run by OpenCOR and any `SED-ML <https://sed-ml.github.io/>`__ capable software (e.g. `SED-ML Web Tools <http://sysbioapps.dyndns.org/SED-ML_Web_Tools>`__).
+The export can then be done either to a `SED-ML <https://sed-ml.github.io/>`__ file or a `COMBINE archive <https://co.mbine.org/documents/archive>`__, both of which can then be re-run by OpenCOR and any `SED-ML <https://sed-ml.github.io/>`__ capable software (e.g. `SED-ML Web Tools <http://sysbioapps.spdns.org/SED-ML_Web_Tools>`__).
 
 .. |sedmlLogo| image:: ../../pics/sedmlLogo.png
    :class: inlineicon

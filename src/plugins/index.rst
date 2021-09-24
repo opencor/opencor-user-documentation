@@ -142,7 +142,7 @@ Non-selectable third-party plugins are used to access to various third-party lib
 - **OAuth:** a plugin to access `OAuth for Qt <https://github.com/pipacs/o2>`__.
 - **OpenSSL:** a plugin to access `OpenSSL <https://openssl.org/>`__.
 - **QScintilla:** a plugin to access `QScintilla <https://riverbankcomputing.com/software/qscintilla/intro>`__.
-- **Qwt:** a plugin to access `Qwt <http://qwt.sourceforge.net/>`__.
+- **Qwt:** a plugin to access `Qwt <https://qwt.sourceforge.io/>`__.
 - **SUNDIALS:** a plugin to access the `ARKode <https://computation.llnl.gov/projects/sundials/arkode>`__, `CVODES <https://computation.llnl.gov/projects/sundials/cvodes>`__, `IDAS <https://computation.llnl.gov/projects/sundials/idas>`__ and `KINSOL <https://computation.llnl.gov/projects/sundials/kinsol>`__ solvers from the `SUNDIALS <https://computation.llnl.gov/projects/sundials>`__ library.
 - **zlib:** a plugin to access `zlib <https://zlib.net/>`__.
 
