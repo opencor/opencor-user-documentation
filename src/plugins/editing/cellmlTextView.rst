@@ -16,14 +16,14 @@ Apart from using a specific format, the view has the same features as the :ref:`
 Compatibility with COR
 ----------------------
 
-People familiar with `COR <https://opencor.ws/cor/index.html>`__ will find that the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>` is compatible with the COR format, although it supports additional features:
+People familiar with `COR <https://opencor.ws/cor>`__ will find that the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>` is compatible with the COR format, although it supports additional features:
 
 - :ref:`Comments <plugins_editing_cellmlTextView_comments>`;
 - The ``import`` element (i.e. support for `CellML 1.1 <https://cellml.org/specifications/cellml_1.1>`__);
 - The ``cmeta:id`` attribute on all `CellML <https://cellml.org/>`__ elements (i.e. support for `CellML <https://cellml.org/>`__ annotation);
 - The ``degree`` qualifier for the ``diff`` element (i.e. support for higher-order derivatives);
 - The ``notanumber`` and ``infinity`` constants; and
-- An unlimited number of group types (in `COR <https://opencor.ws/cor/index.html>`__, a group can only specify one ``encapsulation`` and/or one ``containment`` type).
+- An unlimited number of group types (in `COR <https://opencor.ws/cor>`__, a group can only specify one ``encapsulation`` and/or one ``containment`` type).
 
 However, note that the COR format has some limitations that are also present in the :ref:`CellML Text format <plugins_editing_cellmlTextView_cellmlTextFormat>`:
 
