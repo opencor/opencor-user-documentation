@@ -135,4 +135,4 @@ You might also be interested in our `published article <https://dx.doi.org/10.33
 
 Finally, here is how you can `contact us <https://opencor.ws/contactUs.html>`__.
 
-**Note:** the user documentation for the latest snapshot can be found `here <https://opencor.github.io/>`__.
+**Note:** the documentation for the latest snapshot can be found `here <https://opencor.github.io/>`__.
