@@ -15,6 +15,7 @@ Windows, Linux and macOS
 - OpenCOR uses the `CellML API <https://github.com/cellmlapi/cellml-api/>`__, which is known to have the following limitations:
 
   - It will crash OpenCOR if you try to export a `CellML <https://cellml.org/>`__ file to a user-defined format that is described in a file that contains valid, but unknown, `XML <https://w3.org/XML>`__.
+  - It leaks memory, although it should not be a "problem" in most cases.
   - It may incorrectly (in)validate certain `CellML <https://cellml.org/>`__ files.
 
 - OpenCOR comes with :ref:`pythonSupport`, which requires OpenCOR to be installed in a directory that does not contain spaces.
