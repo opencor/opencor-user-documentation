@@ -53,8 +53,6 @@ Windows
 
 - The :ref:`File Browser window <plugins_organisation_fileBrowserWindow>` plugin may, on some systems, result in OpenCOR being slow to respond at startup.
   This has nothing to do with OpenCOR, but most likely with a `Windows <https://en.wikipedia.org/wiki/Microsoft_Windows>`__ shell add-on.
-- If OpenCOR was installed in a system folder using the `ZIP <https://en.wikipedia.org/wiki/ZIP_(file_format)>`__ file then the first time OpenCOR is run it will have to be run as administrator.
-  This is so that OpenCOR can update the `shebang <https://en.wikipedia.org/wiki/Shebang_(Unix)>`__ of its `Python <https://python.org/>`__ scripts to point to its copy of Python.
 
 Linux
 -----
@@ -67,4 +65,4 @@ Linux
 macOS
 -----
 
-- Starting with `macOS Mojave <https://en.wikipedia.org/wiki/MacOS_Mojave>`__, macOS has a `Dark Mode <https://support.apple.com/HT208976>`__, which is not currently supported by OpenCOR.
+- Starting with `macOS Mojave <https://en.wikipedia.org/wiki/MacOS_Mojave>`__, macOS has a `Dark Mode <https://support.apple.com/HT208976>`__, which is not supported by OpenCOR.
